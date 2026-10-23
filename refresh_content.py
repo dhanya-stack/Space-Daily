@@ -2,8 +2,11 @@
 No API key required. Failures retain the previous good cache.
 """
 import datetime as dt
+import html
 import json
+import os
 import pathlib
+import re
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -12,6 +15,9 @@ from html.parser import HTMLParser
 BASE=pathlib.Path(__file__).resolve().parent
 OUT=BASE/'data'/'latest.json'
 UA={'User-Agent':'SpaceDailyPrototype/0.1 educational demo (contact: configure-before-production)'}
+# Kept server-side only. The current RSS, Image Library, and new APOD endpoint
+# do not require it; do not print, cache, or expose this value.
+NASA_API_KEY=os.environ.get('NASA_API_KEY')
 
 def get(url, timeout=20):
     req=urllib.request.Request(url,headers=UA)
@@ -47,7 +53,6 @@ def articles():
         def field(t): return (item.findtext(t) or '').strip()
         title,link,date=field('title'),field('link'),field('pubDate')
         desc=field('description')
-        import re, html
         desc=html.unescape(re.sub('<[^>]+>',' ',desc))
         if title and link:
             result={'title':html.unescape(title),'link':link,'date':date,'description':desc[:300]}
@@ -55,6 +60,24 @@ def articles():
             if image: result['image']=image
             results.append(result)
     return results
+
+def apod():
+    """Fetch APOD from NASA's current WordPress endpoint, not the retiring legacy API."""
+    payload=json.loads(get('https://science.nasa.gov/wp-json/wp/v2/apod-basic'))
+    item=payload[0] if isinstance(payload,list) and payload else payload if isinstance(payload,dict) else {}
+    if item.get('media_type')!='image': return None
+    image=item.get('hdurl') or item.get('url')
+    if not isinstance(image,str) or not image.startswith('https://'): return None
+    return {
+        'date':item.get('date',''),
+        'title':html.unescape(item.get('title','NASA Astronomy Picture of the Day')),
+        'explanation':html.unescape(re.sub('<[^>]+>',' ',item.get('explanation',''))),
+        'image':image,
+        'link':item.get('permalink') or item.get('url') or 'https://science.nasa.gov/apod/',
+        'credit':html.unescape(re.sub('<[^>]+>',' ',item.get('credit') or item.get('copyright') or 'NASA — see original source')),
+        'alt':html.unescape(item.get('alt','')),
+        'media_type':'image',
+    }
 
 def images(topic):
     params=urllib.parse.urlencode({'q':topic,'media_type':'image','page_size':12})
@@ -77,11 +100,16 @@ def main():
     if OUT.exists():
         try: previous=json.loads(OUT.read_text(encoding='utf-8'))
         except json.JSONDecodeError: pass
-    data={'news':previous.get('news',[]),'gallery':previous.get('gallery',{}),'updated':previous.get('updated')}
+    data={'news':previous.get('news',[]),'gallery':previous.get('gallery',{}),'apod':previous.get('apod'),'updated':previous.get('updated')}
     success=False
     try:
         data['news']=articles();success=True;print('News refreshed')
     except Exception as err:print('News unavailable:',err)
+    try:
+        result=apod()
+        if result:
+            data['apod']=result;success=True;print('APOD refreshed')
+    except Exception as err:print('APOD unavailable:',err)
     for topic in ('galaxy','moon','saturn','nebula','spacecraft'):
         try:
             result=images(topic)

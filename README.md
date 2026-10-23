@@ -12,11 +12,18 @@ The daily lesson, quiz, topic preferences and UI work immediately. NASA news and
 
 ## Import NASA content
 
-Run `python refresh_content.py` with internet access. It fetches NASA's RSS news headlines and Image and Video Library thumbnails into `data/latest.json`. Then refresh the website. Failures retain previously cached data. You can set up a GitHub repository and enable Actions; the supplied workflow refreshes daily. GitHub Pages can host this static site.
+Run `python refresh_content.py` with internet access. It fetches NASA RSS headlines, official article preview images, Image and Video Library thumbnails, and the current Astronomy Picture of the Day into `data/latest.json`. Then refresh the website. Failures retain previously cached data. You can set up a GitHub repository and enable Actions; the supplied workflow refreshes daily. GitHub Pages can host this static site.
 
 ### NASA API key
 
-The current sources (NASA's RSS feed and Image and Video Library search API) are public and do **not** require an API key. `NASA_API_KEY` is therefore intentionally not read, sent to the browser, printed, or included in the workflow. If a future server-side content source requires NASA's API, provide the key as an environment variable locally and as a GitHub Actions secret named `NASA_API_KEY`; do not add it to client-side JavaScript, HTML, `data/latest.json`, or the repository.
+The current sources are public. Space Daily uses `NASA_API_KEY` only as an optional server-side environment variable; it is never printed, stored in `data/latest.json`, or sent to browser code. The new APOD WordPress endpoint does not require a key. If a future NASA source requires a key, set `NASA_API_KEY` locally and add it as a GitHub Actions secret with the same name; never commit it.
+
+## Data sources
+
+- NASA News Release RSS: headlines, dates, links, and summaries.
+- NASA article pages: their official social-preview image, when available.
+- NASA Image and Video Library: gallery and curated learning imagery, with source links and credited creators.
+- NASA APOD WordPress API: `https://science.nasa.gov/wp-json/wp/v2/apod-basic` for the daily image feature. The retiring `api.nasa.gov/planetary/apod` endpoint is not used.
 
 ## What is a prototype, not live?
 
