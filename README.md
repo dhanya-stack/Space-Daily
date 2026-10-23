@@ -27,7 +27,7 @@ The current sources are public. Space Daily uses `NASA_API_KEY` only as an optio
 
 ## What is a prototype, not live?
 
-- The newsletter form only checks the email and offers a copy-to-clipboard preference; there is **no live mailing list**.
+- The Kit newsletter form is live. Scheduled automation is deliberately disabled: GitHub Actions only generates local preview artifacts unless a future, explicit delivery activation is completed.
 - User accounts and synced bookmarks are **not implemented**.
 - Topic selections are stored locally in the browser; they provide lightweight recommendations from the cached articles and reviewed lesson catalogue, not a personalised news feed.
 - No analytics/tracking is installed.
@@ -50,13 +50,29 @@ Sources: https://api.nasa.gov/ · https://www.nasa.gov/rss-feeds/ · https://ima
 
 The refresh script avoids repeated requests after a successful UTC-day refresh. For a deliberate local refresh, set `SPACE_DAILY_FORCE_REFRESH=1` in your shell for that one command.
 
-## Connect GitHub later
+## Newsletter automation
 
-No remote is configured. When you approve publishing setup, create an empty GitHub repository and run:
+`newsletter.py` creates responsive Daily and Weekly HTML editions from the public NASA cache, APOD and reviewed lesson catalogue. It uses a small, public NASA-news history (`data/newsletter-history.json`) so the weekly edition can select stories from the prior seven days. No subscriber information is fetched, written, or committed.
 
-```powershell
-git remote add origin https://github.com/YOUR-ACCOUNT/YOUR-REPOSITORY.git
-git push -u origin main
-```
+Safe defaults:
 
-Before enabling the included workflow, add `NASA_API_KEY` under the repository’s Actions secrets if a future NASA source needs it. The workflow supports manual runs (`workflow_dispatch`) and one daily scheduled cache refresh. Review the resulting cache commit before enabling any deployment workflow.
+- `python newsletter.py --edition both --mode preview` creates local files under `build/newsletters/` only.
+- Preview generation skips an edition if its cache is stale or it has fewer than three valid, non-duplicate NASA stories.
+- `.github/workflows/newsletter.yml` refreshes NASA data before producing preview artifacts at approximately 09:00 Asia/Kolkata (`03:30 UTC`); GitHub scheduling may be delayed.
+- The workflow supports an explicitly triggered read-only `verify` mode to check tag IDs. It cannot create drafts or send email.
+
+Kit V4 draft/test/production commands are deliberately not in the workflow. They require `KIT_API_KEY`, an HTTPS `SPACE_DAILY_SITE_URL`, the exact Kit tags `Daily Newsletter` and `Weekly Newsletter`, and separate environment approval tokens enforced by the script. The production path targets only the matching Kit tag and detects an existing broadcast marker before creating another.
+
+Required GitHub configuration before any future Kit verification or delivery:
+
+- Secret `KIT_API_KEY` — a Kit API V4 key; never commit or expose it.
+- Secret `NASA_API_KEY` — only if a future NASA source needs it.
+- Variable `SPACE_DAILY_SITE_URL` — the future public HTTPS site URL; delivery refuses to run without it.
+- For an approved test only: secret `NEWSLETTER_TEST_SEND_ENABLED` with `I_APPROVE_TEST_SEND`, plus a test-only tag ID in `KIT_TEST_TAG_ID`.
+- For production only: secret `NEWSLETTER_PRODUCTION_ENABLED` with `I_APPROVE_PRODUCTION_SENDING`.
+
+Do not add the two delivery approval secrets or wire a delivery workflow until the preview, Kit tag verification, sending address, confirmation behaviour and a test-only audience have been reviewed.
+
+## GitHub workflow safety
+
+The repository is connected to GitHub, but no deployment or GitHub Pages configuration is included. The refresh and preview workflows can update only public NASA cache data and preview artifacts; neither workflow sends subscriber email.

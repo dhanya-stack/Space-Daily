@@ -17,3 +17,6 @@ venv/
 
 # Local preview diagnostics.
 server*.log
+
+# Generated local newsletter previews and delivery metadata.
+build/

@@ -1,0 +1,89 @@
+name: Prepare newsletter previews
+
+on:
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: Edition to prepare without sending email
+        required: true
+        default: both
+        type: choice
+        options: [daily, weekly, both]
+      mode:
+        description: Preview is local-only; verify reads Kit tag configuration without creating a broadcast
+        required: true
+        default: preview
+        type: choice
+        options: [preview, verify]
+  schedule:
+    # 09:00 Asia/Kolkata (UTC+05:30). GitHub may delay scheduled runs.
+    - cron: '30 3 * * *'
+    - cron: '30 3 * * 0'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: space-daily-newsletter-preview-${{ github.event.schedule || inputs.edition || 'manual' }}
+  cancel-in-progress: false
+
+jobs:
+  daily-preview:
+    if: github.event_name == 'workflow_dispatch' && (inputs.edition == 'daily' || inputs.edition == 'both') || github.event.schedule == '30 3 * * *'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Refresh NASA cache before preparing content
+        run: python refresh_content.py
+        env:
+          NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
+      - name: Generate daily preview only
+        run: python newsletter.py --edition daily --mode "${{ inputs.mode || 'preview' }}"
+        env:
+          KIT_API_KEY: ${{ secrets.KIT_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: space-daily-daily-preview
+          path: build/newsletters/
+          if-no-files-found: warn
+      - name: Commit refreshed public NASA cache
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/latest.json data/newsletter-history.json
+          git diff --cached --quiet || (git commit -m "Refresh NASA content" && git push)
+
+  weekly-preview:
+    if: github.event_name == 'workflow_dispatch' && (inputs.edition == 'weekly' || inputs.edition == 'both') || github.event.schedule == '30 3 * * 0'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Refresh NASA cache before preparing content
+        run: python refresh_content.py
+        env:
+          NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
+      - name: Generate weekly preview only
+        run: python newsletter.py --edition weekly --mode "${{ inputs.mode || 'preview' }}"
+        env:
+          KIT_API_KEY: ${{ secrets.KIT_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: space-daily-weekly-preview
+          path: build/newsletters/
+          if-no-files-found: warn
+      - name: Commit refreshed public NASA cache
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/latest.json data/newsletter-history.json
+          git diff --cached --quiet || (git commit -m "Refresh NASA content" && git push)
+
+# This workflow deliberately has no Kit credential and never sends or drafts
+# broadcasts. Production delivery requires a separately approved workflow edit
+# plus the explicit environment gates enforced in newsletter.py.

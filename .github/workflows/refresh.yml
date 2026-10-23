@@ -2,7 +2,8 @@ name: Refresh NASA content
 on:
   workflow_dispatch:
   schedule:
-    - cron: '25 6 * * *'
+    # 07:30 Asia/Kolkata; newsletter preparation also refreshes defensively.
+    - cron: '0 2 * * *'
 permissions:
   contents: write
 concurrency:
