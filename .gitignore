@@ -1,0 +1,19 @@
+# Keep any future local NASA API configuration out of version control.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python environments and generated files.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Local preview diagnostics.
+server*.log
