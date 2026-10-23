@@ -24,6 +24,7 @@ DEFAULT_OUTPUT = BASE / "build" / "newsletters"
 KIT_API = "https://api.kit.com/v4"
 TAG_NAMES = {"daily": "Daily Newsletter", "weekly": "Weekly Newsletter"}
 TEST_TAG_NAME = "Space Daily Test"
+TEST_SEND_MIN_LEAD_MINUTES = 15
 
 
 class NewsletterError(RuntimeError):
@@ -238,21 +239,34 @@ def existing_broadcast(key, marker):
     return None
 
 
-def create_broadcast(content, key, tag_id, mode, site, send_at=None):
+def create_broadcast(content, key, tag_id, mode, site, send_at=None, sender_email=None):
     marker = f"space-daily:{content['edition']}:{content['issue_date'].isoformat()}"
     existing = existing_broadcast(key, marker)
     if existing:
         return {"status": "duplicate-prevented", "broadcast_id": existing.get("id")}
     now = dt.datetime.now(dt.timezone.utc).isoformat()
     payload = {"content": render_html(content, site), "description": marker, "public": False, "published_at": now, "send_at": send_at, "preview_text": "NASA reporting, imagery, and learning from Space Daily.", "subject": f"Space Daily — {content['edition'].title()} edition · {content['issue_date'].strftime('%d %b')}", "subscriber_filter": [{"all": [{"type": "tag", "ids": [tag_id]}], "any": None, "none": None}]}
+    if sender_email:
+        payload["email_address"] = sender_email
     result = kit_request("POST", "/broadcasts", key, payload)
     broadcast = result.get("broadcast", {})
+    if sender_email and str(broadcast.get("email_address", "")).casefold() != sender_email.casefold():
+        raise NewsletterError("Kit did not confirm the configured test sender; review and cancel the created broadcast before any scheduled send.")
     return {"status": "scheduled" if send_at else "draft-created", "broadcast_id": broadcast.get("id"), "mode": mode}
 
 
 def approved(name, expected):
     if os.environ.get(name) != expected:
         raise NewsletterError(f"{name} is not explicitly enabled; no email action was taken.")
+
+
+def configured_test_sender():
+    """Require an explicit, syntactically valid sender for a scheduled test."""
+    value = os.environ.get("KIT_TEST_SENDER_EMAIL", "").strip()
+    _name, address = email.utils.parseaddr(value)
+    if not value or address != value or "@" not in address:
+        raise NewsletterError("KIT_TEST_SENDER_EMAIL must be an explicit valid sender address; no email action was taken.")
+    return address
 
 
 def run_edition(content, args, output):
@@ -282,13 +296,15 @@ def run_edition(content, args, output):
     elif args.mode == "test-send":
         approved("NEWSLETTER_TEST_SEND_ENABLED", "I_APPROVE_TEST_SEND")
         if not args.confirm_test_send: raise NewsletterError("Pass --confirm-test-send for the approved test-audience mode.")
+        sender_email = configured_test_sender()
         if not args.send_at: raise NewsletterError("--send-at (future ISO8601 UTC time) is required for test delivery.")
         try:
-            if dt.datetime.fromisoformat(args.send_at.replace("Z", "+00:00")).astimezone(dt.timezone.utc) <= dt.datetime.now(dt.timezone.utc):
+            scheduled = dt.datetime.fromisoformat(args.send_at.replace("Z", "+00:00")).astimezone(dt.timezone.utc)
+            if scheduled < dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=TEST_SEND_MIN_LEAD_MINUTES):
                 raise ValueError
         except ValueError:
-            raise NewsletterError("--send-at must be a future ISO8601 UTC timestamp.")
-        result = create_broadcast(content, key, tag_id, "test-send", site, args.send_at)
+            raise NewsletterError(f"--send-at must be at least {TEST_SEND_MIN_LEAD_MINUTES} minutes in the future (ISO8601 UTC).")
+        result = create_broadcast(content, key, tag_id, "test-send", site, args.send_at, sender_email)
     else:
         approved("NEWSLETTER_PRODUCTION_ENABLED", "I_APPROVE_PRODUCTION_SENDING")
         send_at = args.send_at or (dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=10)).isoformat()

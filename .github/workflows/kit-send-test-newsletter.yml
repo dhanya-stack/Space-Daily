@@ -1,0 +1,57 @@
+name: Send one controlled Kit newsletter test
+
+on:
+  workflow_dispatch:
+    inputs:
+      approval:
+        description: Type SEND_ONE_TEST_EMAIL to request the protected one-recipient test
+        required: true
+        default: DO_NOT_SEND
+        type: choice
+        options:
+          - DO_NOT_SEND
+          - SEND_ONE_TEST_EMAIL
+      send_at_utc:
+        description: Future ISO-8601 UTC time, for example 2026-10-24T12:30:00Z
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: space-daily-kit-single-test-send
+  cancel-in-progress: false
+
+jobs:
+  send-one-test:
+    if: inputs.approval == 'SEND_ONE_TEST_EMAIL'
+    name: Reverify and schedule one test recipient
+    runs-on: ubuntu-latest
+    environment:
+      name: kit-test-send
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reverify audience and schedule the single test
+        run: >-
+          python newsletter.py --edition daily --mode test-send
+          --confirm-test-send --send-at "${{ inputs.send_at_utc }}"
+        env:
+          KIT_API_KEY: ${{ secrets.KIT_API_KEY }}
+          KIT_TEST_SENDER_EMAIL: ${{ vars.KIT_TEST_SENDER_EMAIL }}
+          SPACE_DAILY_SITE_URL: ${{ vars.SPACE_DAILY_SITE_URL }}
+          NEWSLETTER_TEST_SEND_ENABLED: ${{ secrets.NEWSLETTER_TEST_SEND_ENABLED }}
+      - name: Upload the rendered test edition
+        uses: actions/upload-artifact@v4
+        with:
+          name: space-daily-single-test-edition
+          path: build/newsletters/
+          if-no-files-found: error
+
+# Before use, configure the protected `kit-test-send` environment with a
+# required reviewer and environment-scoped KIT_API_KEY plus
+# NEWSLETTER_TEST_SEND_ENABLED=I_APPROVE_TEST_SEND. This workflow has no
+# schedule and cannot run unless the dispatch approval phrase is selected.

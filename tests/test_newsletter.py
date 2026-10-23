@@ -61,6 +61,26 @@ class NewsletterTests(unittest.TestCase):
         with self.assertRaisesRegex(newsletter.NewsletterError, "conflicts"):
             newsletter.verify_test_audience("not-a-real-key", {"Space Daily Test": 10, "Daily Newsletter": 10})
 
+    def test_test_sender_must_be_explicit_and_valid(self):
+        with patch.dict(os.environ, {}, clear=True):
+            with self.assertRaisesRegex(newsletter.NewsletterError, "KIT_TEST_SENDER_EMAIL"):
+                newsletter.configured_test_sender()
+        with patch.dict(os.environ, {"KIT_TEST_SENDER_EMAIL": "newsletter@example.test"}, clear=True):
+            self.assertEqual("newsletter@example.test", newsletter.configured_test_sender())
+
+    def test_test_broadcast_supplies_and_confirms_explicit_sender(self):
+        content, reason = newsletter.content_for("daily", self.issue_date)
+        self.assertIsNone(reason)
+        captured = {}
+        def fake_request(_method, _path, _key, payload=None):
+            captured.update(payload)
+            return {"broadcast": {"id": 42, "email_address": "newsletter@example.test"}}
+        with patch.object(newsletter, "existing_broadcast", return_value=None), patch.object(newsletter, "kit_request", side_effect=fake_request):
+            result = newsletter.create_broadcast(content, "not-a-real-key", 99, "test-send", "https://example.test", "2026-10-23T12:30:00Z", "newsletter@example.test")
+        self.assertEqual("scheduled", result["status"])
+        self.assertEqual("newsletter@example.test", captured["email_address"])
+        self.assertEqual([99], captured["subscriber_filter"][0]["all"][0]["ids"])
+
 
 if __name__ == "__main__":
     unittest.main()

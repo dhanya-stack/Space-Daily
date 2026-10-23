@@ -78,6 +78,12 @@ Do not add the two delivery approval secrets or wire a delivery workflow until t
 
 After this repository is pushed and `KIT_API_KEY` is configured as a GitHub Actions secret, manually run **Verify controlled Kit newsletter test**. It is not scheduled and is read-only: it produces a Daily HTML preview artifact and verifies the `Space Daily Test` tag ID plus its active-recipient count. A result other than exactly one stops the workflow before any send-related operation. The workflow deliberately has no input, permission, or command for sending a newsletter.
 
+### Sending the one-recipient test
+
+`.github/workflows/kit-send-test-newsletter.yml` is manual-only and has no schedule. It is protected by all of the following: the `SEND_ONE_TEST_EMAIL` dispatch choice, the protected `kit-test-send` environment, an environment-scoped `NEWSLETTER_TEST_SEND_ENABLED` secret set to `I_APPROVE_TEST_SEND`, and a minimum 15-minute scheduled-send lead time. Immediately before scheduling, it resolves the exact `Space Daily Test` tag again, rejects a clash with the Daily or Weekly tags, and requires exactly one active recipient. It also requires an explicit `KIT_TEST_SENDER_EMAIL` environment variable and passes that value to Kit rather than accepting the account default. The rendered HTML retains Kit's `{{ unsubscribe_url }}` merge tag.
+
+Before approving a send, create the `kit-test-send` GitHub environment with at least one required reviewer. Add environment secrets `KIT_API_KEY` and `NEWSLETTER_TEST_SEND_ENABLED`; add environment variables `KIT_TEST_SENDER_EMAIL` (a sender already verified in Kit) and `SPACE_DAILY_SITE_URL` (the future HTTPS site URL). The test workflow explicitly supplies that sender to Kit and checks that Kit echoes it in the broadcast response. Invalid credentials or insufficient broadcast permission stop the API request; verify the sender in Kit before approving. Do not configure the approval secret until you are ready to perform this one test.
+
 ## GitHub workflow safety
 
 The repository is connected to GitHub, but no deployment or GitHub Pages configuration is included. The refresh and preview workflows can update only public NASA cache data and preview artifacts; neither workflow sends subscriber email.
