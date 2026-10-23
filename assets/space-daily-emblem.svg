@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-labelledby="title desc">
+  <title id="title">Space Daily orbital emblem</title>
+  <desc id="desc">A bright central star enclosed by a refined orbital arc.</desc>
+  <g fill="none" stroke="#dcecff" stroke-linecap="round">
+    <ellipse cx="40" cy="40" rx="31" ry="13" transform="rotate(-25 40 40)" stroke-width="1.7"/>
+    <path d="M17 52.5c8.3 8.4 25 11.5 39.1 6.5" stroke="#91b9dd" stroke-width="1.1" opacity=".85"/>
+  </g>
+  <circle cx="40" cy="40" r="4.4" fill="#f6fbff"/>
+  <path d="M40 28.3 42.2 37.8 51.7 40l-9.5 2.2-2.2 9.5-2.2-9.5-9.5-2.2 9.5-2.2z" fill="#d9efff"/>
+</svg>
