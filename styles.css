@@ -72,6 +72,8 @@ h1 em, h2 em { color: #d5e8ff; font-style: italic; }
 .quiz-options button, .filters button { border: 1px solid var(--line); border-radius: 999px; padding: 8px 12px; color: var(--muted); background: rgba(5, 11, 23, .54); font-size: 12px; }
 .quiz-options button:hover, .filters button.selected { border-color: #bcdfff; color: #08111e; background: #bbdcff; }
 .feedback { min-height: 1.5em; margin: 8px 0 0 !important; }
+.lesson-controls { display: flex; justify-content: space-between; gap: 10px; margin-top: auto; }
+.lesson-controls .btn:disabled { opacity: .42; cursor: not-allowed; }
 
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; }
 .section-note { margin: 17px 0 0; color: var(--muted); font-size: 14px; }
@@ -132,6 +134,8 @@ h1 em, h2 em { color: #d5e8ff; font-style: italic; }
 .interests button.selected, .interests button:hover { border-color: #bcdfff; color: #08111e; background: #bbdcff; }
 .interest-message { font-size: 13px; }
 .reset { border: 0; padding: 0; color: var(--accent); background: transparent; font-size: 12px; text-decoration: underline; text-underline-offset: 4px; }
+.recommendations { margin-top: 25px; padding: 20px; }
+.recommendations p:last-child { margin: 8px 0 0; color: var(--muted); font-size: 13px; }
 
 footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px; border-top: 1px solid var(--line); padding: 42px clamp(20px, 7vw, 100px) 30px; color: var(--quiet); font-size: 12px; }
 footer p { max-width: 360px; margin: 11px 0 0; }

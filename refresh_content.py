@@ -28,35 +28,51 @@ class MetadataParser(HTMLParser):
     def __init__(self):
         super().__init__()
         self.images=[]
+        self.description=''
 
     def handle_starttag(self, tag, attrs):
         if tag != 'meta': return
         values={key.lower():value for key,value in attrs if value}
         if values.get('property','').lower() in ('og:image','og:image:secure_url') or values.get('name','').lower() == 'twitter:image':
             self.images.append(values.get('content',''))
+        if not self.description and (values.get('property','').lower() == 'og:description' or values.get('name','').lower() == 'description'):
+            self.description=values.get('content','')
 
-def article_image(link):
-    """Use the official preview image declared by a NASA article, if available."""
+def article_metadata(link):
+    """Use only official NASA article metadata for previews and summaries."""
     host=urllib.parse.urlparse(link).hostname or ''
-    if not (host == 'nasa.gov' or host.endswith('.nasa.gov')): return None
+    if not (host == 'nasa.gov' or host.endswith('.nasa.gov')): return None, ''
     try:
         parser=MetadataParser()
         parser.feed(get(link,timeout=10).decode('utf-8',errors='replace'))
-        return next((image for image in parser.images if image.startswith('https://')),None)
+        return next((image for image in parser.images if image.startswith('https://')),None), parser.description
     except Exception:
-        return None
+        return None, ''
+
+def summary(text):
+    text=html.unescape(re.sub('<[^>]+>',' ',text or ''))
+    text=re.sub(r'\s+',' ',text).strip()
+    return text[:360]
+
+def category(title, description):
+    text=(title+' '+description).lower()
+    discovery=('discovery','science','galaxy','star','planet','asteroid','hubble','webb','cosmic','exoplanet')
+    return 'Discovery' if any(word in text for word in discovery) else 'NASA update'
 
 def articles():
     root=ET.fromstring(get('https://www.nasa.gov/news-release/feed/'))
-    results=[]
+    results=[];seen=set()
     for item in root.findall('.//channel/item')[:8]:
         def field(t): return (item.findtext(t) or '').strip()
         title,link,date=field('title'),field('link'),field('pubDate')
         desc=field('description')
-        desc=html.unescape(re.sub('<[^>]+>',' ',desc))
         if title and link:
-            result={'title':html.unescape(title),'link':link,'date':date,'description':desc[:300]}
-            image=article_image(link)
+            identity=(link.rstrip('/'),html.unescape(title).lower())
+            if identity in seen: continue
+            seen.add(identity)
+            image,source_description=article_metadata(link)
+            description=summary(source_description or desc)
+            result={'title':html.unescape(title),'link':link,'date':date,'description':description,'category':category(title,description)}
             if image: result['image']=image
             results.append(result)
     return results
@@ -100,6 +116,10 @@ def main():
     if OUT.exists():
         try: previous=json.loads(OUT.read_text(encoding='utf-8'))
         except json.JSONDecodeError: pass
+    updated=previous.get('updated','')
+    if updated.startswith(dt.datetime.now(dt.timezone.utc).date().isoformat()) and os.environ.get('SPACE_DAILY_FORCE_REFRESH')!='1':
+        print('Cache already refreshed today; set SPACE_DAILY_FORCE_REFRESH=1 to refresh again')
+        return
     data={'news':previous.get('news',[]),'gallery':previous.get('gallery',{}),'apod':previous.get('apod'),'updated':previous.get('updated')}
     success=False
     try:

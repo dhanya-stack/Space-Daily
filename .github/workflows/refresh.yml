@@ -5,6 +5,9 @@ on:
     - cron: '25 6 * * *'
 permissions:
   contents: write
+concurrency:
+  group: nasa-content-refresh
+  cancel-in-progress: false
 jobs:
   update:
     runs-on: ubuntu-latest
