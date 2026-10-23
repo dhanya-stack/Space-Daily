@@ -1,0 +1,35 @@
+name: Verify controlled Kit newsletter test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: space-daily-kit-test-verification
+  cancel-in-progress: false
+
+jobs:
+  verify-test-audience:
+    name: Prepare daily test preview and verify recipient count
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prepare the Daily Newsletter and verify its test audience
+        run: python newsletter.py --edition daily --mode test-verify
+        env:
+          KIT_API_KEY: ${{ secrets.KIT_API_KEY }}
+      - name: Upload non-sending preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: space-daily-controlled-test-preview
+          path: build/newsletters/
+          if-no-files-found: error
+
+# This workflow has no schedule, no write permissions, no broadcast-creation
+# step, and no approval input. It can only generate a local preview and read
+# Kit's exact "Space Daily Test" tag and active-recipient count.

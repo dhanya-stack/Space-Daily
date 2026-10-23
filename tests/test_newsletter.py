@@ -46,6 +46,21 @@ class NewsletterTests(unittest.TestCase):
             with self.assertRaises(newsletter.NewsletterError):
                 newsletter.approved("NEWSLETTER_PRODUCTION_ENABLED", "I_APPROVE_PRODUCTION_SENDING")
 
+    def test_test_audience_requires_the_exact_named_tag_and_one_active_recipient(self):
+        tags = {"Space Daily Test": 99, "Daily Newsletter": 10, "Weekly Newsletter": 11}
+        with patch.object(newsletter, "active_subscriber_count_for_tag", return_value=1) as count:
+            result = newsletter.verify_test_audience("not-a-real-key", tags)
+        self.assertEqual({"tag_id": 99, "active_subscriber_count": 1}, result)
+        count.assert_called_once_with("not-a-real-key", 99)
+
+    def test_test_audience_blocks_multiple_or_production_recipients(self):
+        tags = {"Space Daily Test": 99, "Daily Newsletter": 10, "Weekly Newsletter": 11}
+        with patch.object(newsletter, "active_subscriber_count_for_tag", return_value=2):
+            with self.assertRaisesRegex(newsletter.NewsletterError, "exactly one"):
+                newsletter.verify_test_audience("not-a-real-key", tags)
+        with self.assertRaisesRegex(newsletter.NewsletterError, "conflicts"):
+            newsletter.verify_test_audience("not-a-real-key", {"Space Daily Test": 10, "Daily Newsletter": 10})
+
 
 if __name__ == "__main__":
     unittest.main()

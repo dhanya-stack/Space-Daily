@@ -52,7 +52,7 @@ The refresh script avoids repeated requests after a successful UTC-day refresh. 
 
 ## Newsletter automation
 
-`newsletter.py` creates responsive Daily and Weekly HTML editions from the public NASA cache, APOD and reviewed lesson catalogue. It uses a small, public NASA-news history (`data/newsletter-history.json`) so the weekly edition can select stories from the prior seven days. No subscriber information is fetched, written, or committed.
+`newsletter.py` creates responsive Daily and Weekly HTML editions from the public NASA cache, APOD and reviewed lesson catalogue. It uses a small, public NASA-news history (`data/newsletter-history.json`) so the weekly edition can select stories from the prior seven days. Subscriber data is never written, committed, or logged.
 
 Safe defaults:
 
@@ -60,6 +60,7 @@ Safe defaults:
 - Preview generation skips an edition if its cache is stale or it has fewer than three valid, non-duplicate NASA stories.
 - `.github/workflows/newsletter.yml` refreshes NASA data before producing preview artifacts at approximately 09:00 Asia/Kolkata (`03:30 UTC`); GitHub scheduling may be delayed.
 - The workflow supports an explicitly triggered read-only `verify` mode to check tag IDs. It cannot create drafts or send email.
+- `.github/workflows/kit-test-newsletter.yml` is manual-only and cannot send or create a broadcast. It prepares a Daily preview, resolves only the exact `Space Daily Test` tag, and stops unless Kit returns exactly one active recipient. It does not print or save recipient identity data.
 
 Kit V4 draft/test/production commands are deliberately not in the workflow. They require `KIT_API_KEY`, an HTTPS `SPACE_DAILY_SITE_URL`, the exact Kit tags `Daily Newsletter` and `Weekly Newsletter`, and separate environment approval tokens enforced by the script. The production path targets only the matching Kit tag and detects an existing broadcast marker before creating another.
 
@@ -68,10 +69,14 @@ Required GitHub configuration before any future Kit verification or delivery:
 - Secret `KIT_API_KEY` — a Kit API V4 key; never commit or expose it.
 - Secret `NASA_API_KEY` — only if a future NASA source needs it.
 - Variable `SPACE_DAILY_SITE_URL` — the future public HTTPS site URL; delivery refuses to run without it.
-- For an approved test only: secret `NEWSLETTER_TEST_SEND_ENABLED` with `I_APPROVE_TEST_SEND`, plus a test-only tag ID in `KIT_TEST_TAG_ID`.
+- For an approved test only: secret `NEWSLETTER_TEST_SEND_ENABLED` with `I_APPROVE_TEST_SEND`. `KIT_TEST_TAG_ID` is optional but, if set, must match the ID resolved from the exact `Space Daily Test` tag.
 - For production only: secret `NEWSLETTER_PRODUCTION_ENABLED` with `I_APPROVE_PRODUCTION_SENDING`.
 
 Do not add the two delivery approval secrets or wire a delivery workflow until the preview, Kit tag verification, sending address, confirmation behaviour and a test-only audience have been reviewed.
+
+### Controlled Kit test verification
+
+After this repository is pushed and `KIT_API_KEY` is configured as a GitHub Actions secret, manually run **Verify controlled Kit newsletter test**. It is not scheduled and is read-only: it produces a Daily HTML preview artifact and verifies the `Space Daily Test` tag ID plus its active-recipient count. A result other than exactly one stops the workflow before any send-related operation. The workflow deliberately has no input, permission, or command for sending a newsletter.
 
 ## GitHub workflow safety
 

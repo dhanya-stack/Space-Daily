@@ -23,6 +23,7 @@ DATA = BASE / "data"
 DEFAULT_OUTPUT = BASE / "build" / "newsletters"
 KIT_API = "https://api.kit.com/v4"
 TAG_NAMES = {"daily": "Daily Newsletter", "weekly": "Weekly Newsletter"}
+TEST_TAG_NAME = "Space Daily Test"
 
 
 class NewsletterError(RuntimeError):
@@ -189,6 +190,42 @@ def kit_tags(key):
     return {tag.get("name"): tag.get("id") for tag in tags}
 
 
+def active_subscriber_count_for_tag(key, tag_id):
+    """Count active tagged subscribers without logging or persisting their data."""
+    count = 0
+    path = f"/tags/{tag_id}/subscribers?per_page=500&slim=true"
+    while path:
+        page = kit_request("GET", path, key)
+        # Kit defaults this endpoint to active subscribers. Check the state
+        # defensively so a future API default cannot broaden a test audience.
+        count += sum(1 for subscriber in page.get("subscribers", []) if subscriber.get("state") == "active")
+        if count > 1:
+            return count
+        pagination = page.get("pagination", {})
+        path = (f"/tags/{tag_id}/subscribers?per_page=500&slim=true&after="
+                f"{urllib.parse.quote(str(pagination.get('end_cursor', '')))}"
+                if pagination.get("has_next_page") else "")
+    return count
+
+
+def verify_test_audience(key, tags=None):
+    """Resolve and verify the sole permitted test audience without exposing identities."""
+    tags = tags if tags is not None else kit_tags(key)
+    test_tag_id = tags.get(TEST_TAG_NAME)
+    if not isinstance(test_tag_id, int):
+        raise NewsletterError(f"Kit tag '{TEST_TAG_NAME}' was not found; no email action was taken.")
+    production_ids = {tags.get(name) for name in TAG_NAMES.values()}
+    if test_tag_id in production_ids:
+        raise NewsletterError("The test tag conflicts with a production newsletter audience; no email action was taken.")
+    expected_id = os.environ.get("KIT_TEST_TAG_ID")
+    if expected_id and (not expected_id.isdigit() or int(expected_id) != test_tag_id):
+        raise NewsletterError("KIT_TEST_TAG_ID does not match the resolved 'Space Daily Test' tag; no email action was taken.")
+    recipient_count = active_subscriber_count_for_tag(key, test_tag_id)
+    if recipient_count != 1:
+        raise NewsletterError(f"The test audience has {recipient_count} active subscribers; exactly one is required.")
+    return {"tag_id": test_tag_id, "active_subscriber_count": recipient_count}
+
+
 def existing_broadcast(key, marker):
     path = "/broadcasts?per_page=1000&slim=true"
     while path:
@@ -226,10 +263,17 @@ def run_edition(content, args, output):
     key = os.environ.get("KIT_API_KEY")
     if not key: raise NewsletterError("KIT_API_KEY is required for Kit verification or write modes.")
     tags = kit_tags(key)
-    tag_id = tags.get(TAG_NAMES[content["edition"]])
-    if not tag_id: raise NewsletterError(f"Kit tag '{TAG_NAMES[content['edition']]}' was not found; no broadcast was created.")
-    print(f"{content['edition']}: verified target tag id {tag_id}")
-    if args.mode == "verify": return
+    if args.mode in ("test-verify", "test-send"):
+        test_audience = verify_test_audience(key, tags)
+        print(f"{content['edition']}: verified test tag id {test_audience['tag_id']} with exactly one active subscriber")
+        record_status(f"- {content['edition']}: verified '{TEST_TAG_NAME}' (id {test_audience['tag_id']}; exactly one active subscriber; no identity data recorded)")
+        if args.mode == "test-verify": return
+        tag_id = test_audience["tag_id"]
+    else:
+        tag_id = tags.get(TAG_NAMES[content["edition"]])
+        if not tag_id: raise NewsletterError(f"Kit tag '{TAG_NAMES[content['edition']]}' was not found; no broadcast was created.")
+        print(f"{content['edition']}: verified target tag id {tag_id}")
+        if args.mode == "verify": return
     site = site_url()
     if not site: raise NewsletterError("SPACE_DAILY_SITE_URL must be an HTTPS URL before creating a Kit broadcast.")
     if args.mode == "draft":
@@ -238,15 +282,13 @@ def run_edition(content, args, output):
     elif args.mode == "test-send":
         approved("NEWSLETTER_TEST_SEND_ENABLED", "I_APPROVE_TEST_SEND")
         if not args.confirm_test_send: raise NewsletterError("Pass --confirm-test-send for the approved test-audience mode.")
-        test_tag = os.environ.get("KIT_TEST_TAG_ID")
-        if not test_tag or not test_tag.isdigit(): raise NewsletterError("KIT_TEST_TAG_ID is required and must identify an approved test-only tag.")
         if not args.send_at: raise NewsletterError("--send-at (future ISO8601 UTC time) is required for test delivery.")
         try:
             if dt.datetime.fromisoformat(args.send_at.replace("Z", "+00:00")).astimezone(dt.timezone.utc) <= dt.datetime.now(dt.timezone.utc):
                 raise ValueError
         except ValueError:
             raise NewsletterError("--send-at must be a future ISO8601 UTC timestamp.")
-        result = create_broadcast(content, key, int(test_tag), "test-send", site, args.send_at)
+        result = create_broadcast(content, key, tag_id, "test-send", site, args.send_at)
     else:
         approved("NEWSLETTER_PRODUCTION_ENABLED", "I_APPROVE_PRODUCTION_SENDING")
         send_at = args.send_at or (dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=10)).isoformat()
@@ -258,7 +300,7 @@ def run_edition(content, args, output):
 def main():
     parser = argparse.ArgumentParser(description="Prepare Space Daily newsletters safely.")
     parser.add_argument("--edition", choices=("daily", "weekly", "both"), default="both")
-    parser.add_argument("--mode", choices=("preview", "verify", "draft", "test-send", "production"), default="preview")
+    parser.add_argument("--mode", choices=("preview", "verify", "test-verify", "draft", "test-send", "production"), default="preview")
     parser.add_argument("--date", type=dt.date.fromisoformat, default=dt.datetime.now(dt.timezone.utc).date())
     parser.add_argument("--output-dir", type=pathlib.Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--send-at", help="Future ISO8601 UTC timestamp, only for approved send modes.")
