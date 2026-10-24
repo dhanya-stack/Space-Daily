@@ -41,7 +41,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .top-subscribe:hover { background: rgba(148, 180, 230, .18); }
 .menu-toggle { display: none; padding: 5px 10px; font-size: 21px; }
 
-.hero { min-height: 650px; position: relative; display: flex; align-items: flex-end; overflow: hidden; border-bottom: 1px solid var(--line); background: var(--bg) url('assets/moon-background.png') center 58% / cover no-repeat; }
+.hero { min-height: clamp(590px, 48vw, 720px); position: relative; display: flex; align-items: flex-end; overflow: hidden; border-bottom: 1px solid var(--line); background: var(--bg) url('assets/moon-background.png') 48% top / cover no-repeat; }
 .hero-scrim { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(3, 7, 15, .86), rgba(3, 7, 15, .52) 43%, rgba(3, 7, 15, .08) 76%), linear-gradient(0deg, rgba(3, 7, 15, .5), transparent 40%); }
 .hero-content { width: min(850px, 87%); margin: 0 auto clamp(88px, 12vw, 150px) clamp(20px, 10vw, 150px); position: relative; text-align: left; }
 .hero-date, .eyebrow { margin: 0; color: var(--accent); font-size: 10px; font-weight: 700; letter-spacing: .18em; }
@@ -95,6 +95,7 @@ h1 em, h2 em { color: #d5e8ff; font-style: italic; }
 .news-featured .news-card-body { padding: 30px; }
 .news-featured h3 { font-size: clamp(28px, 2.6vw, 39px); }
 .news-featured p { font-size: 14px; }
+.news-controls { display: flex; justify-content: center; margin-top: 25px; }
 .placeholder { grid-column: 1 / -1; border: 1px solid var(--line); border-radius: 14px; padding: 30px; color: var(--muted); background: var(--panel); }
 .statusline, .micro-note { margin: 16px 0 0; color: var(--quiet); font-size: 12px; }
 .apod-section { padding-top: clamp(62px, 8vw, 105px); padding-bottom: 0; }
@@ -109,16 +110,18 @@ h1 em, h2 em { color: #d5e8ff; font-style: italic; }
 .learn-section { max-width: none; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(3, 5, 9, .5); }
 .learn-section > .section-heading, .learn-section > .journeys, .learn-section > .micro-note { max-width: 1200px; margin-right: auto; margin-left: auto; }
 .journeys { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 31px; }
-.journeys article { min-height: 0; overflow: hidden; padding: 0; }
-.journeys article > img { display: block; width: 100%; height: 210px; object-fit: cover; filter: brightness(.78) saturate(.8); }
-.journeys article > div { padding: 25px; }
+.journeys .subject-card { min-height: 0; overflow: hidden; padding: 0; color: inherit; }
+.journeys .subject-card > img { display: block; width: 100%; height: 210px; object-fit: cover; filter: brightness(.78) saturate(.8); }
+.journeys .subject-card > div { padding: 25px; }
 .journeys article > div > span, .journey-foot { color: var(--accent); font-size: 10px; letter-spacing: .15em; }
 .journeys h3 { margin: 30px 0 10px; font-size: 29px; }
 .journeys p { margin: 0; color: var(--muted); font-size: 14px; }
 .journey-foot { margin-top: 28px; color: var(--quiet); }
-.journeys article { cursor: pointer; transition: transform .18s ease, border-color .18s ease; }
-.journeys article:hover { transform: translateY(-3px); border-color: rgba(190, 219, 250, .52); }
+.journeys .subject-card { cursor: pointer; transition: transform .18s ease, border-color .18s ease; }
+.journeys .subject-card:hover { transform: translateY(-3px); border-color: rgba(190, 219, 250, .52); }
 .course-detail { max-width: 1200px; margin: 28px auto 0; padding: clamp(25px,4vw,45px); }
+.course-detail[hidden], .journeys[hidden] { display: none; }
+.back-subjects { display: inline-block; margin-bottom: 25px; }
 .course-detail h3 { font-size: clamp(29px,3.4vw,46px); }
 .course-detail > p:not(.eyebrow) { max-width: 720px; color: var(--muted); }
 .course-progress { color: var(--accent) !important; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
@@ -133,8 +136,8 @@ h1 em, h2 em { color: #d5e8ff; font-style: italic; }
 .archive-date { display: inline-flex; align-items: center; gap: 7px; color: var(--quiet); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
 .archive-date input { min-height: 39px; border: 1px solid var(--line); border-radius: 8px; padding: 0 8px; color: var(--text); background: rgba(6,13,25,.72); font: inherit; }
 
-.gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 17px; margin-top: 28px; }
-.gallery-card img { display: block; width: 100%; height: 220px; object-fit: cover; background: #121820; }
+.gallery-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 28px; }
+.gallery-card img { display: block; width: 100%; aspect-ratio: 4 / 3; height: auto; object-fit: cover; background: #121820; }
 .gallery-card div { padding: 15px; }
 .gallery-card strong { display: block; font-size: 14px; }
 .gallery-card p { color: var(--quiet); font-size: 11px; line-height: 1.5; }
@@ -184,7 +187,7 @@ footer small { flex-basis: 100%; color: #68768b; font-size: 10px; }
   .site-header nav a { padding: 8px 0; }
   .menu-toggle { display: block; margin-left: auto; }
   .top-subscribe { display: none; }
-  .hero { min-height: 590px; background-position: 60% 58%; }
+  .hero { min-height: clamp(560px, 78vw, 650px); background-position: 42% top; }
   .hero-content { margin-right: auto; margin-left: 7%; }
   .hero-scrim { background: linear-gradient(90deg, rgba(3, 7, 15, .91), rgba(3, 7, 15, .52) 68%, rgba(3, 7, 15, .16)), linear-gradient(0deg, rgba(3, 7, 15, .58), transparent 48%); }
   .lesson-card, .newsletter, .my-space, .news-grid, .journeys, .apod-feature { grid-template-columns: 1fr; }
@@ -197,6 +200,7 @@ footer small { flex-basis: 100%; color: #68768b; font-size: 10px; }
   .newsletter { gap: 31px; margin-right: 20px; margin-left: 20px; }
   .kit-form-wrap .formkit-fields { flex-direction: column !important; }
   .kit-form-wrap .formkit-submit { width: 100% !important; }
+  .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
 }
 @media (max-width: 480px) {
   .hero h1 { font-size: 52px; }
@@ -209,5 +213,9 @@ footer small { flex-basis: 100%; color: #68768b; font-size: 10px; }
   .brand-emblem { width: 33px; height: 33px; }
   .brand-wordmark { font-size: 19px; }
   .brand-subtitle { display: none; }
-  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
+}
+@media (min-width: 801px) and (max-width: 1100px) {
+  .hero { background-position: 43% top; }
+  .gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
