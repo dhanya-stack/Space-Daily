@@ -1,5 +1,7 @@
 import datetime as dt
+import json
 import os
+import pathlib
 import unittest
 from unittest.mock import patch
 
@@ -8,7 +10,8 @@ import newsletter
 
 class NewsletterTests(unittest.TestCase):
     def setUp(self):
-        self.issue_date = dt.date.fromisoformat("2026-10-23")
+        latest = json.loads((pathlib.Path(__file__).resolve().parents[1] / "data" / "latest.json").read_text(encoding="utf-8"))
+        self.issue_date = dt.datetime.fromisoformat(latest["updated"].replace("Z", "+00:00")).date()
 
     def test_daily_content_uses_three_distinct_non_apod_articles(self):
         content, reason = newsletter.content_for("daily", self.issue_date)
