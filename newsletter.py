@@ -25,6 +25,8 @@ KIT_API = "https://api.kit.com/v4"
 TAG_NAMES = {"daily": "Daily Newsletter", "weekly": "Weekly Newsletter"}
 TEST_TAG_NAME = "Space Daily Test"
 TEST_SEND_MIN_LEAD_MINUTES = 15
+EMAIL_IMAGE_WIDTH = 600
+EMAIL_IMAGE_HEIGHT = 450
 
 
 class NewsletterError(RuntimeError):
@@ -103,13 +105,13 @@ def content_for(edition, issue_date):
         return None, "No valid NASA APOD image is available."
     if edition == "daily":
         candidates = latest.get("news", [])
-        heading = "Today’s NASA reporting"
+        heading = "Today’s space reporting"
         limit = 3
     else:
         start = dt.datetime.combine(issue_date - dt.timedelta(days=6), dt.time.min, tzinfo=dt.timezone.utc)
         end = dt.datetime.combine(issue_date, dt.time.max, tzinfo=dt.timezone.utc)
         candidates = [item for item in history.get("news", []) if (parse_date(item.get("date")) and start <= parse_date(item.get("date")) <= end)]
-        heading = "NASA reporting from the past week"
+        heading = "Space reporting from the past week"
         limit = 5
     articles = ranked_articles(candidates)[:limit]
     if len(articles) < 3:
@@ -120,7 +122,7 @@ def content_for(edition, issue_date):
         "issue_date": issue_date,
         "articles": articles,
         "heading": heading,
-        "apod": apod,
+        "apod": {**apod, "image": email_image_url(apod.get("image"))},
         "lesson": lesson,
     }, None
 
@@ -130,12 +132,27 @@ def safe_url(value):
     return value if value.startswith("https://") else ""
 
 
+def email_image_url(value):
+    """Return an official, bounded HTTPS rendition suitable for email clients."""
+    url = safe_url(value)
+    if not url:
+        return ""
+    parsed = urllib.parse.urlsplit(url)
+    host = (parsed.hostname or "").lower()
+    if not (host == "nasa.gov" or host.endswith(".nasa.gov")):
+        return ""
+    if host == "assets.science.nasa.gov" and parsed.path.startswith("/dynamicimage/"):
+        query = urllib.parse.urlencode({"w": EMAIL_IMAGE_WIDTH, "h": EMAIL_IMAGE_HEIGHT, "fit": "clip"})
+        return urllib.parse.urlunsplit((parsed.scheme, parsed.netloc, parsed.path, query, ""))
+    return url
+
+
 def site_url():
     value = os.environ.get("SPACE_DAILY_SITE_URL", "").rstrip("/")
     return value if value.startswith("https://") else ""
 
 
-def render_html(content, site):
+def render_html_legacy(content, site):
     edition = content["edition"].title()
     apod = content["apod"]
     lesson = content["lesson"]
@@ -150,6 +167,30 @@ def render_html(content, site):
     home_link = site or safe_url(lesson.get("source"))
     apod_link = safe_url(apod.get("link"))
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body style="margin:0;padding:0;background:#050914;color:#edf3fb"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#050914"><tr><td align="center" style="padding:28px 14px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:640px;background:#10151e;border:1px solid #334154"><tr><td style="padding:30px 30px 20px;border-bottom:1px solid #334154"><p style="margin:0 0 7px;color:#a9c7e2;font:700 10px Arial,sans-serif;letter-spacing:2px">NEWS · EXPLORATION · DISCOVERY</p><h1 style="margin:0;color:#f4f8ff;font:400 31px Georgia,serif;letter-spacing:3px;text-transform:uppercase">Space Daily</h1><p style="margin:16px 0 0;color:#b9c8d8;font:14px/1.5 Arial,sans-serif">{edition} edition · {content['issue_date'].strftime('%d %B %Y')}</p></td></tr><tr><td style="padding:30px"><h2 style="margin:0 0 20px;color:#f4f8ff;font:400 30px Georgia,serif">{content['heading']}</h2><table role="presentation" width="100%" cellspacing="0" cellpadding="0">{''.join(rows)}</table><table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin-top:8px;border-top:1px solid #334154;border-bottom:1px solid #334154"><tr><td style="padding:24px 0"><a href="{html.escape(apod_link,quote=True)}"><img src="{html.escape(safe_url(apod.get('image')),quote=True)}" alt="{html.escape(clean(apod.get('alt') or apod.get('title'),180),quote=True)}" width="580" style="display:block;width:100%;max-width:580px;height:auto;border:0"></a><p style="margin:12px 0 4px;color:#a9c7e2;font:700 10px Arial,sans-serif;letter-spacing:1.2px;text-transform:uppercase">NASA Astronomy Picture of the Day</p><h2 style="margin:0 0 7px;color:#f4f8ff;font:400 25px Georgia,serif">{html.escape(clean(apod.get('title'),180))}</h2><p style="margin:0;color:#b9c8d8;font:12px/1.5 Arial,sans-serif">Image credit: {html.escape(clean(apod.get('credit'),240))} · <a href="{html.escape(apod_link,quote=True)}" style="color:#d5edff">View original</a></p></td></tr></table><p style="margin:25px 0 7px;color:#a9c7e2;font:700 10px Arial,sans-serif;letter-spacing:1.2px;text-transform:uppercase">Today’s discovery</p><h2 style="margin:0 0 8px;color:#f4f8ff;font:400 25px Georgia,serif">{html.escape(clean(lesson.get('title'),180))}</h2><p style="margin:0 0 12px;color:#c4d0dd;font:15px/1.55 Arial,sans-serif">{html.escape(clean(lesson.get('summary'),320))}</p><a href="{html.escape(lesson_link,quote=True)}" style="color:#d5edff;font:700 13px Arial,sans-serif">Explore the lesson →</a></td></tr><tr><td style="padding:20px 30px;border-top:1px solid #334154;color:#8998aa;font:11px/1.5 Arial,sans-serif">NASA stories and images are credited and linked to their original sources. <a href="{html.escape(home_link,quote=True)}" style="color:#b9d9f2">Space Daily</a> · <a href="{{{{ unsubscribe_url }}}}" style="color:#b9d9f2">Unsubscribe</a></td></tr></table></td></tr></table></body></html>'''
+
+
+def render_html(content, site):
+    """Render an independent Space Daily edition without delivery side effects."""
+    apod = content["apod"]
+    lesson = content["lesson"]
+    article_rows = []
+    for article in content["articles"]:
+        article_rows.append('''<tr><td style="padding:0 0 22px"><p style="margin:0 0 6px;color:#9fb9d4;font:700 11px Arial,sans-serif;letter-spacing:1.2px;text-transform:uppercase">SOURCE · {date}</p><h2 style="margin:0 0 8px;font:400 25px Georgia,serif;color:#f4f8ff;line-height:1.2">{title}</h2><p style="margin:0 0 10px;color:#c4d0dd;font:15px/1.55 Arial,sans-serif">{summary}</p><a href="{link}" style="color:#d5edff;font:700 13px Arial,sans-serif">Read original source →</a></td></tr>'''.format(
+            date=html.escape(clean(article.get("date"), 80)),
+            title=html.escape(clean(article.get("title"), 180)),
+            summary=html.escape(clean(article.get("description"), 320)),
+            link=html.escape(safe_url(article.get("link")), quote=True),
+        ))
+    apod_link = html.escape(safe_url(apod.get("link")), quote=True)
+    apod_image = safe_url(apod.get("image"))
+    if apod_image:
+        apod_visual = '''<a href="{link}"><img src="{image}" alt="{alt}" width="600" style="display:block;width:100%;max-width:600px;height:auto;border:0"></a>'''.format(
+            link=apod_link, image=html.escape(apod_image, quote=True), alt=html.escape(clean(apod.get("alt") or apod.get("title"), 180), quote=True))
+    else:
+        apod_visual = f'''<p style="margin:0;color:#b9c8d8;font:14px/1.5 Arial,sans-serif">Image preview unavailable. <a href="{apod_link}" style="color:#d5edff">View the original image</a>.</p>'''
+    lesson_link = html.escape(f"{site}/#lesson" if site else safe_url(lesson.get("source")), quote=True)
+    home_link = html.escape(site or safe_url(lesson.get("source")), quote=True)
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body style="margin:0;padding:0;background:#050914;color:#edf3fb"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#050914"><tr><td align="center" style="padding:28px 14px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:640px;background:#10151e;border:1px solid #334154"><tr><td style="padding:30px 30px 20px;border-bottom:1px solid #334154"><p style="margin:0 0 7px;color:#a9c7e2;font:700 10px Arial,sans-serif;letter-spacing:2px">NEWS · EXPLORATION · DISCOVERY</p><h1 style="margin:0;color:#f4f8ff;font:400 31px Georgia,serif;letter-spacing:3px;text-transform:uppercase">Space Daily</h1><p style="margin:16px 0 0;color:#b9c8d8;font:14px/1.5 Arial,sans-serif">{content['edition'].title()} edition · {content['issue_date'].strftime('%d %B %Y')}</p></td></tr><tr><td style="padding:30px"><h2 style="margin:0 0 20px;color:#f4f8ff;font:400 30px Georgia,serif">{html.escape(content['heading'])}</h2><table role="presentation" width="100%" cellspacing="0" cellpadding="0">{''.join(article_rows)}</table><table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin-top:8px;border-top:1px solid #334154;border-bottom:1px solid #334154"><tr><td style="padding:24px 0">{apod_visual}<p style="margin:12px 0 4px;color:#a9c7e2;font:700 10px Arial,sans-serif;letter-spacing:1.2px;text-transform:uppercase">Picture of the day</p><h2 style="margin:0 0 7px;color:#f4f8ff;font:400 25px Georgia,serif">{html.escape(clean(apod.get('title'),180))}</h2><p style="margin:0;color:#b9c8d8;font:12px/1.5 Arial,sans-serif">Image credit: {html.escape(clean(apod.get('credit'),240))} · <a href="{apod_link}" style="color:#d5edff">View original source</a></p></td></tr></table><p style="margin:25px 0 7px;color:#a9c7e2;font:700 10px Arial,sans-serif;letter-spacing:1.2px;text-transform:uppercase">Today’s discovery</p><h2 style="margin:0 0 8px;color:#f4f8ff;font:400 25px Georgia,serif">{html.escape(clean(lesson.get('title'),180))}</h2><p style="margin:0 0 12px;color:#c4d0dd;font:15px/1.55 Arial,sans-serif">{html.escape(clean(lesson.get('summary'),320))}</p><a href="{lesson_link}" style="color:#d5edff;font:700 13px Arial,sans-serif">Explore the lesson →</a></td></tr><tr><td style="padding:20px 30px;border-top:1px solid #334154;color:#8998aa;font:11px/1.5 Arial,sans-serif">Stories and images are credited and linked to their original sources. <a href="{home_link}" style="color:#b9d9f2">Space Daily</a> · <a href="{{{{ unsubscribe_url }}}}" style="color:#b9d9f2">Unsubscribe</a></td></tr></table></td></tr></table></body></html>'''
 
 
 def write_preview(content, output, site):

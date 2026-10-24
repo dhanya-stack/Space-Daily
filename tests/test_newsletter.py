@@ -26,7 +26,26 @@ class NewsletterTests(unittest.TestCase):
         rendered = newsletter.render_html(content, "https://example.test")
         self.assertIn("{{ unsubscribe_url }}", rendered)
         self.assertIn("Image credit:", rendered)
-        self.assertIn("Read the NASA source", rendered)
+        self.assertIn("Read original source", rendered)
+        self.assertIn("w=600&amp;h=450&amp;fit=clip", rendered)
+        self.assertIn(content["apod"]["alt"], rendered)
+        self.assertIn(content["apod"]["link"], rendered)
+
+    def test_email_image_uses_a_bounded_official_nasa_rendition(self):
+        source = "https://assets.science.nasa.gov/dynamicimage/assets/science/example.png?w=1600&h=1200"
+        self.assertEqual(
+            "https://assets.science.nasa.gov/dynamicimage/assets/science/example.png?w=600&h=450&fit=clip",
+            newsletter.email_image_url(source),
+        )
+        self.assertEqual("", newsletter.email_image_url("https://example.test/image.png"))
+
+    def test_email_html_keeps_a_source_link_when_no_image_can_be_embedded(self):
+        content, reason = newsletter.content_for("daily", self.issue_date)
+        self.assertIsNone(reason)
+        content["apod"]["image"] = ""
+        rendered = newsletter.render_html(content, "https://example.test")
+        self.assertIn("Image preview unavailable.", rendered)
+        self.assertIn(content["apod"]["link"], rendered)
 
     def test_stale_cache_skips_delivery(self):
         original = newsletter.load_json
