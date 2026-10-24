@@ -27,10 +27,10 @@ button, input, select { font: inherit; }
 button { cursor: pointer; }
 button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
-.site-header { height: 78px; display: flex; align-items: center; gap: 32px; padding: 0 clamp(20px, 6vw, 90px); position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--line); background: rgba(3, 7, 15, .72); backdrop-filter: blur(18px); }
+.site-header { height: 82px; display: flex; align-items: center; gap: 32px; padding: 0 clamp(20px, 6vw, 90px); position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--line); background: rgba(3, 7, 15, .72); backdrop-filter: blur(18px); }
 .brand { display: inline-flex; align-items: center; color: #f4f8ff; white-space: nowrap; }
 .brand-lockup { gap: 11px; }
-.brand-emblem { display: block; width: 37px; height: 37px; flex: 0 0 auto; }
+.brand-emblem { display: block; width: 43px; height: 43px; flex: 0 0 auto; filter: drop-shadow(0 0 8px rgba(180, 218, 255, .18)); }
 .brand-copy { display: grid; gap: 3px; }
 .brand-wordmark { font-family: 'DM Serif Display', Georgia, serif; font-size: 24px; letter-spacing: .105em; line-height: .9; text-transform: uppercase; }
 .brand-subtitle { color: #b8c9dc; font-size: 7px; font-weight: 700; letter-spacing: .19em; line-height: 1.2; text-transform: uppercase; }
@@ -122,6 +122,10 @@ h1 em, h2 em { color: #d5e8ff; font-style: italic; }
 .gallery-card div { padding: 15px; }
 .gallery-card strong { display: block; font-size: 14px; }
 .gallery-card p { color: var(--quiet); font-size: 11px; line-height: 1.5; }
+.media-unavailable { position: relative; }
+.media-unavailable::before { display: flex; align-items: center; justify-content: center; min-height: 150px; padding: 22px; color: var(--quiet); background: linear-gradient(135deg, #101925, #070b12); content: 'NASA photograph unavailable'; font-size: 11px; letter-spacing: .11em; text-align: center; text-transform: uppercase; }
+.lesson-visual.media-unavailable::before { position: absolute; inset: 0; z-index: 0; min-height: 0; }
+.news-card.media-unavailable { grid-template-columns: 1fr; }
 
 .newsletter { max-width: 1200px; display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(32px, 5vw, 70px); margin: 0 auto clamp(72px, 9vw, 120px); border-radius: var(--radius); padding: clamp(28px, 5vw, 58px); }
 .newsletter > div > p:not(.eyebrow) { max-width: 450px; color: var(--muted); }
@@ -186,7 +190,7 @@ footer small { flex-basis: 100%; color: #68768b; font-size: 10px; }
   .hero-credit { right: 20px; }
   .hero h1 { white-space: normal; }
   .brand-lockup { gap: 8px; }
-  .brand-emblem { width: 30px; height: 30px; }
+  .brand-emblem { width: 33px; height: 33px; }
   .brand-wordmark { font-size: 19px; }
   .brand-subtitle { display: none; }
   .gallery-grid { grid-template-columns: 1fr; }

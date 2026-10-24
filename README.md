@@ -12,7 +12,7 @@ The daily lesson, quiz, topic preferences and UI work immediately. NASA news and
 
 ## Import NASA content
 
-Run `python refresh_content.py` with internet access. It fetches NASA RSS headlines, official article preview images, Image and Video Library thumbnails, and the current Astronomy Picture of the Day into `data/latest.json`. Then refresh the website. Failures retain previously cached data. You can set up a GitHub repository and enable Actions; the supplied workflow refreshes daily. GitHub Pages can host this static site.
+Run `python refresh_content.py` with internet access. It fetches NASA RSS headlines, official article preview images, Image and Video Library thumbnails, and the current Astronomy Picture of the Day into `data/latest.json`. Each image URL is restricted to NASA hosts and checked for an image response before it enters the cache; a failed refresh retains the previous valid cache. Then refresh the website. You can set up a GitHub repository and enable Actions; the supplied workflow refreshes daily. GitHub Pages can host this static site.
 
 ### NASA API key
 

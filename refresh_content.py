@@ -19,11 +19,46 @@ UA={'User-Agent':'SpaceDailyPrototype/0.1 educational demo (contact: configure-b
 # Kept server-side only. The current RSS, Image Library, and new APOD endpoint
 # do not require it; do not print, cache, or expose this value.
 NASA_API_KEY=os.environ.get('NASA_API_KEY')
+IMAGE_HOSTS=('nasa.gov','images-assets.nasa.gov')
+_IMAGE_VALIDATION_CACHE={}
 
 def get(url, timeout=20):
     req=urllib.request.Request(url,headers=UA)
     with urllib.request.urlopen(req,timeout=timeout) as response:
         return response.read()
+
+def normalise_image_url(url):
+    """Return a safe, encoded first-party NASA image URL or None."""
+    if not isinstance(url,str): return None
+    try:
+        parsed=urllib.parse.urlsplit(url.strip())
+    except ValueError:
+        return None
+    host=(parsed.hostname or '').lower()
+    if parsed.scheme!='https' or not host or not any(host==allowed or host.endswith('.'+allowed) for allowed in IMAGE_HOSTS):
+        return None
+    path=urllib.parse.quote(urllib.parse.unquote(parsed.path),safe='/%:@+~._-')
+    query=urllib.parse.quote(urllib.parse.unquote(parsed.query),safe='=&%:+,~._-')
+    return urllib.parse.urlunsplit((parsed.scheme,parsed.netloc,path,query,''))
+
+def valid_image_url(url, timeout=12):
+    """Confirm that a NASA URL responds as an image; never cache failed media."""
+    url=normalise_image_url(url)
+    if not url: return None
+    if url in _IMAGE_VALIDATION_CACHE: return _IMAGE_VALIDATION_CACHE[url]
+    for method in ('HEAD','GET'):
+        try:
+            headers=dict(UA,Accept='image/avif,image/webp,image/*,*/*;q=0.8')
+            if method=='GET': headers['Range']='bytes=0-1023'
+            request=urllib.request.Request(url,headers=headers,method=method)
+            with urllib.request.urlopen(request,timeout=timeout) as response:
+                if response.headers.get_content_type().startswith('image/'):
+                    _IMAGE_VALIDATION_CACHE[url]=url
+                    return url
+        except Exception:
+            continue
+    _IMAGE_VALIDATION_CACHE[url]=None
+    return None
 
 class MetadataParser(HTMLParser):
     def __init__(self):
@@ -46,7 +81,7 @@ def article_metadata(link):
     try:
         parser=MetadataParser()
         parser.feed(get(link,timeout=10).decode('utf-8',errors='replace'))
-        return next((image for image in parser.images if image.startswith('https://')),None), parser.description
+        return next((checked for image in parser.images if (checked:=valid_image_url(image))),None), parser.description
     except Exception:
         return None, ''
 
@@ -83,8 +118,8 @@ def apod():
     payload=json.loads(get('https://science.nasa.gov/wp-json/wp/v2/apod-basic'))
     item=payload[0] if isinstance(payload,list) and payload else payload if isinstance(payload,dict) else {}
     if item.get('media_type')!='image': return None
-    image=item.get('hdurl') or item.get('url')
-    if not isinstance(image,str) or not image.startswith('https://'): return None
+    image=next((checked for candidate in (item.get('hdurl'),item.get('url')) if (checked:=valid_image_url(candidate))),None)
+    if not image: return None
     return {
         'date':item.get('date',''),
         'title':html.unescape(item.get('title','NASA Astronomy Picture of the Day')),
@@ -102,7 +137,7 @@ def images(topic):
     results=[]
     for item in payload.get('collection',{}).get('items',[]):
         info=(item.get('data') or [{}])[0]; links=item.get('links') or []
-        thumb=next((l.get('href') for l in links if l.get('rel')=='preview'),None)
+        thumb=next((checked for link in links if link.get('rel')=='preview' and (checked:=valid_image_url(link.get('href')))),None)
         if not thumb: continue
         nasa_id=info.get('nasa_id')
         # The search API's item URL points to raw collection JSON.  Send visitors
@@ -111,6 +146,15 @@ def images(topic):
         results.append({'title':info.get('title','NASA photograph'),'image':thumb,'link':page,'credit':info.get('secondary_creator') or info.get('center') or 'NASA'})
         if len(results)>=6: break
     return results
+
+def retain_last_valid_images(fresh, previous):
+    """Keep a previously validated image when current NASA metadata has none."""
+    old={(item.get('link') or '').rstrip('/'):item for item in previous if item.get('link')}
+    for item in fresh:
+        prior=old.get((item.get('link') or '').rstrip('/'),{})
+        if not item.get('image') and prior.get('image'):
+            item['image']=prior['image']
+    return fresh
 
 def update_news_history(news, captured_at):
     """Retain a small, public editorial archive for weekly newsletter selection.
@@ -156,7 +200,10 @@ def main():
     data={'news':previous.get('news',[]),'gallery':previous.get('gallery',{}),'apod':previous.get('apod'),'updated':previous.get('updated')}
     success=False
     try:
-        data['news']=articles();success=True;print('News refreshed')
+        refreshed=articles()
+        if refreshed:
+            data['news']=retain_last_valid_images(refreshed,previous.get('news',[]));success=True;print('News refreshed')
+        else: print('News refresh returned no valid articles; retained last cache')
     except Exception as err:print('News unavailable:',err)
     try:
         result=apod()
