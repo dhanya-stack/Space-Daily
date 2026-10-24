@@ -1,10 +1,58 @@
 {
   "news": [
     {
+      "title": "APOD: 2026 October 24 – Rosetta’s Selfie",
+      "link": "https://science.nasa.gov/image-article/apod-2026-october-24-rosettas-selfie/",
+      "date": "Sat, 24 Oct 2026 04:05:00 +0000",
+      "description": "APOD Science APOD APOD: 2026 October 24 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Rosetta’s Selfie Explanation",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/october/ESA_Rosetta_Philae_CIVA_141007.png/jcr:content/renditions/cq5dam.web.1280.1280.png"
+    },
+    {
+      "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+      "link": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
+      "date": "Fri, 23 Oct 2026 22:39:39 +0000",
+      "description": "As NASA returns humans to the lunar surface and establishes a long-term presence on our closest celestial neighbor, the agency and commercial human landing",
+      "category": "NASA update",
+      "image": "https://images-assets.nasa.gov/image/art002e012632/art002e012632~large.jpg"
+    },
+    {
+      "title": "NASA’s Artemis III Mission to Test Future Moon Lander Operations",
+      "link": "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations/",
+      "date": "Fri, 23 Oct 2026 22:37:53 +0000",
+      "description": "Before astronauts return to the lunar surface, NASA will first conduct one of the most ambitious and complex test missions in the agency's history.",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/2-artemis-iii-con-ops-oct2026.jpg"
+    },
+    {
+      "title": "NASA’s Swift Mission Ends, Leaves Behind Scientific Bonanza",
+      "link": "https://science.nasa.gov/missions/swift/nasas-swift-mission-ends/",
+      "date": "Fri, 23 Oct 2026 21:51:19 +0000",
+      "description": "NASA’s Neil Gehrels Swift Observatory has ended its science mission now that the spacecraft is orbiting less than 171 miles (275 kilometers) above Earth’s",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/missions/swift-observatory/news/2026/end-of-mission/Swift_in_space_15_ac.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "RS-25 Engine Tests at NASA Stennis",
+      "link": "https://www.nasa.gov/image-article/rs-25-engine-tests-at-nasa-stennis/",
+      "date": "Fri, 23 Oct 2026 18:57:04 +0000",
+      "description": "Teams at NASA’s Stennis Space Center near Bay St. Louis, Mississippi tested RS-25 engine No. 10001 on Oct. 21, 2026. The hot fire test lasted for almost",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/ssc-20261021-s00947horig.jpg"
+    },
+    {
+      "title": "NASA, Virginia Launch Power Partnership for Energy Security",
+      "link": "https://www.nasa.gov/centers-and-facilities/langley/nasa-power-energy-partnership/",
+      "date": "Fri, 23 Oct 2026 17:50:21 +0000",
+      "description": "NASA is helping to foster long-term energy security in Virginia.",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/lrc-2026-ocio-p-03524.jpg"
+    },
+    {
       "title": "APOD: 2026 October 23 – Andromeda in Southern Spring",
       "link": "https://science.nasa.gov/image-article/apod-2026-october-23-andromeda-in-southern-spring/",
       "date": "Fri, 23 Oct 2026 04:05:00 +0000",
-      "description": "APOD Science APOD APOD: 2026 October 23 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Andromeda in Southern […]",
+      "description": "APODScienceAPODAPOD: 2026 October 23 –…Today’s APODArchiveSubmissionsIndexSearchCalendarRSSEducationAboutDiscuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Andromeda in Southern Spring Explanation:",
       "category": "Discovery",
       "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/october/APOD_Lucy.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     },
@@ -14,55 +62,7 @@
       "date": "Fri, 23 Oct 2026 04:00:00 +0000",
       "description": "A 35-year satellite altimetry record lets scientists hold this year's El Niño up against its strongest predecessors.",
       "category": "NASA update",
-      "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/el-niño-then-and-now/elninocomp_sen6_20261012_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
-    },
-    {
-      "title": "NASA Invites Media to 2026 von Braun Space Exploration Symposium",
-      "link": "https://www.nasa.gov/news-release/nasa-invites-media-to-2026-von-braun-space-exploration-symposium/",
-      "date": "Thu, 22 Oct 2026 21:39:58 +0000",
-      "description": "Members of the media are invited to join NASA at the 2026 von Braun Space Exploration Symposium from Monday, Oct. 26, to Wednesday, Oct. 28, at the University",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2019/11/nasa_meatball.jpg"
-    },
-    {
-      "title": "Spiral’s Edge",
-      "link": "https://www.nasa.gov/image-article/spirals-edge/",
-      "date": "Thu, 22 Oct 2026 21:35:38 +0000",
-      "description": "This NASA Hubble Space Telescope image released on Oct. 16, 2026, features the edge-on, intermediate spiral galaxy NGC 1827, located roughly 37 million",
-      "category": "Discovery",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/hubble-ngc1827-1-flat-final.jpg"
-    },
-    {
-      "title": "NASA’s Hubble Charts Path for Roman with Gravitational Lenses",
-      "link": "https://science.nasa.gov/missions/hubble/nasas-hubble-charts-path-for-roman-with-gravitational-lenses/",
-      "date": "Thu, 22 Oct 2026 16:20:37 +0000",
-      "description": "This Hubble gravitational lensing image is one of many taken in preparation for science with the Nancy Grace Roman Space Telescope.",
-      "category": "Discovery",
-      "image": "https://assets.science.nasa.gov/content/dam/science/missions/hubble/gravitational-lens/Hubble_DESI194.5345+03.5358_74_flat_FINALok.tif/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
-    },
-    {
-      "title": "APOD: 2026 October 22 – The First Green Star, WD J1330+6435",
-      "link": "https://science.nasa.gov/image-article/apod-2026-october-22-the-first-green-star-wd-j13306435/",
-      "date": "Thu, 22 Oct 2026 04:05:00 +0000",
-      "description": "APOD Science APOD APOD: 2026 October 22 – The… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. The First […]",
-      "category": "Discovery",
-      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/october/green_wd_mark-garlick_annotated.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
-    },
-    {
-      "title": "Fires Char New Guinea",
-      "link": "https://science.nasa.gov/earth/earth-observatory/fires-char-new-guinea/",
-      "date": "Thu, 22 Oct 2026 04:01:00 +0000",
-      "description": "Emissions on both sides of the island are unusually high as human-set fires spread in a landscape parched by drought.",
-      "category": "NASA update",
-      "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/new-guinea-on-fire/papuanewguinea_vir_20261011_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
-    },
-    {
-      "title": "Faster to Science: A Letter to the Science Community",
-      "link": "https://science.nasa.gov/directorates/smd/faster-to-science-a-letter-to-the-science-community/",
-      "date": "Thu, 22 Oct 2026 00:00:16 +0000",
-      "description": "NASA Science wants to deliver science faster, so we’re changing how we compete and select missions. On Monday, October 26, we will host a virtual NASA Science Town Hall.",
-      "category": "Discovery",
-      "image": "https://assets.science.nasa.gov/content/dam/science/cds/general/images/2024/05/rsch-phys-nasa-fox-dspoc-visit-ek-041824-007.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+      "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/el-ni%C3%B1o-then-and-now/elninocomp_sen6_20261012_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     }
   ],
   "gallery": {
@@ -119,25 +119,25 @@
       },
       {
         "title": "Moon to Mars Multidisciplinary Science",
-        "image": "https://images-assets.nasa.gov/image/Moon to Mars Multidisciplinary Science/Moon to Mars Multidisciplinary Science~thumb.jpg",
+        "image": "https://images-assets.nasa.gov/image/Moon%20to%20Mars%20Multidisciplinary%20Science/Moon%20to%20Mars%20Multidisciplinary%20Science~thumb.jpg",
         "link": "https://images.nasa.gov/details/Moon%20to%20Mars%20Multidisciplinary%20Science/",
         "credit": "HQ"
       },
       {
         "title": "Moon to Mars Transportation and Habitation",
-        "image": "https://images-assets.nasa.gov/image/Moon to Mars Transportation and Habitation/Moon to Mars Transportation and Habitation~thumb.jpg",
+        "image": "https://images-assets.nasa.gov/image/Moon%20to%20Mars%20Transportation%20and%20Habitation/Moon%20to%20Mars%20Transportation%20and%20Habitation~thumb.jpg",
         "link": "https://images.nasa.gov/details/Moon%20to%20Mars%20Transportation%20and%20Habitation/",
         "credit": "HQ"
       },
       {
         "title": "Moon to Mars Operations",
-        "image": "https://images-assets.nasa.gov/image/Moon to Mars Operations/Moon to Mars Operations~thumb.jpg",
+        "image": "https://images-assets.nasa.gov/image/Moon%20to%20Mars%20Operations/Moon%20to%20Mars%20Operations~thumb.jpg",
         "link": "https://images.nasa.gov/details/Moon%20to%20Mars%20Operations/",
         "credit": "HQ"
       },
       {
         "title": "Moon to Mars Infrastructure",
-        "image": "https://images-assets.nasa.gov/image/Moon to Mars Infrastructure/Moon to Mars Infrastructure~thumb.jpg",
+        "image": "https://images-assets.nasa.gov/image/Moon%20to%20Mars%20Infrastructure/Moon%20to%20Mars%20Infrastructure~thumb.jpg",
         "link": "https://images.nasa.gov/details/Moon%20to%20Mars%20Infrastructure/",
         "credit": "HQ"
       }
@@ -258,14 +258,14 @@
     ]
   },
   "apod": {
-    "date": "2026-10-23",
-    "title": "Andromeda in Southern Spring",
-    "explanation": " Explanation:   Looking toward  the north from Mullion, New South Wales, Australia, the Andromeda Galaxy never gets more than a few degrees above the horizon. During the southern hemisphere spring, Andromeda is highest in the sky around midnight though. And in this telephoto scene from October 10/11, multiple exposures were used to reveal the spiral galaxy in tantalizing detail as it climbed above rolling Australian hills.  Also known as M31 , the Andromeda Galaxy is one of the brightest objects in the  Messier catalog , but is only visible to the unaided eye as a small, faint, fuzzy patch. Digitally tracked and stacked frames  were combined  with a foreground shot in the deep astro-image composite to reveal the galaxy's greater extent in planet Earth's night. In the springtime night skyscape,the closest large spiral galaxy  spans nearly 6 full moons .   Tomorrow's picture:  pixels in space ",
-    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/october/APOD_Lucy.jpg?w=3000&h=2004&fit=clip&crop=faces%2Cfocalpoint",
-    "link": "https://science.nasa.gov/image-article/apod-2026-october-23-andromeda-in-southern-spring/",
-    "credit": " Lucy Yunxi Hu ",
-    "alt": "The Andromeda galaxy above rolling hills.",
+    "date": "2026-10-24",
+    "title": "Rosetta's Selfie",
+    "explanation": " Explanation:   This Rosetta spacecraft selfie  was snapped on October 7th, 2014. At the time the  comet-chasing spacecraft  was about 472 million kilometers from planet Earth, but only 16 kilometers from the surface of  comet 67P/Churyumov-Gerasimenko . Looming beyond the spacecraft near the top of the frame, dust and gas stream away from the comet's curious  double-lobed nucleus . Bright sunlight glints off one of Rosetta's 14 meter long solar arrays. In fact, two exposures, one short and one long, were combined to record the dramatic high contrast scene using the CIVA camera system on Rosetta's still-attached  Philae lander . Its chosen  primary landing site  was on the visible hemisphere of the smaller lobe of the nucleus. This was the last image from Philae's camera before the lander separated from Rosetta on November 12. Shortly after separation Philae took another image looking back toward the orbiter and  began its descent  to the nucleus of the comet.   Tomorrow's picture:  dark matters ",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/october/ESA_Rosetta_Philae_CIVA_141007.png?w=1024&h=1024&fit=clip&crop=faces,focalpoint",
+    "link": "https://science.nasa.gov/image-article/apod-2026-october-24-rosettas-selfie/",
+    "credit": " ESA/Rosetta/Philae/CIV A",
+    "alt": "Image of a Rosetta spacecraft solar array in foreground and the nucleus of comet 67P in background.",
     "media_type": "image"
   },
-  "updated": "2026-10-23T14:38:50.165971+00:00"
+  "updated": "2026-10-24T06:27:59.380441+00:00"
 }
