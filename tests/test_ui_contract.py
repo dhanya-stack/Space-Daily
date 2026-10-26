@@ -41,7 +41,16 @@ class UiContractTests(unittest.TestCase):
     def test_compact_gallery_and_hero_rules_are_present(self):
         self.assertIn("grid-template-columns: repeat(4", self.css)
         self.assertIn("aspect-ratio: 4 / 3", self.css)
-        self.assertIn("background-position: 42% top", self.css)
+        self.assertIn("min-height: 100svh", self.css)
+        self.assertIn("background-position: 42% center", self.css)
+
+    def test_hero_uses_minimal_menu_navigation_and_keeps_the_newsletter_link(self):
+        self.assertIn('<h1>Space Daily</h1>', self.html)
+        self.assertIn('href="#newsletter">Newsletter</a>', self.html)
+        self.assertIn('aria-label="Open navigation"', self.html)
+        self.assertIn(".site-header { height: 76px", self.css)
+        self.assertIn(".site-header nav.open { display: grid; }", self.css)
+        self.assertIn("Close navigation", self.app)
 
 
 if __name__ == "__main__":
