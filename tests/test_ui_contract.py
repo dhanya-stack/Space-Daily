@@ -58,6 +58,17 @@ class UiContractTests(unittest.TestCase):
         self.assertIn(".site-header nav.open { display: grid; }", self.css)
         self.assertIn("Close navigation", self.app)
 
+    def test_discovery_photo_changes_without_showing_a_stale_image(self):
+        self.assertIn("discoveryPhotoRequest=0", self.app)
+        self.assertIn("photo.removeAttribute('src')", self.app)
+        self.assertIn("photo.hidden=true", self.app)
+        self.assertIn("const preload=new Image()", self.app)
+        self.assertIn("if(request!==discoveryPhotoRequest)return", self.app)
+        self.assertIn("photo.classList.add('is-ready')", self.app)
+        self.assertIn("discovery-photo-unavailable", self.app)
+        self.assertNotIn("discoveryFallbacks", self.app)
+        self.assertIn(".lesson-visual img.is-ready { opacity: 1; }", self.css)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -66,7 +66,8 @@ h1 em, h2 em { color: #d5e8ff; font-style: italic; }
 
 .lesson-card { max-width: 1200px; display: grid; grid-template-columns: .92fr 1.08fr; overflow: hidden; margin: 0 auto; border-radius: var(--radius); }
 .lesson-visual { min-height: 490px; position: relative; overflow: hidden; background: #0a0d13; }
-.lesson-visual img { display: block; width: 100%; min-height: 490px; height: 100%; object-fit: cover; filter: brightness(.82) contrast(1.04); }
+.lesson-visual img { display: block; width: 100%; min-height: 490px; height: 100%; opacity: 0; object-fit: cover; filter: brightness(.82) contrast(1.04); transition: opacity .3s ease; }
+.lesson-visual img.is-ready { opacity: 1; }
 .photo-label { position: absolute; z-index: 1; bottom: 23px; left: 26px; max-width: calc(100% - 52px); overflow: hidden; border: 1px solid var(--line); border-radius: 999px; padding: 6px 10px; color: rgba(219, 232, 247, .8); background: rgba(5, 8, 11, .74); font-size: 10px; letter-spacing: .11em; text-overflow: ellipsis; white-space: nowrap; }
 .lesson-copy { display: flex; flex-direction: column; gap: 17px; padding: clamp(29px, 5vw, 62px); }
 .lesson-copy h3 { font-size: clamp(32px, 3.2vw, 45px); }
@@ -148,6 +149,8 @@ h1 em, h2 em { color: #d5e8ff; font-style: italic; }
 .media-unavailable { position: relative; }
 .media-unavailable::before { display: flex; align-items: center; justify-content: center; min-height: 150px; padding: 22px; color: var(--quiet); background: linear-gradient(135deg, #101925, #070b12); content: 'NASA photograph unavailable'; font-size: 11px; letter-spacing: .11em; text-align: center; text-transform: uppercase; }
 .lesson-visual.media-unavailable::before { position: absolute; inset: 0; z-index: 0; min-height: 0; }
+.lesson-visual.discovery-photo-loading::before { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: var(--quiet); content: attr(data-placeholder); font-size: 11px; letter-spacing: .11em; text-transform: uppercase; }
+.lesson-visual.discovery-photo-unavailable::before { content: attr(data-placeholder); }
 .news-card.media-unavailable { grid-template-columns: 1fr; }
 
 .newsletter { max-width: 1120px; display: grid; grid-template-columns: minmax(235px,.7fr) minmax(0,1fr); align-items: center; gap: clamp(24px, 4vw, 48px); margin: 0 auto clamp(58px, 7vw, 90px); border-radius: var(--radius); padding: clamp(22px, 3.5vw, 36px); }

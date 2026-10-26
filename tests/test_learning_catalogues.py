@@ -1,6 +1,7 @@
 import datetime as dt
 import json
 import pathlib
+import re
 import unittest
 
 
@@ -27,6 +28,26 @@ class LearningCatalogueTests(unittest.TestCase):
             self.assertGreaterEqual(len(item["answers"]), 2)
             self.assertIn(item["correct"], range(len(item["answers"])))
             self.assertTrue(item["imageLink"].startswith("https://images.nasa.gov/"))
+
+    def test_discovery_images_and_fallbacks_are_unique_nasa_assets(self):
+        """Asset IDs, rather than rendition URLs, prevent visually repeated discoveries."""
+        asset_ids = []
+        image_url_pattern = re.compile(r"^https://images-assets\.nasa\.gov/image/([^/]+)/\1~thumb\.jpg$")
+        detail_url_pattern = re.compile(r"^https://images\.nasa\.gov/details/([^/]+)/$")
+        for item in self.discoveries:
+            self.assertTrue(item["imageAssetId"])
+            self.assertTrue(item["credit"])
+            self.assertEqual(item["imageAssetId"], image_url_pattern.fullmatch(item["image"]).group(1))
+            self.assertEqual(item["imageAssetId"], detail_url_pattern.fullmatch(item["imageLink"]).group(1))
+            asset_ids.append(item["imageAssetId"])
+            self.assertEqual(1, len(item["fallbackImages"]), item["id"])
+            for fallback in item["fallbackImages"]:
+                self.assertTrue(fallback["credit"])
+                self.assertEqual(fallback["imageAssetId"], image_url_pattern.fullmatch(fallback["image"]).group(1))
+                self.assertEqual(fallback["imageAssetId"], detail_url_pattern.fullmatch(fallback["imageLink"]).group(1))
+                asset_ids.append(fallback["imageAssetId"])
+        self.assertEqual(60, len(asset_ids))
+        self.assertEqual(len(asset_ids), len(set(asset_ids)), "primary, fallback, or rendition source is repeated")
 
     def test_course_has_three_subjects_fifteen_chapters_and_actual_lessons(self):
         self.assertEqual(3, len(self.subjects))

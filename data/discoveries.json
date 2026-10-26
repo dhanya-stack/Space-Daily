@@ -1,36 +1,829 @@
 {
   "timezone": "UTC",
-  "monthlyThemes": {"01":"Earth","02":"The Moon","03":"Planets","04":"The Solar System","05":"Asteroids and Comets","06":"Stars","07":"Stellar Life Cycles","08":"Nebulae","09":"Galaxies","10":"Black Holes","11":"Space Exploration and Engineering","12":"The Wider Universe"},
+  "monthlyThemes": {
+    "01": "Earth",
+    "02": "The Moon",
+    "03": "Planets",
+    "04": "The Solar System",
+    "05": "Asteroids and Comets",
+    "06": "Stars",
+    "07": "Stellar Life Cycles",
+    "08": "Nebulae",
+    "09": "Galaxies",
+    "10": "Black Holes",
+    "11": "Space Exploration and Engineering",
+    "12": "The Wider Universe"
+  },
   "discoveries": [
-    {"id":"earth-rotation","date":"2026-10-24","title":"Why does Earth have day and night?","summary":"Earth spins once about every 24 hours. The side facing the Sun has day; the side turned away has night.","detail":"Rotation, not Earth moving closer to or farther from the Sun, produces the daily cycle.","source":"https://science.nasa.gov/earth/facts/","sourceLabel":"NASA: Earth facts","image":"https://images-assets.nasa.gov/image/iss071e153307/iss071e153307~thumb.jpg","imageLink":"https://images.nasa.gov/details/iss071e153307/","credit":"NASA","question":"What directly produces day and night?","answers":["Earth’s rotation","Earth’s yearly orbit"],"correct":0},
-    {"id":"earth-seasons","date":"2026-10-25","title":"Why do seasons change?","summary":"Earth’s tilted axis changes the angle and duration of sunlight in each hemisphere as Earth orbits the Sun.","detail":"The two hemispheres have opposite seasons because they tilt toward the Sun at different times of year.","source":"https://science.nasa.gov/earth/facts/","sourceLabel":"NASA: Earth facts","image":"https://images-assets.nasa.gov/image/iss071e153307/iss071e153307~thumb.jpg","imageLink":"https://images.nasa.gov/details/iss071e153307/","credit":"NASA","question":"What is the main cause of seasons?","answers":["Earth’s axial tilt","Changes in the Sun’s brightness"],"correct":0},
-    {"id":"moon-phases","date":"2026-10-26","title":"Why does the Moon change shape?","summary":"Moon phases are our view of the Moon’s sunlit half as it orbits Earth.","detail":"Earth’s shadow is involved in lunar eclipses, not the usual monthly phases.","source":"https://science.nasa.gov/moon/facts/","sourceLabel":"NASA: Moon facts","image":"https://images-assets.nasa.gov/image/PIA12235/PIA12235~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA12235/","credit":"NASA/JPL-Caltech/Brown Univ.","question":"What causes ordinary Moon phases?","answers":["Changing illumination as the Moon orbits","Earth’s shadow every night"],"correct":0},
-    {"id":"moon-near-side","date":"2026-10-27","title":"Why do we see the same face of the Moon?","summary":"The Moon rotates once in the same time it takes to orbit Earth, a relationship called synchronous rotation.","detail":"The far side receives sunlight too; it is not permanently dark.","source":"https://science.nasa.gov/moon/facts/","sourceLabel":"NASA: Moon facts","image":"https://images-assets.nasa.gov/image/AS11-40-5875/AS11-40-5875~thumb.jpg","imageLink":"https://images.nasa.gov/details/AS11-40-5875/","credit":"NASA · Apollo 11","question":"Does the Moon rotate?","answers":["Yes, once per orbit","No"],"correct":0},
-    {"id":"moon-craters","date":"2026-10-28","title":"Why are lunar craters so well preserved?","summary":"The Moon has no thick atmosphere, flowing water, or active plate tectonics to erase most impact marks quickly.","detail":"Craters preserve a record of impacts across solar-system history.","source":"https://science.nasa.gov/moon/facts/","sourceLabel":"NASA: Moon facts","image":"https://images-assets.nasa.gov/image/PIA12235/PIA12235~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA12235/","credit":"NASA/JPL-Caltech/Brown Univ.","question":"What most directly preserves many Moon craters?","answers":["Little erosion","A thick atmosphere"],"correct":0},
-    {"id":"sun-gravity","date":"2026-10-29","title":"What keeps the Solar System together?","summary":"The Sun contains most of the Solar System’s mass, so its gravity strongly shapes the paths of planets, asteroids, and comets.","detail":"An orbit is forward motion continually bent by gravity.","source":"https://science.nasa.gov/sun/facts/","sourceLabel":"NASA: Sun facts","image":"https://images-assets.nasa.gov/image/PIA04921/PIA04921~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA04921/","credit":"NASA/JPL-Caltech","question":"What chiefly keeps planets in orbit?","answers":["The Sun’s gravity","Earth’s magnetic field"],"correct":0},
-    {"id":"eight-planets","date":"2026-10-30","title":"How many planets orbit the Sun?","summary":"Our Solar System has eight planets, from Mercury to Neptune, alongside dwarf planets, moons, asteroids, and comets.","detail":"Planet classifications are defined by scientific criteria, not simply by size.","source":"https://science.nasa.gov/solar-system/solar-system-facts/","sourceLabel":"NASA: Solar System facts","image":"https://images-assets.nasa.gov/image/PIA04921/PIA04921~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA04921/","credit":"NASA/JPL-Caltech","question":"How many planets are in the Solar System?","answers":["Eight","Nine"],"correct":0},
-    {"id":"asteroid-belt","date":"2026-10-31","title":"Is the asteroid belt crowded like science fiction?","summary":"Asteroids are spread over a huge region between Mars and Jupiter; spacecraft can travel through it without weaving between rocks.","detail":"The belt is leftover material that never formed a planet.","source":"https://science.nasa.gov/solar-system/solar-system-facts/","sourceLabel":"NASA: Solar System facts","image":"https://images-assets.nasa.gov/image/PIA04921/PIA04921~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA04921/","credit":"NASA/JPL-Caltech","question":"Where is the main asteroid belt?","answers":["Between Mars and Jupiter","Beyond Neptune"],"correct":0},
-    {"id":"comet-tail","date":"2026-11-01","title":"Why do comets grow tails?","summary":"Near the Sun, a comet warms and releases gas and dust. Solar radiation and the solar wind shape the material into tails.","detail":"A comet’s ion tail points generally away from the Sun.","source":"https://science.nasa.gov/solar-system/solar-system-facts/","sourceLabel":"NASA: Solar System facts","image":"https://images-assets.nasa.gov/image/PIA04921/PIA04921~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA04921/","credit":"NASA/JPL-Caltech","question":"What helps shape a comet’s tail?","answers":["Solar radiation and solar wind","Earth’s atmosphere"],"correct":0},
-    {"id":"star-fusion","date":"2026-11-02","title":"How does the Sun shine?","summary":"In the Sun’s core, nuclear fusion joins hydrogen into helium and releases energy that moves outward as light and heat.","detail":"Fusion requires extremely high temperature and pressure.","source":"https://science.nasa.gov/sun/facts/","sourceLabel":"NASA: Sun facts","image":"https://images-assets.nasa.gov/image/PIA04220/PIA04220~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA04220/","credit":"NASA/JPL-Caltech/2MASS","question":"What powers the Sun?","answers":["Nuclear fusion","Chemical burning"],"correct":0},
-    {"id":"star-color","date":"2026-11-03","title":"What can a star’s color tell us?","summary":"A star’s color is related to its surface temperature: hotter stars generally look bluer and cooler stars redder.","detail":"Color is one clue astronomers combine with brightness and spectra.","source":"https://science.nasa.gov/universe/stars/","sourceLabel":"NASA: Stars","image":"https://images-assets.nasa.gov/image/PIA04220/PIA04220~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA04220/","credit":"NASA/JPL-Caltech/2MASS","question":"Which stars are generally hotter?","answers":["Bluer stars","Redder stars"],"correct":0},
-    {"id":"stellar-lives","date":"2026-11-04","title":"Do all stars live the same kind of life?","summary":"A star’s mass strongly affects how it changes over time and how it ends its life.","detail":"The Sun will evolve differently from a much more massive star.","source":"https://science.nasa.gov/universe/stars/","sourceLabel":"NASA: Stars","image":"https://images-assets.nasa.gov/image/PIA04220/PIA04220~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA04220/","credit":"NASA/JPL-Caltech/2MASS","question":"What most influences a star’s evolution?","answers":["Its mass","Its distance from Earth"],"correct":0},
-    {"id":"nebulae","date":"2026-11-05","title":"What is a nebula?","summary":"Nebulae are clouds of gas and dust in space. Some are places where stars form, while others are material shed by dying stars.","detail":"Their colors can reflect different gases, temperatures, and observing wavelengths.","source":"https://science.nasa.gov/universe/stars/","sourceLabel":"NASA: Stars","image":"https://images-assets.nasa.gov/image/PIA04220/PIA04220~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA04220/","credit":"NASA/JPL-Caltech/2MASS","question":"What is a nebula made of?","answers":["Gas and dust","Only solid rock"],"correct":0},
-    {"id":"galaxy-definition","date":"2026-11-06","title":"What is a galaxy?","summary":"A galaxy is a gravity-bound collection of stars, gas, dust, planets, and other matter.","detail":"Galaxies come in spiral, elliptical, and irregular forms.","source":"https://science.nasa.gov/universe/galaxies/","sourceLabel":"NASA: Galaxies","image":"https://images-assets.nasa.gov/image/PIA04634/PIA04634~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA04634/","credit":"NASA/JPL-Caltech","question":"What holds a galaxy together?","answers":["Gravity","Solar wind"],"correct":0},
-    {"id":"milky-way","date":"2026-11-07","title":"Where is our Solar System?","summary":"The Solar System is in the Milky Way, a barred spiral galaxy. The Sun lies in a smaller region called the Orion Spur.","detail":"The Solar System also orbits the Milky Way’s center.","source":"https://science.nasa.gov/solar-system/solar-system-facts/","sourceLabel":"NASA: Solar System facts","image":"https://images-assets.nasa.gov/image/PIA04634/PIA04634~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA04634/","credit":"NASA/JPL-Caltech","question":"Which galaxy contains the Solar System?","answers":["The Milky Way","Andromeda"],"correct":0},
-    {"id":"black-hole","date":"2026-11-08","title":"What is a black hole?","summary":"A black hole is an object with gravity so strong that, beyond its event horizon, light cannot escape.","detail":"Black holes can form in different ways; many large galaxies host supermassive ones at their centers.","source":"https://science.nasa.gov/universe/black-holes/","sourceLabel":"NASA: Black holes","image":"https://images-assets.nasa.gov/image/PIA04634/PIA04634~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA04634/","credit":"NASA/JPL-Caltech","question":"What cannot escape beyond a black hole’s event horizon?","answers":["Light","Gravity"],"correct":0},
-    {"id":"black-hole-orbits","date":"2026-11-09","title":"Would a black hole pull everything in?","summary":"At the same distance, gravity depends on mass. Replacing the Sun with a black hole of equal mass would leave planetary orbits similar, though Earth would lose sunlight.","detail":"This thought experiment separates gravity from light and heat.","source":"https://science.nasa.gov/universe/black-holes/","sourceLabel":"NASA: Black holes","image":"https://images-assets.nasa.gov/image/PIA04634/PIA04634~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA04634/","credit":"NASA/JPL-Caltech","question":"What determines gravity at a given distance?","answers":["Mass","Brightness"],"correct":0},
-    {"id":"light-time","date":"2026-11-10","title":"Why is looking into space also looking back in time?","summary":"Light travels at a finite speed, so light from distant objects began its journey before it reaches our telescopes.","detail":"The Sun’s light takes a little over eight minutes to reach Earth.","source":"https://science.nasa.gov/earth/facts/","sourceLabel":"NASA: Earth facts","image":"https://images-assets.nasa.gov/image/PIA04634/PIA04634~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA04634/","credit":"NASA/JPL-Caltech","question":"Why do distant objects appear in the past?","answers":["Light takes time to travel","Telescopes slow time"],"correct":0},
-    {"id":"telescopes","date":"2026-11-11","title":"Why put telescopes in space?","summary":"Space telescopes can observe above much of Earth’s atmosphere, which absorbs or blurs some kinds of light.","detail":"Different observatories are designed for different wavelengths.","source":"https://science.nasa.gov/universe/telescopes/","sourceLabel":"NASA: Telescopes","image":"https://images-assets.nasa.gov/image/s65-05399/s65-05399~thumb.jpg","imageLink":"https://images.nasa.gov/details/s65-05399/","credit":"NASA","question":"What can atmosphere-free observing improve?","answers":["Access to some wavelengths","The speed of light"],"correct":0},
-    {"id":"rockets","date":"2026-11-12","title":"How can rockets work in space?","summary":"A rocket pushes exhaust in one direction and moves in the opposite direction, so it does not need air to push against.","detail":"This follows conservation of momentum.","source":"https://www.nasa.gov/learning-resources/for-kids-and-students/","sourceLabel":"NASA: Learning resources","image":"https://images-assets.nasa.gov/image/s65-05399/s65-05399~thumb.jpg","imageLink":"https://images.nasa.gov/details/s65-05399/","credit":"NASA","question":"Do rockets need air to work?","answers":["No","Yes"],"correct":0},
-    {"id":"spacecraft","date":"2026-11-13","title":"How do spacecraft send information home?","summary":"Spacecraft use radio signals to communicate with Earth. Mission teams use networks of antennas to receive those signals.","detail":"Signals still take time to travel across the Solar System.","source":"https://science.nasa.gov/solar-system/solar-system-facts/","sourceLabel":"NASA: Solar System facts","image":"https://images-assets.nasa.gov/image/KSC-07PD-0862/KSC-07PD-0862~thumb.jpg","imageLink":"https://images.nasa.gov/details/KSC-07PD-0862/","credit":"NASA/KSC","question":"What carries many spacecraft messages to Earth?","answers":["Radio signals","Sound waves through space"],"correct":0},
-    {"id":"human-spaceflight","date":"2026-11-14","title":"Why is a spacesuit more than clothing?","summary":"A spacesuit provides pressure, oxygen, temperature control, and protection for an astronaut working outside a spacecraft.","detail":"Space is nearly a vacuum, so the body needs a controlled environment.","source":"https://www.nasa.gov/humans-in-space/","sourceLabel":"NASA: Humans in Space","image":"https://images-assets.nasa.gov/image/AS11-40-5875/AS11-40-5875~thumb.jpg","imageLink":"https://images.nasa.gov/details/AS11-40-5875/","credit":"NASA · Apollo 11","question":"What does a spacesuit provide?","answers":["A controlled life-support environment","Gravity"],"correct":0},
-    {"id":"microgravity","date":"2026-11-15","title":"Why do astronauts float in orbit?","summary":"Astronauts and their spacecraft are continuously falling around Earth together, producing the feeling of weightlessness.","detail":"Gravity is still strong in low Earth orbit.","source":"https://www.nasa.gov/humans-in-space/","sourceLabel":"NASA: Humans in Space","image":"https://images-assets.nasa.gov/image/iss071e153307/iss071e153307~thumb.jpg","imageLink":"https://images.nasa.gov/details/iss071e153307/","credit":"NASA","question":"Is gravity absent in low Earth orbit?","answers":["No","Yes"],"correct":0},
-    {"id":"aurora","date":"2026-11-16","title":"What makes an aurora glow?","summary":"Charged particles from the Sun can interact with Earth’s magnetic field and atmosphere, causing gases high above the poles to glow.","detail":"Aurorae are signs of space weather interacting with Earth.","source":"https://science.nasa.gov/earth/facts/","sourceLabel":"NASA: Earth facts","image":"https://images-assets.nasa.gov/image/iss071e153307/iss071e153307~thumb.jpg","imageLink":"https://images.nasa.gov/details/iss071e153307/","credit":"NASA","question":"Aurorae involve particles from which star?","answers":["The Sun","Polaris"],"correct":0},
-    {"id":"atmosphere","date":"2026-11-17","title":"What does Earth’s atmosphere do for us?","summary":"Earth’s atmosphere supports life, shapes weather, and burns up many small incoming meteoroids before they reach the ground.","detail":"It also changes how we observe the sky from the surface.","source":"https://science.nasa.gov/earth/facts/","sourceLabel":"NASA: Earth facts","image":"https://images-assets.nasa.gov/image/iss071e153307/iss071e153307~thumb.jpg","imageLink":"https://images.nasa.gov/details/iss071e153307/","credit":"NASA","question":"What often happens to small meteoroids in the atmosphere?","answers":["They burn up","They become moons"],"correct":0},
-    {"id":"universe","date":"2026-11-18","title":"What do we mean by the universe?","summary":"The universe includes all space, time, matter, and energy that we can observe and investigate.","detail":"Astronomers study it with observations, models, and measurements across many wavelengths.","source":"https://science.nasa.gov/exoplanets/what-is-the-universe/","sourceLabel":"NASA: What is the Universe?","image":"https://images-assets.nasa.gov/image/PIA04634/PIA04634~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA04634/","credit":"NASA/JPL-Caltech","question":"Which is part of the universe?","answers":["Space and time","Only planets"],"correct":0},
-    {"id":"dark-matter","date":"2026-11-19","title":"Why do astronomers infer dark matter?","summary":"Its gravity helps explain motions and lensing effects that visible matter alone does not fully account for.","detail":"Dark matter is inferred from its gravitational influence, not photographed directly.","source":"https://science.nasa.gov/exoplanets/what-is-the-universe/","sourceLabel":"NASA: What is the Universe?","image":"https://images-assets.nasa.gov/image/PIA04634/PIA04634~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA04634/","credit":"NASA/JPL-Caltech","question":"How is dark matter chiefly inferred?","answers":["Through gravity’s effects","By direct photographs"],"correct":0},
-    {"id":"exoplanets","date":"2026-11-20","title":"What is an exoplanet?","summary":"An exoplanet is a planet orbiting a star other than the Sun.","detail":"NASA missions and ground observatories use several methods to find and study them.","source":"https://science.nasa.gov/exoplanets/","sourceLabel":"NASA: Exoplanets","image":"https://images-assets.nasa.gov/image/PIA04921/PIA04921~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA04921/","credit":"NASA/JPL-Caltech","question":"What does an exoplanet orbit?","answers":["A star beyond our Sun","Earth"],"correct":0},
-    {"id":"solar-wind","date":"2026-11-21","title":"What is the solar wind?","summary":"The solar wind is a continuous outward flow of charged particles from the Sun.","detail":"It helps form the heliosphere, the Sun’s bubble of influence in interstellar space.","source":"https://science.nasa.gov/sun/facts/","sourceLabel":"NASA: Sun facts","image":"https://images-assets.nasa.gov/image/PIA04921/PIA04921~thumb.jpg","imageLink":"https://images.nasa.gov/details/PIA04921/","credit":"NASA/JPL-Caltech","question":"What is the solar wind made of?","answers":["Charged particles","Liquid water"],"correct":0},
-    {"id":"exploration","date":"2026-11-22","title":"Why send different missions to space?","summary":"Different questions require different tools: orbiters map, landers sample environments, and telescopes observe across light wavelengths.","detail":"Together, missions build evidence about worlds near and far.","source":"https://www.nasa.gov/learning-resources/for-kids-and-students/","sourceLabel":"NASA: Learning resources","image":"https://images-assets.nasa.gov/image/KSC-07PD-0862/KSC-07PD-0862~thumb.jpg","imageLink":"https://images.nasa.gov/details/KSC-07PD-0862/","credit":"NASA/KSC","question":"Why do missions use different tools?","answers":["Different questions need different measurements","All worlds are identical"],"correct":0}
+    {
+      "id": "earth-rotation",
+      "date": "2026-10-24",
+      "title": "Why does Earth have day and night?",
+      "summary": "Earth spins once about every 24 hours. The side facing the Sun has day; the side turned away has night.",
+      "detail": "Rotation, not Earth moving closer to or farther from the Sun, produces the daily cycle.",
+      "source": "https://science.nasa.gov/earth/facts/",
+      "sourceLabel": "NASA: Earth facts",
+      "image": "https://images-assets.nasa.gov/image/s134e010062/s134e010062~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/s134e010062/",
+      "credit": "NASA",
+      "question": "What directly produces day and night?",
+      "answers": [
+        "Earth’s rotation",
+        "Earth’s yearly orbit"
+      ],
+      "correct": 0,
+      "imageAssetId": "s134e010062",
+      "fallbackImages": [
+        {
+          "imageAssetId": "iss007e16249",
+          "image": "https://images-assets.nasa.gov/image/iss007e16249/iss007e16249~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/iss007e16249/",
+          "credit": "NASA"
+        }
+      ]
+    },
+    {
+      "id": "earth-seasons",
+      "date": "2026-10-25",
+      "title": "Why do seasons change?",
+      "summary": "Earth’s tilted axis changes the angle and duration of sunlight in each hemisphere as Earth orbits the Sun.",
+      "detail": "The two hemispheres have opposite seasons because they tilt toward the Sun at different times of year.",
+      "source": "https://science.nasa.gov/earth/facts/",
+      "sourceLabel": "NASA: Earth facts",
+      "image": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001159/GSFC_20171208_Archive_e001159~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001159/",
+      "credit": "NASA/GSFC",
+      "question": "What is the main cause of seasons?",
+      "answers": [
+        "Earth’s axial tilt",
+        "Changes in the Sun’s brightness"
+      ],
+      "correct": 0,
+      "imageAssetId": "GSFC_20171208_Archive_e001159",
+      "fallbackImages": [
+        {
+          "imageAssetId": "iss007e17719",
+          "image": "https://images-assets.nasa.gov/image/iss007e17719/iss007e17719~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/iss007e17719/",
+          "credit": "NASA"
+        }
+      ]
+    },
+    {
+      "id": "moon-phases",
+      "date": "2026-10-26",
+      "title": "Why does the Moon change shape?",
+      "summary": "Moon phases are our view of the Moon’s sunlit half as it orbits Earth.",
+      "detail": "Earth’s shadow is involved in lunar eclipses, not the usual monthly phases.",
+      "source": "https://science.nasa.gov/moon/facts/",
+      "sourceLabel": "NASA: Moon facts",
+      "image": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000864/GSFC_20171208_Archive_e000864~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000864/",
+      "credit": "NASA/GSFC",
+      "question": "What causes ordinary Moon phases?",
+      "answers": [
+        "Changing illumination as the Moon orbits",
+        "Earth’s shadow every night"
+      ],
+      "correct": 0,
+      "imageAssetId": "GSFC_20171208_Archive_e000864",
+      "fallbackImages": [
+        {
+          "imageAssetId": "PIA12660",
+          "image": "https://images-assets.nasa.gov/image/PIA12660/PIA12660~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/PIA12660/",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    },
+    {
+      "id": "moon-near-side",
+      "date": "2026-10-27",
+      "title": "Why do we see the same face of the Moon?",
+      "summary": "The Moon rotates once in the same time it takes to orbit Earth, a relationship called synchronous rotation.",
+      "detail": "The far side receives sunlight too; it is not permanently dark.",
+      "source": "https://science.nasa.gov/moon/facts/",
+      "sourceLabel": "NASA: Moon facts",
+      "image": "https://images-assets.nasa.gov/image/PIA12945/PIA12945~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/PIA12945/",
+      "credit": "NASA/JPL-Caltech",
+      "question": "Does the Moon rotate?",
+      "answers": [
+        "Yes, once per orbit",
+        "No"
+      ],
+      "correct": 0,
+      "imageAssetId": "PIA12945",
+      "fallbackImages": [
+        {
+          "imageAssetId": "PIA17674",
+          "image": "https://images-assets.nasa.gov/image/PIA17674/PIA17674~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/PIA17674/",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    },
+    {
+      "id": "moon-craters",
+      "date": "2026-10-28",
+      "title": "Why are lunar craters so well preserved?",
+      "summary": "The Moon has no thick atmosphere, flowing water, or active plate tectonics to erase most impact marks quickly.",
+      "detail": "Craters preserve a record of impacts across solar-system history.",
+      "source": "https://science.nasa.gov/moon/facts/",
+      "sourceLabel": "NASA: Moon facts",
+      "image": "https://images-assets.nasa.gov/image/PIA13529/PIA13529~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/PIA13529/",
+      "credit": "NASA/JPL-Caltech",
+      "question": "What most directly preserves many Moon craters?",
+      "answers": [
+        "Little erosion",
+        "A thick atmosphere"
+      ],
+      "correct": 0,
+      "imageAssetId": "PIA13529",
+      "fallbackImages": [
+        {
+          "imageAssetId": "PIA13524",
+          "image": "https://images-assets.nasa.gov/image/PIA13524/PIA13524~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/PIA13524/",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    },
+    {
+      "id": "sun-gravity",
+      "date": "2026-10-29",
+      "title": "What keeps the Solar System together?",
+      "summary": "The Sun contains most of the Solar System’s mass, so its gravity strongly shapes the paths of planets, asteroids, and comets.",
+      "detail": "An orbit is forward motion continually bent by gravity.",
+      "source": "https://science.nasa.gov/sun/facts/",
+      "sourceLabel": "NASA: Sun facts",
+      "image": "https://images-assets.nasa.gov/image/PIA00450/PIA00450~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/PIA00450/",
+      "credit": "NASA/JPL-Caltech",
+      "question": "What chiefly keeps planets in orbit?",
+      "answers": [
+        "The Sun’s gravity",
+        "Earth’s magnetic field"
+      ],
+      "correct": 0,
+      "imageAssetId": "PIA00450",
+      "fallbackImages": [
+        {
+          "imageAssetId": "PIA18169",
+          "image": "https://images-assets.nasa.gov/image/PIA18169/PIA18169~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/PIA18169/",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    },
+    {
+      "id": "eight-planets",
+      "date": "2026-10-30",
+      "title": "How many planets orbit the Sun?",
+      "summary": "Our Solar System has eight planets, from Mercury to Neptune, alongside dwarf planets, moons, asteroids, and comets.",
+      "detail": "Planet classifications are defined by scientific criteria, not simply by size.",
+      "source": "https://science.nasa.gov/solar-system/solar-system-facts/",
+      "sourceLabel": "NASA: Solar System facts",
+      "image": "https://images-assets.nasa.gov/image/PIA11800/PIA11800~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/PIA11800/",
+      "credit": "NASA/JPL-Caltech",
+      "question": "How many planets are in the Solar System?",
+      "answers": [
+        "Eight",
+        "Nine"
+      ],
+      "correct": 0,
+      "imageAssetId": "PIA11800",
+      "fallbackImages": [
+        {
+          "imageAssetId": "PIA10969",
+          "image": "https://images-assets.nasa.gov/image/PIA10969/PIA10969~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/PIA10969/",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    },
+    {
+      "id": "asteroid-belt",
+      "date": "2026-10-31",
+      "title": "Is the asteroid belt crowded like science fiction?",
+      "summary": "Asteroids are spread over a huge region between Mars and Jupiter; spacecraft can travel through it without weaving between rocks.",
+      "detail": "The belt is leftover material that never formed a planet.",
+      "source": "https://science.nasa.gov/solar-system/solar-system-facts/",
+      "sourceLabel": "NASA: Solar System facts",
+      "image": "https://images-assets.nasa.gov/image/PIA19380/PIA19380~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/PIA19380/",
+      "credit": "NASA/JPL-Caltech",
+      "question": "Where is the main asteroid belt?",
+      "answers": [
+        "Between Mars and Jupiter",
+        "Beyond Neptune"
+      ],
+      "correct": 0,
+      "imageAssetId": "PIA19380",
+      "fallbackImages": [
+        {
+          "imageAssetId": "PIA12469",
+          "image": "https://images-assets.nasa.gov/image/PIA12469/PIA12469~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/PIA12469/",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    },
+    {
+      "id": "comet-tail",
+      "date": "2026-11-01",
+      "title": "Why do comets grow tails?",
+      "summary": "Near the Sun, a comet warms and releases gas and dust. Solar radiation and the solar wind shape the material into tails.",
+      "detail": "A comet’s ion tail points generally away from the Sun.",
+      "source": "https://science.nasa.gov/solar-system/solar-system-facts/",
+      "sourceLabel": "NASA: Solar System facts",
+      "image": "https://images-assets.nasa.gov/image/PIA13438/PIA13438~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/PIA13438/",
+      "credit": "NASA/JPL-Caltech",
+      "question": "What helps shape a comet’s tail?",
+      "answers": [
+        "Solar radiation and solar wind",
+        "Earth’s atmosphere"
+      ],
+      "correct": 0,
+      "imageAssetId": "PIA13438",
+      "fallbackImages": [
+        {
+          "imageAssetId": "PIA13115",
+          "image": "https://images-assets.nasa.gov/image/PIA13115/PIA13115~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/PIA13115/",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    },
+    {
+      "id": "star-fusion",
+      "date": "2026-11-02",
+      "title": "How does the Sun shine?",
+      "summary": "In the Sun’s core, nuclear fusion joins hydrogen into helium and releases energy that moves outward as light and heat.",
+      "detail": "Fusion requires extremely high temperature and pressure.",
+      "source": "https://science.nasa.gov/sun/facts/",
+      "sourceLabel": "NASA: Sun facts",
+      "image": "https://images-assets.nasa.gov/image/PIA26681/PIA26681~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/PIA26681/",
+      "credit": "NASA/GSFC/Solar Dynamics Observatory",
+      "question": "What powers the Sun?",
+      "answers": [
+        "Nuclear fusion",
+        "Chemical burning"
+      ],
+      "correct": 0,
+      "imageAssetId": "PIA26681",
+      "fallbackImages": [
+        {
+          "imageAssetId": "PIA17669",
+          "image": "https://images-assets.nasa.gov/image/PIA17669/PIA17669~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/PIA17669/",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    },
+    {
+      "id": "star-color",
+      "date": "2026-11-03",
+      "title": "What can a star’s color tell us?",
+      "summary": "A star’s color is related to its surface temperature: hotter stars generally look bluer and cooler stars redder.",
+      "detail": "Color is one clue astronomers combine with brightness and spectra.",
+      "source": "https://science.nasa.gov/universe/stars/",
+      "sourceLabel": "NASA: Stars",
+      "image": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000137/GSFC_20171208_Archive_e000137~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000137/",
+      "credit": "NASA, ESA, Hubble",
+      "question": "Which stars are generally hotter?",
+      "answers": [
+        "Bluer stars",
+        "Redder stars"
+      ],
+      "correct": 0,
+      "imageAssetId": "GSFC_20171208_Archive_e000137",
+      "fallbackImages": [
+        {
+          "imageAssetId": "PIA09194",
+          "image": "https://images-assets.nasa.gov/image/PIA09194/PIA09194~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/PIA09194/",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    },
+    {
+      "id": "stellar-lives",
+      "date": "2026-11-04",
+      "title": "Do all stars live the same kind of life?",
+      "summary": "A star’s mass strongly affects how it changes over time and how it ends its life.",
+      "detail": "The Sun will evolve differently from a much more massive star.",
+      "source": "https://science.nasa.gov/universe/stars/",
+      "sourceLabel": "NASA: Stars",
+      "image": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001986/GSFC_20171208_Archive_e001986~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001986/",
+      "credit": "NASA, ESA, Hubble",
+      "question": "What most influences a star’s evolution?",
+      "answers": [
+        "Its mass",
+        "Its distance from Earth"
+      ],
+      "correct": 0,
+      "imageAssetId": "GSFC_20171208_Archive_e001986",
+      "fallbackImages": [
+        {
+          "imageAssetId": "GSFC_20171208_Archive_e000282",
+          "image": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000282/GSFC_20171208_Archive_e000282~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000282/",
+          "credit": "NASA, ESA, Hubble"
+        }
+      ]
+    },
+    {
+      "id": "nebulae",
+      "date": "2026-11-05",
+      "title": "What is a nebula?",
+      "summary": "Nebulae are clouds of gas and dust in space. Some are places where stars form, while others are material shed by dying stars.",
+      "detail": "Their colors can reflect different gases, temperatures, and observing wavelengths.",
+      "source": "https://science.nasa.gov/universe/stars/",
+      "sourceLabel": "NASA: Stars",
+      "image": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001464/GSFC_20171208_Archive_e001464~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001464/",
+      "credit": "NASA, ESA, Hubble",
+      "question": "What is a nebula made of?",
+      "answers": [
+        "Gas and dust",
+        "Only solid rock"
+      ],
+      "correct": 0,
+      "imageAssetId": "GSFC_20171208_Archive_e001464",
+      "fallbackImages": [
+        {
+          "imageAssetId": "GSFC_20171208_Archive_e001955",
+          "image": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001955/GSFC_20171208_Archive_e001955~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001955/",
+          "credit": "NASA, ESA, Hubble"
+        }
+      ]
+    },
+    {
+      "id": "galaxy-definition",
+      "date": "2026-11-06",
+      "title": "What is a galaxy?",
+      "summary": "A galaxy is a gravity-bound collection of stars, gas, dust, planets, and other matter.",
+      "detail": "Galaxies come in spiral, elliptical, and irregular forms.",
+      "source": "https://science.nasa.gov/universe/galaxies/",
+      "sourceLabel": "NASA: Galaxies",
+      "image": "https://images-assets.nasa.gov/image/PIA20064/PIA20064~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/PIA20064/",
+      "credit": "SDSS",
+      "question": "What holds a galaxy together?",
+      "answers": [
+        "Gravity",
+        "Solar wind"
+      ],
+      "correct": 0,
+      "imageAssetId": "PIA20064",
+      "fallbackImages": [
+        {
+          "imageAssetId": "GSFC_20171208_Archive_e001262",
+          "image": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001262/GSFC_20171208_Archive_e001262~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001262/",
+          "credit": "NASA, ESA, Hubble"
+        }
+      ]
+    },
+    {
+      "id": "milky-way",
+      "date": "2026-11-07",
+      "title": "Where is our Solar System?",
+      "summary": "The Solar System is in the Milky Way, a barred spiral galaxy. The Sun lies in a smaller region called the Orion Spur.",
+      "detail": "The Solar System also orbits the Milky Way’s center.",
+      "source": "https://science.nasa.gov/solar-system/solar-system-facts/",
+      "sourceLabel": "NASA: Solar System facts",
+      "image": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001326/GSFC_20171208_Archive_e001326~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001326/",
+      "credit": "NASA, ESA, Hubble",
+      "question": "Which galaxy contains the Solar System?",
+      "answers": [
+        "The Milky Way",
+        "Andromeda"
+      ],
+      "correct": 0,
+      "imageAssetId": "GSFC_20171208_Archive_e001326",
+      "fallbackImages": [
+        {
+          "imageAssetId": "GSFC_20171208_Archive_e000148",
+          "image": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000148/GSFC_20171208_Archive_e000148~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000148/",
+          "credit": "NASA, ESA, Hubble"
+        }
+      ]
+    },
+    {
+      "id": "black-hole",
+      "date": "2026-11-08",
+      "title": "What is a black hole?",
+      "summary": "A black hole is an object with gravity so strong that, beyond its event horizon, light cannot escape.",
+      "detail": "Black holes can form in different ways; many large galaxies host supermassive ones at their centers.",
+      "source": "https://science.nasa.gov/universe/black-holes/",
+      "sourceLabel": "NASA: Black holes",
+      "image": "https://images-assets.nasa.gov/image/PIA14730/PIA14730~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/PIA14730/",
+      "credit": "NASA/JPL-Caltech",
+      "question": "What cannot escape beyond a black hole’s event horizon?",
+      "answers": [
+        "Light",
+        "Gravity"
+      ],
+      "correct": 0,
+      "imageAssetId": "PIA14730",
+      "fallbackImages": [
+        {
+          "imageAssetId": "PIA22085",
+          "image": "https://images-assets.nasa.gov/image/PIA22085/PIA22085~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/PIA22085/",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    },
+    {
+      "id": "black-hole-orbits",
+      "date": "2026-11-09",
+      "title": "Would a black hole pull everything in?",
+      "summary": "At the same distance, gravity depends on mass. Replacing the Sun with a black hole of equal mass would leave planetary orbits similar, though Earth would lose sunlight.",
+      "detail": "This thought experiment separates gravity from light and heat.",
+      "source": "https://science.nasa.gov/universe/black-holes/",
+      "sourceLabel": "NASA: Black holes",
+      "image": "https://images-assets.nasa.gov/image/PIA20697/PIA20697~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/PIA20697/",
+      "credit": "NASA/JPL-Caltech",
+      "question": "What determines gravity at a given distance?",
+      "answers": [
+        "Mass",
+        "Brightness"
+      ],
+      "correct": 0,
+      "imageAssetId": "PIA20697",
+      "fallbackImages": [
+        {
+          "imageAssetId": "PIA23687",
+          "image": "https://images-assets.nasa.gov/image/PIA23687/PIA23687~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/PIA23687/",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    },
+    {
+      "id": "light-time",
+      "date": "2026-11-10",
+      "title": "Why is looking into space also looking back in time?",
+      "summary": "Light travels at a finite speed, so light from distant objects began its journey before it reaches our telescopes.",
+      "detail": "The Sun’s light takes a little over eight minutes to reach Earth.",
+      "source": "https://science.nasa.gov/earth/facts/",
+      "sourceLabel": "NASA: Earth facts",
+      "image": "https://images-assets.nasa.gov/image/PIA12110/PIA12110~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/PIA12110/",
+      "credit": "NASA/JPL-Caltech",
+      "question": "Why do distant objects appear in the past?",
+      "answers": [
+        "Light takes time to travel",
+        "Telescopes slow time"
+      ],
+      "correct": 0,
+      "imageAssetId": "PIA12110",
+      "fallbackImages": [
+        {
+          "imageAssetId": "hubble-sees-a-legion-of-galaxies_25608651281_o",
+          "image": "https://images-assets.nasa.gov/image/hubble-sees-a-legion-of-galaxies_25608651281_o/hubble-sees-a-legion-of-galaxies_25608651281_o~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/hubble-sees-a-legion-of-galaxies_25608651281_o/",
+          "credit": "NASA, ESA, Hubble"
+        }
+      ]
+    },
+    {
+      "id": "telescopes",
+      "date": "2026-11-11",
+      "title": "Why put telescopes in space?",
+      "summary": "Space telescopes can observe above much of Earth’s atmosphere, which absorbs or blurs some kinds of light.",
+      "detail": "Different observatories are designed for different wavelengths.",
+      "source": "https://science.nasa.gov/universe/telescopes/",
+      "sourceLabel": "NASA: Telescopes",
+      "image": "https://images-assets.nasa.gov/image/sts061-57-021/sts061-57-021~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/sts061-57-021/",
+      "credit": "NASA",
+      "question": "What can atmosphere-free observing improve?",
+      "answers": [
+        "Access to some wavelengths",
+        "The speed of light"
+      ],
+      "correct": 0,
+      "imageAssetId": "sts061-57-021",
+      "fallbackImages": [
+        {
+          "imageAssetId": "s90-34002",
+          "image": "https://images-assets.nasa.gov/image/s90-34002/s90-34002~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/s90-34002/",
+          "credit": "NASA"
+        }
+      ]
+    },
+    {
+      "id": "rockets",
+      "date": "2026-11-12",
+      "title": "How can rockets work in space?",
+      "summary": "A rocket pushes exhaust in one direction and moves in the opposite direction, so it does not need air to push against.",
+      "detail": "This follows conservation of momentum.",
+      "source": "https://www.nasa.gov/learning-resources/for-kids-and-students/",
+      "sourceLabel": "NASA: Learning resources",
+      "image": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000127/GSFC_20171208_Archive_e000127~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000127/",
+      "credit": "NASA/GSFC",
+      "question": "Do rockets need air to work?",
+      "answers": [
+        "No",
+        "Yes"
+      ],
+      "correct": 0,
+      "imageAssetId": "GSFC_20171208_Archive_e000127",
+      "fallbackImages": [
+        {
+          "imageAssetId": "GSFC_20171208_Archive_e000765",
+          "image": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000765/GSFC_20171208_Archive_e000765~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000765/",
+          "credit": "NASA/GSFC"
+        }
+      ]
+    },
+    {
+      "id": "spacecraft",
+      "date": "2026-11-13",
+      "title": "How do spacecraft send information home?",
+      "summary": "Spacecraft use radio signals to communicate with Earth. Mission teams use networks of antennas to receive those signals.",
+      "detail": "Signals still take time to travel across the Solar System.",
+      "source": "https://science.nasa.gov/solar-system/solar-system-facts/",
+      "sourceLabel": "NASA: Solar System facts",
+      "image": "https://images-assets.nasa.gov/image/PIA25136/PIA25136~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/PIA25136/",
+      "credit": "NASA/JPL-Caltech",
+      "question": "What carries many spacecraft messages to Earth?",
+      "answers": [
+        "Radio signals",
+        "Sound waves through space"
+      ],
+      "correct": 0,
+      "imageAssetId": "PIA25136",
+      "fallbackImages": [
+        {
+          "imageAssetId": "PIA24163",
+          "image": "https://images-assets.nasa.gov/image/PIA24163/PIA24163~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/PIA24163/",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    },
+    {
+      "id": "human-spaceflight",
+      "date": "2026-11-14",
+      "title": "Why is a spacesuit more than clothing?",
+      "summary": "A spacesuit provides pressure, oxygen, temperature control, and protection for an astronaut working outside a spacecraft.",
+      "detail": "Space is nearly a vacuum, so the body needs a controlled environment.",
+      "source": "https://www.nasa.gov/humans-in-space/",
+      "sourceLabel": "NASA: Humans in Space",
+      "image": "https://images-assets.nasa.gov/image/iss010e20747/iss010e20747~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/iss010e20747/",
+      "credit": "NASA",
+      "question": "What does a spacesuit provide?",
+      "answers": [
+        "A controlled life-support environment",
+        "Gravity"
+      ],
+      "correct": 0,
+      "imageAssetId": "iss010e20747",
+      "fallbackImages": [
+        {
+          "imageAssetId": "iss010e14763",
+          "image": "https://images-assets.nasa.gov/image/iss010e14763/iss010e14763~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/iss010e14763/",
+          "credit": "NASA"
+        }
+      ]
+    },
+    {
+      "id": "microgravity",
+      "date": "2026-11-15",
+      "title": "Why do astronauts float in orbit?",
+      "summary": "Astronauts and their spacecraft are continuously falling around Earth together, producing the feeling of weightlessness.",
+      "detail": "Gravity is still strong in low Earth orbit.",
+      "source": "https://www.nasa.gov/humans-in-space/",
+      "sourceLabel": "NASA: Humans in Space",
+      "image": "https://images-assets.nasa.gov/image/iss005e21031/iss005e21031~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/iss005e21031/",
+      "credit": "NASA",
+      "question": "Is gravity absent in low Earth orbit?",
+      "answers": [
+        "No",
+        "Yes"
+      ],
+      "correct": 0,
+      "imageAssetId": "iss005e21031",
+      "fallbackImages": [
+        {
+          "imageAssetId": "jsc2018e094631",
+          "image": "https://images-assets.nasa.gov/image/jsc2018e094631/jsc2018e094631~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/jsc2018e094631/",
+          "credit": "NASA"
+        }
+      ]
+    },
+    {
+      "id": "aurora",
+      "date": "2026-11-16",
+      "title": "What makes an aurora glow?",
+      "summary": "Charged particles from the Sun can interact with Earth’s magnetic field and atmosphere, causing gases high above the poles to glow.",
+      "detail": "Aurorae are signs of space weather interacting with Earth.",
+      "source": "https://science.nasa.gov/earth/facts/",
+      "sourceLabel": "NASA: Earth facts",
+      "image": "https://images-assets.nasa.gov/image/iss006-327-026/iss006-327-026~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/iss006-327-026/",
+      "credit": "NASA",
+      "question": "Aurorae involve particles from which star?",
+      "answers": [
+        "The Sun",
+        "Polaris"
+      ],
+      "correct": 0,
+      "imageAssetId": "iss006-327-026",
+      "fallbackImages": [
+        {
+          "imageAssetId": "iss007e06077",
+          "image": "https://images-assets.nasa.gov/image/iss007e06077/iss007e06077~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/iss007e06077/",
+          "credit": "NASA"
+        }
+      ]
+    },
+    {
+      "id": "atmosphere",
+      "date": "2026-11-17",
+      "title": "What does Earth’s atmosphere do for us?",
+      "summary": "Earth’s atmosphere supports life, shapes weather, and burns up many small incoming meteoroids before they reach the ground.",
+      "detail": "It also changes how we observe the sky from the surface.",
+      "source": "https://science.nasa.gov/earth/facts/",
+      "sourceLabel": "NASA: Earth facts",
+      "image": "https://images-assets.nasa.gov/image/iss035e014335/iss035e014335~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/iss035e014335/",
+      "credit": "NASA",
+      "question": "What often happens to small meteoroids in the atmosphere?",
+      "answers": [
+        "They burn up",
+        "They become moons"
+      ],
+      "correct": 0,
+      "imageAssetId": "iss035e014335",
+      "fallbackImages": [
+        {
+          "imageAssetId": "iss067e102151",
+          "image": "https://images-assets.nasa.gov/image/iss067e102151/iss067e102151~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/iss067e102151/",
+          "credit": "NASA"
+        }
+      ]
+    },
+    {
+      "id": "universe",
+      "date": "2026-11-18",
+      "title": "What do we mean by the universe?",
+      "summary": "The universe includes all space, time, matter, and energy that we can observe and investigate.",
+      "detail": "Astronomers study it with observations, models, and measurements across many wavelengths.",
+      "source": "https://science.nasa.gov/exoplanets/what-is-the-universe/",
+      "sourceLabel": "NASA: What is the Universe?",
+      "image": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e002105/GSFC_20171208_Archive_e002105~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/GSFC_20171208_Archive_e002105/",
+      "credit": "NASA, ESA, Hubble",
+      "question": "Which is part of the universe?",
+      "answers": [
+        "Space and time",
+        "Only planets"
+      ],
+      "correct": 0,
+      "imageAssetId": "GSFC_20171208_Archive_e002105",
+      "fallbackImages": [
+        {
+          "imageAssetId": "GSFC_20171208_Archive_e001651",
+          "image": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001651/GSFC_20171208_Archive_e001651~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001651/",
+          "credit": "NASA, ESA, Hubble"
+        }
+      ]
+    },
+    {
+      "id": "dark-matter",
+      "date": "2026-11-19",
+      "title": "Why do astronomers infer dark matter?",
+      "summary": "Its gravity helps explain motions and lensing effects that visible matter alone does not fully account for.",
+      "detail": "Dark matter is inferred from its gravitational influence, not photographed directly.",
+      "source": "https://science.nasa.gov/exoplanets/what-is-the-universe/",
+      "sourceLabel": "NASA: What is the Universe?",
+      "image": "https://images-assets.nasa.gov/image/PIA15418/PIA15418~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/PIA15418/",
+      "credit": "NASA, ESA, EPFL Switzerland",
+      "question": "How is dark matter chiefly inferred?",
+      "answers": [
+        "Through gravity’s effects",
+        "By direct photographs"
+      ],
+      "correct": 0,
+      "imageAssetId": "PIA15418",
+      "fallbackImages": [
+        {
+          "imageAssetId": "hubble-spies-big-bang-frontiers_22202541749_o",
+          "image": "https://images-assets.nasa.gov/image/hubble-spies-big-bang-frontiers_22202541749_o/hubble-spies-big-bang-frontiers_22202541749_o~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/hubble-spies-big-bang-frontiers_22202541749_o/",
+          "credit": "NASA, ESA, Hubble"
+        }
+      ]
+    },
+    {
+      "id": "exoplanets",
+      "date": "2026-11-20",
+      "title": "What is an exoplanet?",
+      "summary": "An exoplanet is a planet orbiting a star other than the Sun.",
+      "detail": "NASA missions and ground observatories use several methods to find and study them.",
+      "source": "https://science.nasa.gov/exoplanets/",
+      "sourceLabel": "NASA: Exoplanets",
+      "image": "https://images-assets.nasa.gov/image/PIA21473/PIA21473~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/PIA21473/",
+      "credit": "NASA/JPL-Caltech",
+      "question": "What does an exoplanet orbit?",
+      "answers": [
+        "A star beyond our Sun",
+        "Earth"
+      ],
+      "correct": 0,
+      "imageAssetId": "PIA21473",
+      "fallbackImages": [
+        {
+          "imageAssetId": "PIA20690",
+          "image": "https://images-assets.nasa.gov/image/PIA20690/PIA20690~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/PIA20690/",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    },
+    {
+      "id": "solar-wind",
+      "date": "2026-11-21",
+      "title": "What is the solar wind?",
+      "summary": "The solar wind is a continuous outward flow of charged particles from the Sun.",
+      "detail": "It helps form the heliosphere, the Sun’s bubble of influence in interstellar space.",
+      "source": "https://science.nasa.gov/sun/facts/",
+      "sourceLabel": "NASA: Sun facts",
+      "image": "https://images-assets.nasa.gov/image/PIA16482/PIA16482~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/PIA16482/",
+      "credit": "NASA/JPL-Caltech",
+      "question": "What is the solar wind made of?",
+      "answers": [
+        "Charged particles",
+        "Liquid water"
+      ],
+      "correct": 0,
+      "imageAssetId": "PIA16482",
+      "fallbackImages": [
+        {
+          "imageAssetId": "PIA14110",
+          "image": "https://images-assets.nasa.gov/image/PIA14110/PIA14110~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/PIA14110/",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    },
+    {
+      "id": "exploration",
+      "date": "2026-11-22",
+      "title": "Why send different missions to space?",
+      "summary": "Different questions require different tools: orbiters map, landers sample environments, and telescopes observe across light wavelengths.",
+      "detail": "Together, missions build evidence about worlds near and far.",
+      "source": "https://www.nasa.gov/learning-resources/for-kids-and-students/",
+      "sourceLabel": "NASA: Learning resources",
+      "image": "https://images-assets.nasa.gov/image/PIA18152/PIA18152~thumb.jpg",
+      "imageLink": "https://images.nasa.gov/details/PIA18152/",
+      "credit": "NASA/JPL-Caltech",
+      "question": "Why do missions use different tools?",
+      "answers": [
+        "Different questions need different measurements",
+        "All worlds are identical"
+      ],
+      "correct": 0,
+      "imageAssetId": "PIA18152",
+      "fallbackImages": [
+        {
+          "imageAssetId": "PIA15653",
+          "image": "https://images-assets.nasa.gov/image/PIA15653/PIA15653~thumb.jpg",
+          "imageLink": "https://images.nasa.gov/details/PIA15653/",
+          "credit": "NASA/JPL-Caltech"
+        }
+      ]
+    }
   ]
 }
