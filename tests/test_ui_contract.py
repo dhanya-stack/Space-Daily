@@ -42,9 +42,9 @@ class UiContractTests(unittest.TestCase):
         self.assertIn("grid-template-columns: repeat(4", self.css)
         self.assertIn("aspect-ratio: 4 / 3", self.css)
         self.assertIn("min-height: 100svh", self.css)
-        self.assertIn("STScI-01EVT2C45NSH3P4GTPXYY828KC", self.css)
-        self.assertIn("w=6000&h=4000&fit=clip", self.css)
-        self.assertIn("w=1200&h=1600&fit=clip", self.css)
+        self.assertIn("assets/veil-nebula-3000.jpg", self.css)
+        self.assertIn("assets/veil-nebula-1280.jpg", self.css)
+        self.assertNotIn(".tif", self.css)
         self.assertIn("background-position: 56% 50%", self.css)
         self.assertIn("rgba(3, 5, 12, .18)", self.css)
 

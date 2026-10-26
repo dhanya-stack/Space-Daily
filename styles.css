@@ -43,7 +43,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .menu-toggle { display: inline-flex; align-items: center; justify-content: center; width: 41px; height: 41px; margin-left: auto; border: 1px solid rgba(238, 244, 255, .36); border-radius: 50%; padding: 0; color: #eef5ff; background: transparent; backdrop-filter: blur(4px); font-size: 20px; line-height: 1; }
 .menu-toggle:hover { background: rgba(238, 244, 255, .12); }
 
-.hero { min-height: 100svh; position: relative; display: flex; align-items: flex-start; overflow: hidden; border-bottom: 1px solid var(--line); background: var(--bg) url('https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/releases/2015/09/STScI-01EVT2C45NSH3P4GTPXYY828KC.tif?w=2400&h=1600&fit=clip') 50% 52% / cover no-repeat; }
+.hero { min-height: 100svh; position: relative; display: flex; align-items: flex-start; overflow: hidden; border-bottom: 1px solid var(--line); background: var(--bg) url('assets/veil-nebula-3000.jpg') 50% 52% / cover no-repeat; }
 .hero-scrim { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(3, 5, 12, .18), rgba(3, 5, 12, .08) 40%, rgba(3, 5, 12, .02) 72%), linear-gradient(0deg, rgba(3, 5, 12, .18), transparent 54%); }
 .hero-content { width: min(850px, 87%); margin: clamp(125px, 19vh, 210px) auto 80px clamp(25px, 8vw, 130px); position: relative; text-align: left; text-shadow: 0 2px 18px rgba(2, 4, 10, .58); }
 .hero-date, .eyebrow { margin: 0; color: var(--accent); font-size: 10px; font-weight: 700; letter-spacing: .18em; }
@@ -187,7 +187,7 @@ footer small { flex-basis: 100%; color: #68768b; font-size: 10px; }
 @media (max-width: 800px) {
   .site-header { height: 64px; padding: 0 20px; }
   .site-header nav { top: 56px; right: 20px; }
-  .hero { min-height: 100svh; background-image: url('https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/releases/2015/09/STScI-01EVT2C45NSH3P4GTPXYY828KC.tif?w=1200&h=1600&fit=clip'); background-position: 56% 50%; }
+  .hero { min-height: 100svh; background-image: url('assets/veil-nebula-1280.jpg'); background-position: 56% 50%; }
   .hero-content { width: calc(100% - 48px); margin: clamp(110px, 18vh, 150px) 24px 80px; }
   .hero-scrim { background: linear-gradient(180deg, rgba(3, 5, 12, .2), rgba(3, 5, 12, .03) 45%, rgba(3, 5, 12, .09) 78%, rgba(3, 5, 12, .22)); }
   .lesson-card, .newsletter, .my-space, .news-grid, .journeys, .apod-feature { grid-template-columns: 1fr; }
@@ -220,5 +220,5 @@ footer small { flex-basis: 100%; color: #68768b; font-size: 10px; }
   .gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (min-width: 1600px) {
-  .hero { background-image: url('https://assets.science.nasa.gov/dynamicimage/assets/science/missions/hubble/releases/2015/09/STScI-01EVT2C45NSH3P4GTPXYY828KC.tif?w=6000&h=4000&fit=clip'); }
+  .hero { background-image: url('assets/veil-nebula-3000.jpg'); }
 }
