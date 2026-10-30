@@ -1,64 +1,68 @@
 {
   "news": [
     {
-      "title": "APOD: 29 October 2026 – The Horns of Venus",
-      "link": "https://science.nasa.gov/image-article/apod-29-october-2026-the-horns-of-venus/",
-      "date": "Thu, 29 Oct 2026 04:05:00 +0000",
-      "description": "APOD Science APOD APOD: 29 October 2026 – The… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. The Horns […]",
+      "title": "APOD: 2026 October 30 – Haunting the Cepheus Flare",
+      "link": "https://science.nasa.gov/image-article/apod-2026-october-30-haunting-the-cepheus-flare/",
+      "date": "Fri, 30 Oct 2026 04:05:00 +0000",
+      "description": "APOD Science APOD APOD: 2026 October 30 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Haunting the Cepheus […]",
       "category": "Discovery",
-      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/october/venus_20261024a.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/october/CepheusFlare_Tondinelli.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     },
     {
-      "title": "Arnab Strikes India",
-      "link": "https://science.nasa.gov/earth/earth-observatory/arnab-strikes-india/",
-      "date": "Thu, 29 Oct 2026 04:01:00 +0000",
-      "description": "The first named storm of the North Indian Ocean’s cyclone season made landfall along the coast of Andhra Pradesh.",
+      "title": "Vega Island Frozen in Fright",
+      "link": "https://science.nasa.gov/earth/earth-observatory/vega-island-frozen-in-fright/",
+      "date": "Fri, 30 Oct 2026 04:01:00 +0000",
+      "description": "The sight of an icy skull-like visage on the Antarctic island could make one’s blood run cold.",
       "category": "NASA update",
-      "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/arnab-strikes-india/typhoonarnab_vir_20261026_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+      "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/vega-island-frozen-in-fright/vegaislandzm_oli2_20261010_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     },
     {
-      "title": "Caltech Names Artemis II Commander Reid Wiseman as NASA JPL Deputy",
-      "link": "https://www.nasa.gov/centers-and-facilities/jpl/caltech-names-artemis-ii-commander-reid-wiseman-as-nasa-jpl-deputy/",
-      "date": "Thu, 29 Oct 2026 02:49:59 +0000",
-      "description": "Artemis II Commander Reid Wiseman has been named Caltech associate vice president and deputy director of NASA’s Jet Propulsion Laboratory in Southern",
-      "category": "NASA update"
-    },
-    {
-      "title": "NASA Welcomes Vietnam as Newest Artemis Accords Signatory",
-      "link": "https://www.nasa.gov/organizations/oiir/nasa-welcomes-vietnam-as-newest-artemis-accords-signatory/",
-      "date": "Wed, 28 Oct 2026 21:50:01 +0000",
-      "description": "The Socialist Republic of Vietnam became the 78th nation to sign the Artemis Accords, joining a growing coalition of like-minded nations committed to the",
-      "category": "NASA update"
-    },
-    {
-      "title": "Artemis III SLS Core Stage Joins Boosters at Kennedy",
-      "link": "https://www.nasa.gov/image-article/artemis-iii-sls-core-stage-joins-boosters-at-kennedy/",
-      "date": "Wed, 28 Oct 2026 18:59:44 +0000",
-      "description": "NASA’s Artemis III SLS (Space Launch System) core stage is integrated alongside the twin solid rocket boosters on Oct. 28 inside the Vehicle Assembly",
+      "title": "Map Showing Potential Origins of Martian Meteorite Teghaza 001",
+      "link": "https://science.nasa.gov/photojournal/map-showing-potential-origins-of-martian-meteorite-teghaza-001/",
+      "date": "Fri, 30 Oct 2026 00:07:39 +0000",
+      "description": "This global map of Mars shows 13 locations that match the mineralogy and chemistry of Teghaza 001, one of the most ancient Martian meteorites ever found on",
       "category": "NASA update",
-      "image": "https://images-assets.nasa.gov/image/KSC-20261026-PH-FMX01_0018/KSC-20261026-PH-FMX01_0018~large.jpg"
+      "image": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26802/PIA26802.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     },
     {
-      "title": "NASA University Challenge Ignites Trajectory of Drone Entrepreneur",
-      "link": "https://www.nasa.gov/aeronautics/nasa-challenge-drone-entrepreneur/",
-      "date": "Wed, 28 Oct 2026 18:00:28 +0000",
-      "description": "NASA University Challenge Ignites Trajectory of Drone Entrepreneur Five years ago, Gavin Gardner was a Michigan State University engineering student researching next-generation drone technology as part of a NASA grant. Garder expected the research to be demanding – but he was surprised that navigating the financial side of the work presented an even greater ",
-      "category": "NASA update"
+      "title": "Slice of Martian Meteorite Teghaza 001",
+      "link": "https://science.nasa.gov/photojournal/slice-of-martian-meteorite-teghaza-001/",
+      "date": "Thu, 29 Oct 2026 23:32:35 +0000",
+      "description": "This slice of Teghaza 001, one of the most ancient Martian meteorites ever found on Earth, was used to determine the age of the rock. Reflected light images",
+      "category": "NASA update",
+      "image": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26801/PIA26801.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     },
     {
-      "title": "NASA Selects 19 New Citizen Science Proposals in 2026",
-      "link": "https://science.nasa.gov/get-involved/citizen-science/nasa-selects-19-new-citizen-science-proposals-in-2026/",
-      "date": "Wed, 28 Oct 2026 16:25:29 +0000",
-      "description": "The Citizen Science Seed Funding Program (CSSFP-25) of NASA’s Science Mission Directorate aims to support scientists and other experts to develop citizen",
+      "title": "Halloween Aboard the International Space Station",
+      "link": "https://www.nasa.gov/centers-and-facilities/johnson/halloween-aboard-the-international-space-station/",
+      "date": "Thu, 29 Oct 2026 21:44:23 +0000",
+      "description": "Although no ghouls, goblins, or trick-or-treaters come knocking at the International Space Station’s front hatch, crew members aboard the orbiting laboratory",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2025/11/iss057e057509.jpg"
+    },
+    {
+      "title": "NASA-funded Study Details One of Oldest Mars Meteorites Ever Found",
+      "link": "https://www.nasa.gov/solar-system/planets/mars/nasa-funded-study-details-one-of-oldest-mars-meteorites-ever-found/",
+      "date": "Thu, 29 Oct 2026 18:18:09 +0000",
+      "description": "Although the Mars meteorites found on Earth differ from one another, they share a common history, having been blasted off the Red Planet’s surface by an",
       "category": "Discovery",
-      "image": "https://assets.science.nasa.gov/content/dam/science/cds/citizen-science/highlights/2026/NASA_citizen_science_projects_2026.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/1-closeup-of-teghaza-001-mars-meteorite.jpg"
     },
     {
-      "title": "Webb Sees Turbulent Star Nursery",
-      "link": "https://www.nasa.gov/image-article/webb-sees-turbulent-star-nursery/",
-      "date": "Wed, 28 Oct 2026 15:33:10 +0000",
-      "description": "In this Webb image released on Oct. 22, 2026, we see a turbulent cauldron of star formation filled with dense clumps of gas. This region is named N159 and is",
-      "category": "Discovery"
+      "title": "NASA Names Troy Asher Armstrong Flight Research Center Director",
+      "link": "https://www.nasa.gov/news-release/nasa-names-troy-asher-armstrong-flight-research-center-director/",
+      "date": "Thu, 29 Oct 2026 18:00:35 +0000",
+      "description": "NASA Administrator Jared Isaacman has named Troy Asher director of the agency’s Armstrong Flight Research Center in Edwards, California. Asher, a veteran test",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/troyasher.jpg"
+    },
+    {
+      "title": "NIH–NASA QuSAFE Challenge",
+      "link": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nih-nasa-qusafe-challenge/",
+      "date": "Thu, 29 Oct 2026 17:44:37 +0000",
+      "description": "The Quantum-Enabled Predictive Preclinical NAMs for Toxicity and Safety (QuSAFE) Challenge, a collaboration between the National Institutes of Health (NIH)",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/07/bps-goals-landscape-ppt-no-text.jpg"
     }
   ],
   "gallery": {
@@ -254,14 +258,14 @@
     ]
   },
   "apod": {
-    "date": "2026-10-29",
-    "title": "The Horns of Venus",
-    "explanation": " Explanation:   That's no moon.  But you could be forgiven for thinking it was a  crescent Moon  in the sky. It is a lesser known fact that  Venus also has phases . (What about  other planets? ) The  featured image  shows  Venus  seen almost directly between the Sun and the Earth. This happens once every  year and a half , and it is like the alignment that happens every month during a new Moon. But the new Moon is dark, while Venus' backlit  atmosphere   refracts and scatters  the sunlight, creating a glowing  crescent arc  that extends beyond 180 degrees: the tips of this arc are called the \"horns\". The crescent can be seen with a small telescope or binoculars during twilight, but those with  exceptionally acute eyesight  may be able to see it with the unaided eye. Ancient  Babylonian  astronomers may have been the first to study Venus' brightness changes, which are related to its  phases .  Many other cultures  have similar astronomical records, including the  oldest   surviving   Maya book .    Tomorrow's picture:  What's next?",
-    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/october/venus_20261024a.jpg?w=744&h=744&fit=clip&crop=faces,focalpoint",
-    "link": "https://science.nasa.gov/image-article/apod-29-october-2026-the-horns-of-venus/",
-    "credit": " Thierry Legault ",
-    "alt": "See Explanation.  Clicking on the picture will download the highest resolution version available.",
+    "date": "2026-10-30",
+    "title": "Haunting the Cepheus Flare",
+    "explanation": " Explanation:   Spooky  shapes seem to haunt this dusty expanse, drifting through the night in the royal constellation  Cepheus . Of course,  the shapes  are cosmic dust clouds visible in dimly reflected starlight. Far from  your own neighborhood , they lurk above the plane of the Milky Way at the edge of the  Cepheus Flare  molecular cloud complex some 1,200 light-years away. Over 2 light-years across and brighter than most of the other ghostly apparitions, vdB 141 or Sh2-136 is also known as the  Ghost Nebula . It lies at lower right in the starry field of view. Inside the Ghost Nebula are reddish telltale signs of dense cores collapsing in the early stages  of star formation . With the eerie hue of interstellar dust reflecting bluish light from hot young stars of  NGC 7023, the Iris Nebula  stands out against the dark just left of center.  In the broad telescopic frame , these fertile interstellar dust fields stretch almost six full moons across the sky.   Tomorrow's picture:  night on a spooky planet",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/october/CepheusFlare_Tondinelli.jpg?w=6000&h=4076&fit=clip&crop=faces,focalpoint",
+    "link": "https://science.nasa.gov/image-article/apod-2026-october-30-haunting-the-cepheus-flare/",
+    "credit": " Mirko Tondinelli ",
+    "alt": "Interstellar dust clouds and dark nebulae in the Cepheus molecular cloud.",
     "media_type": "image"
   },
-  "updated": "2026-10-29T07:59:19.391238+00:00"
+  "updated": "2026-10-30T08:02:02.104171+00:00"
 }
