@@ -1,6 +1,44 @@
 {
   "news": [
     {
+      "title": "APOD: 2026 October 31 – Night on a Spooky Planet",
+      "link": "https://science.nasa.gov/image-article/apod-2026-october-31-night-on-a-spooky-planet/",
+      "date": "Sat, 31 Oct 2026 04:05:00 +0000",
+      "description": "APOD Science APOD APOD: 2026 October 31 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Night on a […]",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/Hverir_Vetter_1300.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "NASA Releases MAX POWER Key Events for Media, Participants",
+      "link": "https://www.nasa.gov/news-release/nasa-releases-max-power-key-events-for-media-participants/",
+      "date": "Fri, 30 Oct 2026 19:31:02 +0000",
+      "description": "America’s newest aerospace expo and air show – MAX POWER – is fast approaching, and NASA has announced key events beginning Friday, Nov. 6, and running",
+      "category": "NASA update"
+    },
+    {
+      "title": "NASA’s James Webb Space Telescope Captures Eerie Cat’s Head",
+      "link": "https://www.nasa.gov/image-article/nasas-james-webb-space-telescope-captures-eerie-cats-head/",
+      "date": "Fri, 30 Oct 2026 15:56:26 +0000",
+      "description": "Intricate structures within the Cat’s Head Nebula are illuminated in this mid-infrared view from NASA’s James Webb Space Telescope released on Oct. 29, 2026. The distinctive “cat’s head” shape of the nebula was likely sculpted over time by the intense ultraviolet radiation and winds from massive stars in the Carina Nebula. As this stellar feedback […]",
+      "category": "Discovery"
+    },
+    {
+      "title": "NASA Explores Potential Commercial Servicing for Hubble Telescope",
+      "link": "https://science.nasa.gov/missions/hubble/nasa-explores-potential-commercial-servicing-for-hubble-telescope/",
+      "date": "Fri, 30 Oct 2026 14:51:21 +0000",
+      "description": "NASA issued a Request for Information Oct. 29 to learn more about industry capabilities for in-space servicing to support the agency’s Hubble Space Telescope.",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/cds/general/images/2023/04/2/27946391011_d40ff10573_h.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "November’s Night Sky Notes: Light-Day Away",
+      "link": "https://science.nasa.gov/solar-system/skywatching/night-sky-network/novembers-night-sky-notes-light-day-away/",
+      "date": "Fri, 30 Oct 2026 10:00:00 +0000",
+      "description": "On November 18, 2026, the Voyager 1 spacecraft will reach a historic milestone: one light-day from Earth, the farthest humanity has ever explored.",
+      "category": "NASA update",
+      "image": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26353/PIA26353.tif/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
       "title": "APOD: 2026 October 30 – Haunting the Cepheus Flare",
       "link": "https://science.nasa.gov/image-article/apod-2026-october-30-haunting-the-cepheus-flare/",
       "date": "Fri, 30 Oct 2026 04:05:00 +0000",
@@ -23,46 +61,6 @@
       "description": "This global map of Mars shows 13 locations that match the mineralogy and chemistry of Teghaza 001, one of the most ancient Martian meteorites ever found on",
       "category": "NASA update",
       "image": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26802/PIA26802.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
-    },
-    {
-      "title": "Slice of Martian Meteorite Teghaza 001",
-      "link": "https://science.nasa.gov/photojournal/slice-of-martian-meteorite-teghaza-001/",
-      "date": "Thu, 29 Oct 2026 23:32:35 +0000",
-      "description": "This slice of Teghaza 001, one of the most ancient Martian meteorites ever found on Earth, was used to determine the age of the rock. Reflected light images",
-      "category": "NASA update",
-      "image": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26801/PIA26801.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
-    },
-    {
-      "title": "Halloween Aboard the International Space Station",
-      "link": "https://www.nasa.gov/centers-and-facilities/johnson/halloween-aboard-the-international-space-station/",
-      "date": "Thu, 29 Oct 2026 21:44:23 +0000",
-      "description": "Although no ghouls, goblins, or trick-or-treaters come knocking at the International Space Station’s front hatch, crew members aboard the orbiting laboratory",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2025/11/iss057e057509.jpg"
-    },
-    {
-      "title": "NASA-funded Study Details One of Oldest Mars Meteorites Ever Found",
-      "link": "https://www.nasa.gov/solar-system/planets/mars/nasa-funded-study-details-one-of-oldest-mars-meteorites-ever-found/",
-      "date": "Thu, 29 Oct 2026 18:18:09 +0000",
-      "description": "Although the Mars meteorites found on Earth differ from one another, they share a common history, having been blasted off the Red Planet’s surface by an",
-      "category": "Discovery",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/1-closeup-of-teghaza-001-mars-meteorite.jpg"
-    },
-    {
-      "title": "NASA Names Troy Asher Armstrong Flight Research Center Director",
-      "link": "https://www.nasa.gov/news-release/nasa-names-troy-asher-armstrong-flight-research-center-director/",
-      "date": "Thu, 29 Oct 2026 18:00:35 +0000",
-      "description": "NASA Administrator Jared Isaacman has named Troy Asher director of the agency’s Armstrong Flight Research Center in Edwards, California. Asher, a veteran test",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/troyasher.jpg"
-    },
-    {
-      "title": "NIH–NASA QuSAFE Challenge",
-      "link": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/nih-nasa-qusafe-challenge/",
-      "date": "Thu, 29 Oct 2026 17:44:37 +0000",
-      "description": "The Quantum-Enabled Predictive Preclinical NAMs for Toxicity and Safety (QuSAFE) Challenge, a collaboration between the National Institutes of Health (NIH)",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/07/bps-goals-landscape-ppt-no-text.jpg"
     }
   ],
   "gallery": {
@@ -258,14 +256,14 @@
     ]
   },
   "apod": {
-    "date": "2026-10-30",
-    "title": "Haunting the Cepheus Flare",
-    "explanation": " Explanation:   Spooky  shapes seem to haunt this dusty expanse, drifting through the night in the royal constellation  Cepheus . Of course,  the shapes  are cosmic dust clouds visible in dimly reflected starlight. Far from  your own neighborhood , they lurk above the plane of the Milky Way at the edge of the  Cepheus Flare  molecular cloud complex some 1,200 light-years away. Over 2 light-years across and brighter than most of the other ghostly apparitions, vdB 141 or Sh2-136 is also known as the  Ghost Nebula . It lies at lower right in the starry field of view. Inside the Ghost Nebula are reddish telltale signs of dense cores collapsing in the early stages  of star formation . With the eerie hue of interstellar dust reflecting bluish light from hot young stars of  NGC 7023, the Iris Nebula  stands out against the dark just left of center.  In the broad telescopic frame , these fertile interstellar dust fields stretch almost six full moons across the sky.   Tomorrow's picture:  night on a spooky planet",
-    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/october/CepheusFlare_Tondinelli.jpg?w=6000&h=4076&fit=clip&crop=faces,focalpoint",
-    "link": "https://science.nasa.gov/image-article/apod-2026-october-30-haunting-the-cepheus-flare/",
-    "credit": " Mirko Tondinelli ",
-    "alt": "Interstellar dust clouds and dark nebulae in the Cepheus molecular cloud.",
+    "date": "2026-10-31",
+    "title": "Night on a Spooky Planet",
+    "explanation": " Explanation:   What spooky planet is this?  Planet Earth on a dark and stormy night, of course. The ghostly scene was  photographed at Hverir , a geothermally active area found along northeastern Iceland's  volcanic landscape . Triggered by  solar activity ,  geomagnetic storms  have unleashed energetic particles trapped in Earth's magnetic field. Penetrating the planet's upper atmosphere at high latitudes, the particles create  auroral displays  in the starry night sky. Ghostly towers of steam and gas are venting from  local fumaroles to dance  against the eerie, greenish northern lights. For now, auroral activity on planet Earth remains in a high state as the Sun is only in early phases of decline from the peak of its  solar activity cycle . And soon, other ghostly apparitions may dance in your neighborhood.  Happy Halloween !   Tomorrow's picture:   Sunday's Childe ",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/Hverir_Vetter_1300.jpg?w=1300&h=867&fit=clip&crop=faces,focalpoint",
+    "link": "https://science.nasa.gov/image-article/apod-2026-october-31-night-on-a-spooky-planet/",
+    "credit": " Stéphane Vetter  ( Nuits sacrées )",
+    "alt": "Steam is venting from volcanic fumaroles photographed against greenish aurorae.",
     "media_type": "image"
   },
-  "updated": "2026-10-30T08:02:02.104171+00:00"
+  "updated": "2026-10-31T07:58:13.815170+00:00"
 }
