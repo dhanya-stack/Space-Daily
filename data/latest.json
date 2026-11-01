@@ -1,6 +1,14 @@
 {
   "news": [
     {
+      "title": "APOD: 2026 November 1 – Colors of the Moon",
+      "link": "https://science.nasa.gov/image-article/apod-2026-november-1-colors-of-the-moon/",
+      "date": "Sun, 01 Nov 2026 04:05:00 +0000",
+      "description": "APOD Science APOD APOD: 2026 November 1 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Colors of the […]",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/MoonColors_Pace_960.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
       "title": "APOD: 2026 October 31 – Night on a Spooky Planet",
       "link": "https://science.nasa.gov/image-article/apod-2026-october-31-night-on-a-spooky-planet/",
       "date": "Sat, 31 Oct 2026 04:05:00 +0000",
@@ -13,14 +21,16 @@
       "link": "https://www.nasa.gov/news-release/nasa-releases-max-power-key-events-for-media-participants/",
       "date": "Fri, 30 Oct 2026 19:31:02 +0000",
       "description": "America’s newest aerospace expo and air show – MAX POWER – is fast approaching, and NASA has announced key events beginning Friday, Nov. 6, and running",
-      "category": "NASA update"
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/grc-2026-c-06389large.jpg"
     },
     {
       "title": "NASA’s James Webb Space Telescope Captures Eerie Cat’s Head",
       "link": "https://www.nasa.gov/image-article/nasas-james-webb-space-telescope-captures-eerie-cats-head/",
       "date": "Fri, 30 Oct 2026 15:56:26 +0000",
-      "description": "Intricate structures within the Cat’s Head Nebula are illuminated in this mid-infrared view from NASA’s James Webb Space Telescope released on Oct. 29, 2026. The distinctive “cat’s head” shape of the nebula was likely sculpted over time by the intense ultraviolet radiation and winds from massive stars in the Carina Nebula. As this stellar feedback […]",
-      "category": "Discovery"
+      "description": "Intricate structures within the Cat's Head Nebula are illuminated in this mid-infrared view from NASA’s James Webb Space Telescope released on Oct. 29, 2026.",
+      "category": "Discovery",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/10/full-res-for-display.png"
     },
     {
       "title": "NASA Explores Potential Commercial Servicing for Hubble Telescope",
@@ -53,14 +63,6 @@
       "description": "The sight of an icy skull-like visage on the Antarctic island could make one’s blood run cold.",
       "category": "NASA update",
       "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/vega-island-frozen-in-fright/vegaislandzm_oli2_20261010_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
-    },
-    {
-      "title": "Map Showing Potential Origins of Martian Meteorite Teghaza 001",
-      "link": "https://science.nasa.gov/photojournal/map-showing-potential-origins-of-martian-meteorite-teghaza-001/",
-      "date": "Fri, 30 Oct 2026 00:07:39 +0000",
-      "description": "This global map of Mars shows 13 locations that match the mineralogy and chemistry of Teghaza 001, one of the most ancient Martian meteorites ever found on",
-      "category": "NASA update",
-      "image": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26802/PIA26802.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     }
   ],
   "gallery": {
@@ -256,14 +258,14 @@
     ]
   },
   "apod": {
-    "date": "2026-10-31",
-    "title": "Night on a Spooky Planet",
-    "explanation": " Explanation:   What spooky planet is this?  Planet Earth on a dark and stormy night, of course. The ghostly scene was  photographed at Hverir , a geothermally active area found along northeastern Iceland's  volcanic landscape . Triggered by  solar activity ,  geomagnetic storms  have unleashed energetic particles trapped in Earth's magnetic field. Penetrating the planet's upper atmosphere at high latitudes, the particles create  auroral displays  in the starry night sky. Ghostly towers of steam and gas are venting from  local fumaroles to dance  against the eerie, greenish northern lights. For now, auroral activity on planet Earth remains in a high state as the Sun is only in early phases of decline from the peak of its  solar activity cycle . And soon, other ghostly apparitions may dance in your neighborhood.  Happy Halloween !   Tomorrow's picture:   Sunday's Childe ",
-    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/Hverir_Vetter_1300.jpg?w=1300&h=867&fit=clip&crop=faces,focalpoint",
-    "link": "https://science.nasa.gov/image-article/apod-2026-october-31-night-on-a-spooky-planet/",
-    "credit": " Stéphane Vetter  ( Nuits sacrées )",
-    "alt": "Steam is venting from volcanic fumaroles photographed against greenish aurorae.",
+    "date": "2026-11-01",
+    "title": "Colors of the Moon",
+    "explanation": " Explanation:  What color is the Moon? It depends on the night -- and the time. Outside of the  Earth's atmosphere , the  dark Moon , which shines by reflected sunlight, appears a  magnificent ly brown-tinged gray. The  featured image  highlights a collection of apparent colors of the full moon on Earth, documented by one astrophotographer over 10 years from  different locations  across  Italy . A  red - or  yellow -colored moon usually indicates a moon seen  near the horizon . There, some of the blue light has been scattered away by a long path through the  Earth's atmosphere , sometimes laden with fine dust. A  blue-colored moon  is more rare and can indicate an atmosphere carrying larger  dust particles . What created the purple moon is  unclear  -- it may be a combination of several effects. The last image captures the total  lunar eclipse  of 2018 July -- where the moon, in  Earth's shadow , appeared a faint red -- due to light  refracted  through air around the Earth.  Have you  ever seen an unusually colorful Moon?   Tomorrow's picture:   open space ",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/MoonColors_Pace_960.jpg?w=960&h=991&fit=clip&crop=faces,focalpoint",
+    "link": "https://science.nasa.gov/image-article/apod-2026-november-1-colors-of-the-moon/",
+    "credit": " Marcella Giulia Pace ",
+    "alt": "Different colored images of the Moon are arranged in a spiral pattern.",
     "media_type": "image"
   },
-  "updated": "2026-10-31T07:58:13.815170+00:00"
+  "updated": "2026-11-01T08:40:13.860245+00:00"
 }
