@@ -1,6 +1,22 @@
 {
   "news": [
     {
+      "title": "APOD: 2026 November 2 – A Long Cloud on Mars",
+      "link": "https://science.nasa.gov/image-article/apod-2026-november-2-a-long-cloud-on-mars/",
+      "date": "Mon, 02 Nov 2026 05:05:00 +0000",
+      "description": "APOD Science APOD APOD: 2026 November 2 – A… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. A Long […]",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/MonsCloud_MarsExpress_1920.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "Pennsylvania’s Grand Canyon",
+      "link": "https://science.nasa.gov/earth/earth-observatory/pennsylvanias-grand-canyon/",
+      "date": "Mon, 02 Nov 2026 05:01:00 +0000",
+      "description": "Amid the warm hues of fall foliage, Pine Creek Gorge forms a deep scar in the Allegheny Plateau.",
+      "category": "NASA update",
+      "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/pennsylvania%E2%80%99s-grand-canyon/pinecreekgorge_oli_20261025_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
       "title": "APOD: 2026 November 1 – Colors of the Moon",
       "link": "https://science.nasa.gov/image-article/apod-2026-november-1-colors-of-the-moon/",
       "date": "Sun, 01 Nov 2026 04:05:00 +0000",
@@ -47,22 +63,6 @@
       "description": "On November 18, 2026, the Voyager 1 spacecraft will reach a historic milestone: one light-day from Earth, the farthest humanity has ever explored.",
       "category": "NASA update",
       "image": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26/pia26353/PIA26353.tif/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
-    },
-    {
-      "title": "APOD: 2026 October 30 – Haunting the Cepheus Flare",
-      "link": "https://science.nasa.gov/image-article/apod-2026-october-30-haunting-the-cepheus-flare/",
-      "date": "Fri, 30 Oct 2026 04:05:00 +0000",
-      "description": "APOD Science APOD APOD: 2026 October 30 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Haunting the Cepheus […]",
-      "category": "Discovery",
-      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/october/CepheusFlare_Tondinelli.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
-    },
-    {
-      "title": "Vega Island Frozen in Fright",
-      "link": "https://science.nasa.gov/earth/earth-observatory/vega-island-frozen-in-fright/",
-      "date": "Fri, 30 Oct 2026 04:01:00 +0000",
-      "description": "The sight of an icy skull-like visage on the Antarctic island could make one’s blood run cold.",
-      "category": "NASA update",
-      "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/vega-island-frozen-in-fright/vegaislandzm_oli2_20261010_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     }
   ],
   "gallery": {
@@ -258,14 +258,14 @@
     ]
   },
   "apod": {
-    "date": "2026-11-01",
-    "title": "Colors of the Moon",
-    "explanation": " Explanation:  What color is the Moon? It depends on the night -- and the time. Outside of the  Earth's atmosphere , the  dark Moon , which shines by reflected sunlight, appears a  magnificent ly brown-tinged gray. The  featured image  highlights a collection of apparent colors of the full moon on Earth, documented by one astrophotographer over 10 years from  different locations  across  Italy . A  red - or  yellow -colored moon usually indicates a moon seen  near the horizon . There, some of the blue light has been scattered away by a long path through the  Earth's atmosphere , sometimes laden with fine dust. A  blue-colored moon  is more rare and can indicate an atmosphere carrying larger  dust particles . What created the purple moon is  unclear  -- it may be a combination of several effects. The last image captures the total  lunar eclipse  of 2018 July -- where the moon, in  Earth's shadow , appeared a faint red -- due to light  refracted  through air around the Earth.  Have you  ever seen an unusually colorful Moon?   Tomorrow's picture:   open space ",
-    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/MoonColors_Pace_960.jpg?w=960&h=991&fit=clip&crop=faces,focalpoint",
-    "link": "https://science.nasa.gov/image-article/apod-2026-november-1-colors-of-the-moon/",
-    "credit": " Marcella Giulia Pace ",
-    "alt": "Different colored images of the Moon are arranged in a spiral pattern.",
+    "date": "2026-11-02",
+    "title": "A Long Cloud on Mars",
+    "explanation": " Explanation:  What’s causing this unusually long cloud on  Mars ? Known as the  Arsia Mons Elongated Cloud  (AMEC) and first recorded by NASA’s  Viking Orbiter 2  in 1977, the  strange cloud  has been imaged in greater detail more recently by  ESA ’s robotic  Mars Express  spacecraft. The  featured   image  is from 2018. The  cloud forms  only during  spring  and summer  seasons  and then only during morning hours. Made of water-ice, the most familiar process that causes  cloud crystals  to  form around bits of dust  would fail due to the thinness and lack of dust high in the  Martian atmosphere .  Leading speculation  holds that dust is not involved. After the cloud forms near the volcano  Arsia Mons , wind blows the cloud  downstream  — creating a tail that can extend over 1500 kilometers. Efforts to better understand  AMEC s will continue, an understanding that may bolster a  more complete view  of  cloud formation  on  Earth .   Tomorrow's picture:  eyeing a cat",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/MonsCloud_MarsExpress_1920.jpg?w=1920&h=1200&fit=clip&crop=faces,focalpoint",
+    "link": "https://science.nasa.gov/image-article/apod-2026-november-2-a-long-cloud-on-mars/",
+    "credit": " ESA ,  DLR ,  FU Berlin ;  Processing &  License :  J. Cowart ",
+    "alt": "Mars is seen from orbit with an orange landscape and two prominent volcanoes on the right. Extending  horizontally from the nearer volcano is a very long white cloud.",
     "media_type": "image"
   },
-  "updated": "2026-11-01T08:40:13.860245+00:00"
+  "updated": "2026-11-02T08:50:45.488040+00:00"
 }
