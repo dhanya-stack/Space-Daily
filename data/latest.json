@@ -1,6 +1,43 @@
 {
   "news": [
     {
+      "title": "APOD: 2026 November 4 – The Not-So-Hidden Galaxy, IC 342",
+      "link": "https://science.nasa.gov/image-article/apod-2026-november-4-the-not-so-hidden-galaxy-ic-342/",
+      "date": "Wed, 04 Nov 2026 05:05:00 +0000",
+      "description": "APOD Science APOD APOD: 2026 November 4 – The… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. The Not-So-Hidden […]",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/ic342.png/jcr:content/renditions/cq5dam.web.1280.1280.png"
+    },
+    {
+      "title": "Before the Dawn in America’s Heartland",
+      "link": "https://science.nasa.gov/earth/earth-observatory/before-the-dawn-in-americas-heartland/",
+      "date": "Wed, 04 Nov 2026 05:01:00 +0000",
+      "description": "With hardly a cloud in sight, astronauts had a sweeping view of nighttime lights in the U.S. Midwest.",
+      "category": "NASA update",
+      "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/before-the-dawn-in-america%E2%80%99s-heartland/ISS075-E-226709_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "Astronaut and Earth",
+      "link": "https://www.nasa.gov/image-article/astronaut-and-earth/",
+      "date": "Tue, 03 Nov 2026 16:37:42 +0000",
+      "description": "CSA (Canadian Space Agency) astronaut Joshua Kutryk is pictured during the Oct. 29, 2026, spacewalk. The International Space Station was soaring 267 miles",
+      "category": "NASA update"
+    },
+    {
+      "title": "TB 26-10 Printed Circuit Board Assembly Chip Resistor Body Cracking",
+      "link": "https://www.nasa.gov/centers-and-facilities/nesc/tb-26-10-printed-circuit-board-assembly-chip-resistor-body-cracking/",
+      "date": "Tue, 03 Nov 2026 15:35:14 +0000",
+      "description": "For more information, contact Joel W. Sills, Langley Research Center, joel.w.sills@nasa.gov. Download PDF here Chip resistors are widely used in NASA projects, yet cases of alumina substrate cracking during environmental testing are rare. Two instances of thick-film chip resistor cracking were observed during thermal cycling after vibration, with fractures o",
+      "category": "NASA update"
+    },
+    {
+      "title": "NASA Astronaut, STEM Creator Connect with Students for STEM Day",
+      "link": "https://www.nasa.gov/learning-resources/nasa-astronaut-stem-creator-connect-with-students-for-stem-day/",
+      "date": "Tue, 03 Nov 2026 15:15:50 +0000",
+      "description": "Students across the country will have the opportunity to connect directly with the International Space Station during a live, interactive in-flight call with NASA astronaut Anil Menon and Mark Rober STEM content creator and founder of ClassCrunchLabs Foundation. The event, hosted by NASA’s Office of STEM Engagement, celebrates National STEM Day by bringing r",
+      "category": "NASA update"
+    },
+    {
       "title": "APOD: 2026 November 3 – Comet PanSTARRs and Rainbow Meteor",
       "link": "https://science.nasa.gov/image-article/apod-2026-november-3-comet-panstarrs-and-rainbow-meteor/",
       "date": "Tue, 03 Nov 2026 05:05:00 +0000",
@@ -23,46 +60,6 @@
       "description": "Sixty-five years ago, a bold vision took root in Houston: a NASA center dedicated to human spaceflight. Since its founding, NASA’s Johnson Space Center has",
       "category": "NASA update",
       "image": "https://www.nasa.gov/wp-content/uploads/2026/10/s63-11625.jpg"
-    },
-    {
-      "title": "TB 26-09 Measured Hammer-Tap Inputs",
-      "link": "https://www.nasa.gov/centers-and-facilities/nesc/tb-26-09-measured-hammer-tap-inputs/",
-      "date": "Mon, 02 Nov 2026 20:47:41 +0000",
-      "description": "For more information, contact Joel W. Sills, Langley Research Center, joel.w.sills@nasa.gov.",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2015/04/tb-26-09-1-illustrative-hammer-force-time-histories.png"
-    },
-    {
-      "title": "NASA’s CHAPEA Crew “Returns” to Earth",
-      "link": "https://www.nasa.gov/image-article/nasas-chapea-crew-returns-to-earth/",
-      "date": "Mon, 02 Nov 2026 18:50:42 +0000",
-      "description": "The four-member Crew Health and Performance Exploration Analog (CHAPEA) crew poses outside for the first time in more than a year following the end of their",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/jsc2026e424293orig.jpg"
-    },
-    {
-      "title": "What’s Up: November 2026 Skywatching Tips from NASA",
-      "link": "https://science.nasa.gov/solar-system/skywatching/whats-up-november-2026-skywatching-tips-from-nasa/",
-      "date": "Mon, 02 Nov 2026 18:19:58 +0000",
-      "description": "I'm Raquel Villanueva from NASA's Jet Propulsion Laboratory and that's What's Up this month.",
-      "category": "NASA update",
-      "image": "https://science.nasa.gov/wp-content/uploads/2023/07/moonrise-at-vasquez-rocks-credit-nasa-preston-dyches-cc-by-nc-2.0.jpg"
-    },
-    {
-      "title": "NASA Invites Media to Northrop Grumman CRS-25 Station Resupply Launch",
-      "link": "https://www.nasa.gov/news-release/nasa-invites-media-to-northrop-grumman-crs-25-station-resupply-launch/",
-      "date": "Mon, 02 Nov 2026 17:33:22 +0000",
-      "description": "The mission is known as NASA’s Northrop Grumman Commercial Resupply Services 25, or NASA’s Northrop Grumman CRS-25. Liftoff is targeted for no earlier than",
-      "category": "NASA update",
-      "image": "https://images-assets.nasa.gov/image/iss075e0189493/iss075e0189493~large.jpg"
-    },
-    {
-      "title": "NASA’s Hubble Uncovers Case of Missing Oxygen in Nearby Dwarf Galaxies",
-      "link": "https://science.nasa.gov/missions/hubble/nasas-hubble-uncovers-case-of-missing-oxygen-in-nearby-dwarf-galaxies/",
-      "date": "Mon, 02 Nov 2026 15:00:39 +0000",
-      "description": "NASA’s Hubble studied 37 nearby dwarf galaxies and found that much of the oxygen they expected to see is missing.",
-      "category": "Discovery",
-      "image": "https://assets.science.nasa.gov/content/dam/science/missions/hubble/releases/2026/11/STScI-01M4RST3TGWT2T53FVXQBSP75D.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     }
   ],
   "gallery": {
@@ -258,14 +255,14 @@
     ]
   },
   "apod": {
-    "date": "2026-11-03",
-    "title": "Comet PanSTARRs and Rainbow Meteor",
-    "explanation": " Explanation:  Did this meteor come from that comet? Probably not. Although many  meteors  do originate from comets, there are  thousands  of  comets  that have visited the inner  Solar System  recently, and matching meteors to them can be tricky. And to be clear, the  pictured comet  is far behind the  streaking meteor . Comet  C/2025 R3 (PanSTARRS)  was captured from  Hautacam ,  France  in April when the  giant space iceberg  sported impressive  ion  (blue) and dust  tails . Sand-sized rocky debris that enters  Earth’s atmosphere  typically appears as  meteors , while the  colorful foreground streak  here may indicate a complicated composition. This month three  notable meteor showers  will reach their peaks. Over the next few days, the Southern  Taurids  will be reaching their apex, while the Northern  Taurids  will top out about a week later. Both originate from  Comet 2P/Encke . November is most famous for the  Leonids Meteor Shower , though, which originates from  Comet 55P/Tempel-Tuttle  and will  reach its crescendo  in about two weeks.   Tomorrow's picture:  open space",
-    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/CometMeteor_Metais_1934.jpg?w=0&h=0&fit=clip&crop=faces,focalpoint",
-    "link": "https://science.nasa.gov/image-article/apod-2026-november-3-comet-panstarrs-and-rainbow-meteor/",
-    "credit": " Eddy Metais ",
-    "alt": "A comet with a long flowing tail is seen below a star-filled  sky and above a peaked hill. Starting right in the tail of the comet is a multicolored meteor. Please see the explanation for more detailed information.",
+    "date": "2026-11-04",
+    "title": "The Not-So-Hidden Galaxy, IC 342",
+    "explanation": " Explanation:  “I see” IC 342, the Hidden Galaxy!  Today’s image  peers through the  plane of the Milky Way , through all its gas, dust and stars, to unveil this  spiral galaxy .  IC 342  (or  Caldwell 5 ) is one of the brightest members of the IC 342/ Maffei  group of galaxies. Located about 10 million  light years  away, this group is quite close to the  Local Group  that includes our Milky Way. Inaccurate accounting of the crowded and dusty Milky Way foreground has led to misunderstandings in IC 342’s history, including the theory that the galaxy was  ejected from the Local Group . IC 342 has its own dust intermittently blocking the  glow of hydrogen gas , indicating the presence of bright, young stars.  Magnetic field maps  of IC 342 reveal that magnetic fields may contribute substantially to one of the biggest galactic puzzles:  how do spiral arms form ?   Tomorrow's picture:  open space",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/ic342.png?w=4144&h=2822&fit=clip&crop=faces,focalpoint",
+    "link": "https://science.nasa.gov/image-article/apod-2026-november-4-the-not-so-hidden-galaxy-ic-342/",
+    "credit": " Artem Mironov ",
+    "alt": "The face of a spiral galaxy fills the image. The galaxy has a bright yellow-ish center. A handful of large arms spiral outward from the center. Bubbles of red glowing gas and tendrils of dark dust trace the spiral arms. Foreground stars and background galaxies are sprinkled across the image.",
     "media_type": "image"
   },
-  "updated": "2026-11-03T08:59:30.284589+00:00"
+  "updated": "2026-11-04T08:35:06.569028+00:00"
 }
