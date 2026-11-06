@@ -1,6 +1,46 @@
 {
   "news": [
     {
+      "title": "APOD: 2026 November 6 – A Farewell to Swift",
+      "link": "https://science.nasa.gov/image-article/apod-2026-november-6-a-farewell-to-swift/",
+      "date": "Fri, 06 Nov 2026 05:05:00 +0000",
+      "description": "APOD Science APOD APOD: 2026 November 6 – A… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. A Farewell […]",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/Swift_Millionth_Image_Mosaic.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "Taking a Gander at Utah’s Goosenecks",
+      "link": "https://science.nasa.gov/earth/earth-observatory/taking-a-gander-at-utahs-goosenecks/",
+      "date": "Fri, 06 Nov 2026 05:01:00 +0000",
+      "description": "The San Juan River has carved deep, improbably curvy meanders into the desert landscape.",
+      "category": "NASA update",
+      "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/taking-a-gander-at-utah%E2%80%99s-goosenecks/ISS075-E-188830_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "Midwestern City Lights",
+      "link": "https://www.nasa.gov/image-article/midwestern-city-lights/",
+      "date": "Thu, 05 Nov 2026 15:17:19 +0000",
+      "description": "City lights from the Midwestern United States to the East Coast sparkle across the landscape a couple of hours before sunrise on Oct. 18, 2026. Major urban",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/iss075e0227352orig.jpg"
+    },
+    {
+      "title": "NASA Astronauts to Answer Questions from Florida Students",
+      "link": "https://www.nasa.gov/learning-resources/nasa-astronauts-to-answer-questions-from-florida-students-2/",
+      "date": "Thu, 05 Nov 2026 15:11:25 +0000",
+      "description": "Students in Florida will hear from NASA astronauts Jessica Watkins and Luke Delaney as they answer prerecorded STEM questions while aboard",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/freedom-crossing-downlink-nov-5.jpg"
+    },
+    {
+      "title": "Hubble Learns Galactic History From Stars",
+      "link": "https://science.nasa.gov/missions/hubble/hubble-learns-galactic-history-from-stars/",
+      "date": "Thu, 05 Nov 2026 12:56:21 +0000",
+      "description": "This Hubble image features the sparkling collection of stars named Messier 30 (M30), also called NGC 7099.",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/missions/hubble/stars/globular-clusters/Hubble_M30_potm2610a.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
       "title": "APOD: 2026 November 5 – Enceladus in Silhouette",
       "link": "https://science.nasa.gov/image-article/apod-2026-november-5-enceladus-in-silhouette/",
       "date": "Thu, 05 Nov 2026 05:05:00 +0000",
@@ -22,47 +62,7 @@
       "date": "Thu, 05 Nov 2026 01:43:21 +0000",
       "description": "On Wednesday, NASA unveiled its newest experimental aircraft, the X-70 Fractal, during the UP.Summit at the agency’s Kennedy Space Center in Florida. This",
       "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/img-6418.png"
-    },
-    {
-      "title": "NASA Shares Plans to Accelerate Artemis, Return to Moon",
-      "link": "https://www.nasa.gov/missions/artemis/nasa-shares-plans-to-accelerate-artemis-return-to-moon/",
-      "date": "Wed, 04 Nov 2026 21:04:10 +0000",
-      "description": "Agency leadership provided updates on the previously announced acceleration plans for the Artemis program, advancing toward the agency’s Artemis III test",
-      "category": "NASA update",
-      "image": "https://images-assets.nasa.gov/image/art002e012632/art002e012632~large.jpg"
-    },
-    {
-      "title": "NASA Announces Ka-Band Satellite Relay Awards for Space Communications",
-      "link": "https://www.nasa.gov/news-release/nasa-announces-ka-band-satellite-relay-awards-for-space-communications/",
-      "date": "Wed, 04 Nov 2026 18:00:02 +0000",
-      "description": "NASA selected three companies on Wednesday to perform work to develop Ka-band space relay capability concepts that are compatible with current missions in",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2022/02/nasa_meatball_large.jpg"
-    },
-    {
-      "title": "NASA Navigation Experiment Shows Promise for Planetary Landings",
-      "link": "https://www.nasa.gov/centers-and-facilities/armstrong/nasa-navigation-experiment-shows-promise-for-planetary-landings/",
-      "date": "Wed, 04 Nov 2026 16:52:43 +0000",
-      "description": "An Alta-X drone equipped with the agency’s Safe and Precise Landing – Integrated Capabilities Evolution (SPLICE) guidance, navigation, and control payload",
-      "category": "Discovery",
-      "image": "https://images-assets.nasa.gov/image/AFRC2026-0152-30/AFRC2026-0152-30~large.jpg"
-    },
-    {
-      "title": "NASA Space Grant Students Fuel Agency’s Inspiration Tour",
-      "link": "https://www.nasa.gov/learning-resources/nasa-space-grant-students-fuel-agencys-inspiration-tour/",
-      "date": "Wed, 04 Nov 2026 16:16:41 +0000",
-      "description": "NASA’s Inspiration Tour spread the excitement of space exploration and aeronautical innovation by connecting the public, industry, and academia with the",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/55572302164-8599ccaff1-k.jpg"
-    },
-    {
-      "title": "Hubble Reveals Cosmic Mystery",
-      "link": "https://www.nasa.gov/image-article/hubble-reveals-cosmic-mystery/",
-      "date": "Wed, 04 Nov 2026 15:59:36 +0000",
-      "description": "This photo released on Nov. 2, 2026, showcases NGC 4449, a dwarf irregular. Researchers using NASA's Hubble Space Telescope studied 37 nearby dwarf",
-      "category": "Discovery",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/full-res-for-display-1.png"
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/nasa-x-70-image.png"
     }
   ],
   "gallery": {
@@ -258,14 +258,14 @@
     ]
   },
   "apod": {
-    "date": "2026-11-05",
-    "title": "Enceladus in Silhouette",
-    "explanation": " Explanation:  One of our Solar System's most  tantalizing  worlds, Enceladus is backlit by the Sun in this Cassini spacecraft image from November 1, 2009.  The dramatic illumination  reveals the plumes that continuously spew into space from the south pole of  Saturn's 500 kilometer diameter moon . Discovered by Cassini in 2005, the icy plumes are likely connected to an ocean  beneath the ice shell  of Enceladus. They supply material directly to Saturn's outer, tenuous  E ring  and make the surface of Enceladus as reflective as snow. Across the scene, Saturn's icy rings scatter sunlight toward Cassini's cameras. Beyond the rings (lower right), the night side of 80 kilometer diameter moon  Pandora  is faintly lit by  Saturnlight .    Tomorrow's picture:  pixels in space",
-    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/PIA17144EnceladusPandora.png?w=982&h=575&fit=clip&crop=faces,focalpoint",
-    "link": "https://science.nasa.gov/image-article/apod-2026-november-5-enceladus-in-silhouette/",
-    "credit": " Cassini Imaging Team ,  SSI ,  JPL ,  ESA ,  NASA ",
-    "alt": "Saturn moon Enceladus in silhouette",
+    "date": "2026-11-06",
+    "title": "A Farewell to Swift",
+    "explanation": " Explanation:  It is time to say goodbye to  NASA 's  Neil Gehrels Swift Observatory . After nearly 22 years of service, the satellite  re-entered Earth's atmosphere  on November 4 at 7:39 EST over the  North Sumatra  region of  Indonesia . The  featured image  is a mosaic created in 2018 using the first one million  images  captured by the satellite's  Ultraviolet/Optical Telescope . Swift had a combination of instruments, including an  X-ray telescope  and a  gamma-ray telescope , that worked together to enable humanity to study, in unprecedented detail, the fastest and most energetic  explosions  in the universe. The most recent  solar maximum  accelerated the decay of the satellite's orbit. An  innovative mission  to  rescue Swift  by boosting its orbit was  not successful . Swift burned on  reentry  like a shooting star, but the impressive data acquired by the telescope over its mission will continue to bring light to the mysteries of the cosmos for years to come. May it keep inspiring new missions  to boldly go  into space, explore new data and seek out new science.     Tomorrow's picture:  what's next?",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/Swift_Millionth_Image_Mosaic.jpg?w=5252&h=3744&fit=clip&crop=faces,focalpoint",
+    "link": "https://science.nasa.gov/image-article/apod-2026-november-6-a-farewell-to-swift/",
+    "credit": " NASA / Swift  and  AndreaMosaic ",
+    "alt": "A mosaic image of the Neil Gehrels Swift Observatory, created from one million images of astronomical objects captured by the satellite’s Ultraviolet/Optical Telescope.",
     "media_type": "image"
   },
-  "updated": "2026-11-05T08:55:46.938381+00:00"
+  "updated": "2026-11-06T08:54:48.343719+00:00"
 }
