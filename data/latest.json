@@ -1,6 +1,30 @@
 {
   "news": [
     {
+      "title": "APOD: 2026 November 8 – Major Fireball Meteor",
+      "link": "https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor/",
+      "date": "Sun, 08 Nov 2026 05:05:00 +0000",
+      "description": "APOD Science APOD APOD: 2026 November 8 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Major Fireball Meteor […]",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/meteor2017_Taylor_1200.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
+      "link": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/",
+      "date": "Sat, 07 Nov 2026 22:47:03 +0000",
+      "description": "NASA announced a suite of awards and mission updates on Saturday to expand the agency's Moon Base exploration, science, and infrastructure capabilities. The",
+      "category": "Discovery",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/moon-base-artists-concept.jpg"
+    },
+    {
+      "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
+      "link": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
+      "date": "Sat, 07 Nov 2026 18:11:57 +0000",
+      "description": "U.S. citizens interested in joining the astronaut corps have until 11:59 p.m. EST Thursday, Dec. 3, to submit their completed application materials at:",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/jsc2025e076292large.jpg"
+    },
+    {
       "title": "APOD: 2026 November 7 – De Gerlache-Kocher Massif",
       "link": "https://science.nasa.gov/image-article/apod-2026-november-7-de-gerlache-kocher-massif/",
       "date": "Sat, 07 Nov 2026 05:05:00 +0000",
@@ -39,30 +63,6 @@
       "description": "The San Juan River has carved deep, improbably curvy meanders into the desert landscape.",
       "category": "NASA update",
       "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/taking-a-gander-at-utah%E2%80%99s-goosenecks/ISS075-E-188830_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
-    },
-    {
-      "title": "Midwestern City Lights",
-      "link": "https://www.nasa.gov/image-article/midwestern-city-lights/",
-      "date": "Thu, 05 Nov 2026 15:17:19 +0000",
-      "description": "City lights from the Midwestern United States to the East Coast sparkle across the landscape a couple of hours before sunrise on Oct. 18, 2026. Major urban",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/iss075e0227352orig.jpg"
-    },
-    {
-      "title": "NASA Astronauts to Answer Questions from Florida Students",
-      "link": "https://www.nasa.gov/learning-resources/nasa-astronauts-to-answer-questions-from-florida-students-2/",
-      "date": "Thu, 05 Nov 2026 15:11:25 +0000",
-      "description": "Students in Florida will hear from NASA astronauts Jessica Watkins and Luke Delaney as they answer prerecorded STEM questions while aboard",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/freedom-crossing-downlink-nov-5.jpg"
-    },
-    {
-      "title": "Hubble Learns Galactic History From Stars",
-      "link": "https://science.nasa.gov/missions/hubble/hubble-learns-galactic-history-from-stars/",
-      "date": "Thu, 05 Nov 2026 12:56:21 +0000",
-      "description": "This Hubble image features the sparkling collection of stars named Messier 30 (M30), also called NGC 7099.",
-      "category": "Discovery",
-      "image": "https://assets.science.nasa.gov/content/dam/science/missions/hubble/stars/globular-clusters/Hubble_M30_potm2610a.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     }
   ],
   "gallery": {
@@ -258,14 +258,14 @@
     ]
   },
   "apod": {
-    "date": "2026-11-07",
-    "title": "De Gerlache-Kocher Massif",
-    "explanation": " Explanation:  De Gerlache-Kocher  massif  looms on the visible horizon in this close-up of the edge of the Moon. The mountainous formation rises about 4 kilometers above its surroundings and is located very close to the lunar south pole. Boasting  permanently shadowed  crater floors that likely contain deposits of water ice and peaks that receive almost continuous sunlight for solar power generation, the south polar region is consider a prime location for the first human settlement on the Moon.  In fact , De Gerlache-Kocher massif itself has been consider as a potential  landing site  for future crewed  Artemis missions to the Moon . The remarkable telescopic image of the massif at the lunar limb was captured on October 31. Then, a favorable libration angle or  lunar wobble  enhanced this oblique view  across the Moon's south pole.    Tomorrow's picture:  meteoric",
-    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/GerlacheKocherMassif_Sans.jpg?w=1500&h=1022&fit=clip&crop=faces,focalpoint",
-    "link": "https://science.nasa.gov/image-article/apod-2026-november-7-de-gerlache-kocher-massif/",
-    "credit": " Alejandro Sanz ",
-    "alt": "Mountains and craters at the lunar limb.",
+    "date": "2026-11-08",
+    "title": "Major Fireball Meteor",
+    "explanation": " Explanation:   The sky glows  with soft pinkish colors of fading twilight in this serendipitous mountaintop vista. Taken in subfreezing temperatures, the  thoughtfully composed photo  shows snowy, rugged peaks seen from a mountain pass on 2017 November 14. Below lies the village of  La Villa, Alta Badia  in  Italy 's  Dolomite Alps . Above the nestled village lights, the  constellation Ursa Major  hangs over the northern horizon. But most  stunning  is the intense  fireball  meteor. It was  captured  during the camera's exposure by chance as it flashed east to west across the northern horizon, under Ursa Major's familiar  Big Dipper   asterism . Sightings of  this major fireball meteor  were widely reported in European skies, making it one of the most reported fireball events ever for planet Earth's  American Meteor Society  and the  International Meteor Organization . The meteor's measured track over  Germany  is consistent with its origin near the active  radiant  of November's Northern  Taurid Meteor Shower , a shower associated with dust from  Encke's comet .   Tomorrow's picture:  witch sky?",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/meteor2017_Taylor_1200.jpg?w=0&h=0&fit=clip&crop=faces,focalpoint",
+    "link": "https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor/",
+    "credit": " Ollie Taylor ",
+    "alt": "A mountainous landscape with snow and trees is seen  below a starry sky. A pink band is visible on the horizon.  Coming down from the sky is a bright meteor trail. Just above the meteor are the stars of the Big Dipper.  Please see the explanation for more detailed information.",
     "media_type": "image"
   },
-  "updated": "2026-11-07T08:18:05.943439+00:00"
+  "updated": "2026-11-08T08:33:33.952491+00:00"
 }
