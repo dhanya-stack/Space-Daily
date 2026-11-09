@@ -1,6 +1,30 @@
 {
   "news": [
     {
+      "title": "APOD: 2026 November 9 – Rigel and the Witch Head Nebula",
+      "link": "https://science.nasa.gov/image-article/apod-2026-november-9-rigel-and-the-witch-head-nebula/",
+      "date": "Mon, 09 Nov 2026 05:05:00 +0000",
+      "description": "APOD Science APOD APOD: 2026 November 9 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Rigel and the […]",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/WitchHead_Czerski_3000.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "Ozone Hole Reaches Its 2026 Maximum",
+      "link": "https://science.nasa.gov/earth/earth-observatory/ozone-hole-reaches-its-2026-maximum/",
+      "date": "Mon, 09 Nov 2026 05:00:00 +0000",
+      "description": "The ozone hole ranked seventh largest by area in 48 years of monitoring, but it was not as deep as other large holes on record.",
+      "category": "NASA update",
+      "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/ozone-hole-reaches-its-2026-maximum/ozone_geos5_20260918_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "NASA Announces $1 Million to Students for Moon Base Challenge",
+      "link": "https://www.nasa.gov/news-release/nasa-announces-1-million-to-students-for-moon-base-challenge/",
+      "date": "Sun, 08 Nov 2026 15:26:38 +0000",
+      "description": "On Sunday, NASA announced the opening of its $1 million Moon Base Student Challenge during a MAX POWER event at Kennedy Space Center Visitor Complex in",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/stmd-exteriorlunarbase-hdlandscapeversion-2026-0521.png"
+    },
+    {
       "title": "APOD: 2026 November 8 – Major Fireball Meteor",
       "link": "https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor/",
       "date": "Sun, 08 Nov 2026 05:05:00 +0000",
@@ -39,30 +63,6 @@
       "description": "This NASA/ESA Hubble Space Telescope image released Nov. 5, 2026, provides a lesson in galactic history. The sparkling collection of stars is named Messier 30",
       "category": "Discovery",
       "image": "https://www.nasa.gov/wp-content/uploads/2026/11/hubble-m30-potm2610a.jpg"
-    },
-    {
-      "title": "Supercomputing Tech Demo Schedule",
-      "link": "https://science.nasa.gov/earth/supercomputing-tech-demo-schedule/",
-      "date": "Fri, 06 Nov 2026 16:03:52 +0000",
-      "description": "Supercomputing 2026",
-      "category": "NASA update",
-      "image": "https://assets.science.nasa.gov/content/dam/science/astro/programs/cosmic-origins/images/misc/NASA-Meatball-Feature5.png/jcr:content/renditions/cq5dam.web.1280.1280.png"
-    },
-    {
-      "title": "APOD: 2026 November 6 – A Farewell to Swift",
-      "link": "https://science.nasa.gov/image-article/apod-2026-november-6-a-farewell-to-swift/",
-      "date": "Fri, 06 Nov 2026 05:05:00 +0000",
-      "description": "APOD Science APOD APOD: 2026 November 6 – A… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. A Farewell […]",
-      "category": "Discovery",
-      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/Swift_Millionth_Image_Mosaic.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
-    },
-    {
-      "title": "Taking a Gander at Utah’s Goosenecks",
-      "link": "https://science.nasa.gov/earth/earth-observatory/taking-a-gander-at-utahs-goosenecks/",
-      "date": "Fri, 06 Nov 2026 05:01:00 +0000",
-      "description": "The San Juan River has carved deep, improbably curvy meanders into the desert landscape.",
-      "category": "NASA update",
-      "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/taking-a-gander-at-utah%E2%80%99s-goosenecks/ISS075-E-188830_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     }
   ],
   "gallery": {
@@ -258,14 +258,14 @@
     ]
   },
   "apod": {
-    "date": "2026-11-08",
-    "title": "Major Fireball Meteor",
-    "explanation": " Explanation:   The sky glows  with soft pinkish colors of fading twilight in this serendipitous mountaintop vista. Taken in subfreezing temperatures, the  thoughtfully composed photo  shows snowy, rugged peaks seen from a mountain pass on 2017 November 14. Below lies the village of  La Villa, Alta Badia  in  Italy 's  Dolomite Alps . Above the nestled village lights, the  constellation Ursa Major  hangs over the northern horizon. But most  stunning  is the intense  fireball  meteor. It was  captured  during the camera's exposure by chance as it flashed east to west across the northern horizon, under Ursa Major's familiar  Big Dipper   asterism . Sightings of  this major fireball meteor  were widely reported in European skies, making it one of the most reported fireball events ever for planet Earth's  American Meteor Society  and the  International Meteor Organization . The meteor's measured track over  Germany  is consistent with its origin near the active  radiant  of November's Northern  Taurid Meteor Shower , a shower associated with dust from  Encke's comet .   Tomorrow's picture:  witch sky?",
-    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/meteor2017_Taylor_1200.jpg?w=0&h=0&fit=clip&crop=faces,focalpoint",
-    "link": "https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor/",
-    "credit": " Ollie Taylor ",
-    "alt": "A mountainous landscape with snow and trees is seen  below a starry sky. A pink band is visible on the horizon.  Coming down from the sky is a bright meteor trail. Just above the meteor are the stars of the Big Dipper.  Please see the explanation for more detailed information.",
+    "date": "2026-11-09",
+    "title": "Rigel and the Witch Head Nebula",
+    "explanation": " Explanation:  Does the blue nebula look like the head of a witch? The nebula is  known popularly  as the Witch Head Nebula because, it is said, the nebula's shape resembles a  Halloween-style caricature  of a witch's head. Exactly how, though, can be a topic of  imaginative speculation . What is clear is that  IC 2118  is about 50  light-years  across and made of gas and dust that points to -- because it has been partly eroded by -- the nearby star  Rigel . One of the brighter stars in the constellation Orion,  Rigel  lies just below the center of the  featured image . The blue color of the Witch Head Nebula and is caused not only by  Rigel's intense blue starlight  but also because the  dust grains  scatter blue light more efficiently than red. The same  physical process  causes Earth's daytime  sky to appear blue , although the scatterers in planet  Earth's atmosphere  are molecules of  nitrogen  and  oxygen .   Tomorrow's picture:  suddenly Saturn",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/WitchHead_Czerski_3000.jpg?w=3000&h=1990&fit=clip&crop=faces,focalpoint",
+    "link": "https://science.nasa.gov/image-article/apod-2026-november-9-rigel-and-the-witch-head-nebula/",
+    "credit": " Piotr Czerski ",
+    "alt": "A starfield filled with red glowing gas is seen surroinging a bright blue star near the center. To the upper right of the star is an unusually shaped blue-tinted nebula.",
     "media_type": "image"
   },
-  "updated": "2026-11-08T08:33:33.952491+00:00"
+  "updated": "2026-11-09T09:04:11.632417+00:00"
 }
