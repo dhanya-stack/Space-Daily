@@ -1,6 +1,22 @@
 {
   "news": [
     {
+      "title": "Outbursts from a Massive Star",
+      "link": "https://www.nasa.gov/image-article/outbursts-from-a-massive-star/",
+      "date": "Fri, 13 Nov 2026 16:39:33 +0000",
+      "description": "Using NASA’s Chandra X-ray Observatory, astronomers have discovered what is triggering repeated outbursts from a giant, unstable star located in the galaxy",
+      "category": "Discovery",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/at2016blu.jpg"
+    },
+    {
+      "title": "Gemini Astronaut Photos Inspired Early Earth Observation Program",
+      "link": "https://www.nasa.gov/image-article/gemini-astronaut-photos-inspired-early-earth-observation-program/",
+      "date": "Fri, 13 Nov 2026 16:05:54 +0000",
+      "description": "Jim Lovell and Buzz Aldrin's photos of Earth as they orbited in November 1966, helped demonstrate the value of orbital imagery for studying Earth's surface.",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/s66-63535-f.png"
+    },
+    {
       "title": "APOD: 2026 November 13 – NGC 206 and the Star Clouds of Andromeda",
       "link": "https://science.nasa.gov/image-article/apod-2026-november-13-ngc-206-and-the-star-clouds-of-andromeda/",
       "date": "Fri, 13 Nov 2026 05:05:00 +0000",
@@ -47,22 +63,6 @@
       "description": "Hubble captured a gallery of gravitational lenses that lay the groundwork for follow-up observations by the Nancy Grace Roman Space Telescope.",
       "category": "Discovery",
       "image": "https://assets.science.nasa.gov/content/dam/science/missions/hubble/gravitational-lens/Hubble_lenscollage_P18085_ok4_noletters.tif/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
-    },
-    {
-      "title": "Through NASA’s Lens: Capturing Space Shuttle Endeavour’s Move to LA",
-      "link": "https://www.nasa.gov/centers-and-facilities/armstrong/through-nasas-lens-capturing-space-shuttle-endeavours-move-to-la/",
-      "date": "Thu, 12 Nov 2026 13:00:00 +0000",
-      "description": "As a new exhibit opens showcasing NASA’s space shuttle Endeavour, NASA photographers look back at the final mission. These photographers documented the iconic",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2023/03/690852main_ED12-0317-012_full.jpg"
-    },
-    {
-      "title": "APOD: 2026 November 12 – Moon, Venus and Spica Meet",
-      "link": "https://science.nasa.gov/image-article/apod-2026-november-12-moon-venus-and-spica-meet/",
-      "date": "Thu, 12 Nov 2026 05:05:00 +0000",
-      "description": "APOD Science APOD APOD: 2026 November 12 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Moon, Venus and […]",
-      "category": "Discovery",
-      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/conjunction-bubak.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     }
   ],
   "gallery": {
@@ -258,14 +258,14 @@
     ]
   },
   "apod": {
-    "date": "2026-11-13",
-    "title": "NGC 206 and the Star Clouds of Andromeda",
-    "explanation": " Explanation:  The large stellar association cataloged as  NGC 206  is nestled within the dusty arms of the neighboring  Andromeda galaxy  along with the galaxy's pinkish star-forming regions. Also known as M31,  the spiral galaxy is a mere  2.5 million light-years away. NGC 206 is found at the center of  this sharp and detailed close-up  of the southwestern  extent  of Andromeda's disk. The bright, blue  stars of NGC 206  indicate its youth. In fact, its youngest massive stars are less than 10 million years old. Much larger than the open or galactic clusters of young stars  in the disk   of our Milky Way galaxy,   NGC 206  spans about 4,000 light-years. That's comparable in size to the giant stellar nurseries  NGC 604  in nearby spiral M33 and the  Tarantula Nebula  in the Large Magellanic Cloud.   Tomorrow's picture:  pixels in space",
-    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/Andromeda_closeupCruz4096.jpg",
-    "link": "https://science.nasa.gov/image-article/apod-2026-november-13-ngc-206-and-the-star-clouds-of-andromeda/",
-    "credit": " David Cruz ",
-    "alt": "Close up of NGC 206 in the Andromeda galaxy.",
+    "date": "2026-11-14",
+    "title": "Apollo 12 and Surveyor 3",
+    "explanation": " Explanation:  Put on your  red/blue glasses  and gaze across the western  Ocean of Storms  on the surface of the Moon. The 3D  anaglyph  shows Apollo 12 astronaut Pete Conrad visiting the Surveyor 3 spacecraft in November of 1969.  Surveyor 3 had landed at the site on the inside slope of a small crater about 2 1/2 years earlier in April of 1967. Visible on the horizon beyond the far crater wall, Apollo 12's  Lunar Module Intrepid  touched down less than 200 meters (650 feet) away, easy moonwalking distance from the robotic Surveyor spacecraft. This stereo image was carefully created from two separate pictures ( AS12-48-7133 ,  AS12-48-7134 ) captured on the  lunar surface . They depict the scene from only slightly different viewpoints, approximating the separation between human eyes.   Tomorrow's picture:  meteors through Orion",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/KF-ApAn48-7133-4.jpg?w=2181&h=2200&fit=clip&crop=faces,focalpoint",
+    "link": "https://science.nasa.gov/image-article/apod-2026-november-14-apollo-12-and-surveyor-3/",
+    "credit": " Apollo 12 ,  Alan Bean  - Stereo Image Copyright:  Kevin Frank ",
+    "alt": "Astronaut standing next to Surveyor 3 on the Moon.",
     "media_type": "image"
   },
-  "updated": "2026-11-13T09:03:59.502211+00:00"
+  "updated": "2026-11-14T08:34:10.364861+00:00"
 }
