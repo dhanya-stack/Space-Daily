@@ -1,6 +1,22 @@
 {
   "news": [
     {
+      "title": "APOD: 2026 November 16 – NGC 7129: Star Formation with Jets from Webb",
+      "link": "https://science.nasa.gov/image-article/apod-2026-november-16-ngc-7129-star-formation-with-jets-from-webb/",
+      "date": "Mon, 16 Nov 2026 05:05:00 +0000",
+      "description": "APOD Science APOD APOD: 2026 November 16 – NGC… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. NGC 7129: […]",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/missions/webb/science/2026/10/weic2620a.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "The Last Ice on Puncak Jaya",
+      "link": "https://science.nasa.gov/earth/earth-observatory/the-last-ice-on-puncak-jaya/",
+      "date": "Mon, 16 Nov 2026 05:00:00 +0000",
+      "description": "Ice near the summit of the Indonesian mountain peak has shrunk to scattered patches too small to flow like glaciers.",
+      "category": "NASA update",
+      "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/the-last-ice-on-puncak-jaya/puncakjaya_oli2_20261019_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
       "title": "Outbursts from a Massive Star",
       "link": "https://www.nasa.gov/image-article/outbursts-from-a-massive-star/",
       "date": "Fri, 13 Nov 2026 16:39:33 +0000",
@@ -47,22 +63,6 @@
       "description": "The U.S. Air Force Thunderbirds create a heart-shaped smoke trail during a flight maneuver near NASA’s Vehicle Assembly Building during the agency’s MAX POWER",
       "category": "NASA update",
       "image": "https://www.nasa.gov/wp-content/uploads/2026/11/55640210122-dae9d5e6b9-o.jpg"
-    },
-    {
-      "title": "NASA Ames Stars of the Month: November 2026",
-      "link": "https://www.nasa.gov/general/nasa-ames-stars-of-the-month-november-2026/",
-      "date": "Thu, 12 Nov 2026 17:54:32 +0000",
-      "description": "The NASA Ames Science Directorate recognizes the outstanding contributions of (pictured left to right) Alyssa Villanueva, Steve Howell, and Samuel LeBlanc.",
-      "category": "Discovery",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/som-november-2026-banner.jpg"
-    },
-    {
-      "title": "NASA’s Hubble Offers Cosmic Sampler of Targets for Roman",
-      "link": "https://science.nasa.gov/missions/hubble/nasas-hubble-offers-cosmic-sampler-of-targets-for-roman/",
-      "date": "Thu, 12 Nov 2026 13:18:40 +0000",
-      "description": "Hubble captured a gallery of gravitational lenses that lay the groundwork for follow-up observations by the Nancy Grace Roman Space Telescope.",
-      "category": "Discovery",
-      "image": "https://assets.science.nasa.gov/content/dam/science/missions/hubble/gravitational-lens/Hubble_lenscollage_P18085_ok4_noletters.tif/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     }
   ],
   "gallery": {
@@ -258,14 +258,14 @@
     ]
   },
   "apod": {
-    "date": "2026-11-15",
-    "title": "Leonid Meteors Through Orion",
-    "explanation": " Explanation:  Where will the next meteor appear? Even during a meteor shower, it is practically impossible to know. Therefore, a good way to enjoy a  meteor shower  is to find a place where you can sit comfortably and monitor a great expanse of dark sky. And it may be satisfying to share this experience with a friend. The meteor shower depicted was the 2022  Leonids  and the view is from  Hainan ,  China  looking out over the  South China Sea . Meteor streaks captured over a few hours were isolated and added to a foreground image recorded earlier.  Leonid meteor streaks  trace back to the  constellation of Leo  and were here seen  streaking across  the constellation of Orion. The bright red  planet Mars  appears near the top of the image. The  Leonids peak  in mid-November every year and so will  peak again  this week. Bonding over their love of astronomy, the two pictured meteor enthusiasts, shown celebrating their  common birthday  this month, were later married.   Tomorrow's picture:   open space ",
-    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/Leonids2022_Hongyang_2880.jpg?w=2880&h=3600&fit=clip&crop=faces,focalpoint",
-    "link": "https://science.nasa.gov/image-article/apod-2026-november-15-leonid-meteors-through-orion/",
-    "credit": " Luo Hongyang ",
-    "alt": "A composite showing many meteors trails streaking across a sky featuring the familiar constellation of Orion. In the foreground two people sit in adjoining chairs facing away from the camera, one holding a wand with a glowing star at the end. Please see the explanation for more detailed information.",
+    "date": "2026-11-16",
+    "title": "NGC 7129: Star Formation with Jets from Webb",
+    "explanation": " Explanation:  How do stars form? To help answer this question,  NASA  used the  James Webb Space Telescope  to take the  featured detailed image  of the star-forming region  NGC 7129  in  infrared light . Star formation progresses when  gravity  pulls together massive amounts of gas, but soon things can get complicated when previously formed stars emit powerful  jets  and  winds  -- and some then  explode . Opaque  dust  can form in the cool  atmospheres of stars  and, when dispersed, can obstruct  visible-light  images. Many stars can be seen to be forming in the  featured image , with the young stars on the left, in the gold-colored gas, typically being more mature than the young stars on the right -- in the red region.  Jets  and  wind s likely cause the filamentary nature of the red-colored gas. Studying stars at different stages of development  bolsters understanding  about what  physical processes  are most important and when.   Tomorrow's picture:  sky duel",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/missions/webb/science/2026/10/weic2620a.jpg?w=1280&h=1194&fit=clip&crop=faces,focalpoint",
+    "link": "https://science.nasa.gov/image-article/apod-2026-november-16-ngc-7129-star-formation-with-jets-from-webb/",
+    "credit": " NASA ,  ESA ,  CSA ,  STScI ,  JWST ;  Processing:  A. Pagan  ( STScI )",
+    "alt": "A young star cluster filled with many stars that display Webb’s unique eight-pronged diffraction pattern. At its center is a yellow star that sports the largest diffraction pattern. To its left, there is a region filled with yellow dust and gas that extends from the star to the left and the bottom, covering about two-thirds of the frame. The yellow region has several embedded blue stars of different sizes. The top third, which lies outside the yellow region, has a few bright protostars, within dense gray gas. These stars illuminate the gas, making it appear blue. A few red outflows from other protostars are visible above this grayish-blue region. To the right of the central star, there is a clumpy, flame-like plume of red dust and gas with protostars that emit a soft white light within. The plume is surrounded by more dense gray gas and dust. It is about one third the size of the yellow region. There are several background galaxies strewn throughout.",
     "media_type": "image"
   },
-  "updated": "2026-11-15T08:47:50.594253+00:00"
+  "updated": "2026-11-16T08:58:44.939522+00:00"
 }
