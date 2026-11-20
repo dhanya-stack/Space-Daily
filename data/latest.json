@@ -1,68 +1,68 @@
 {
   "news": [
     {
+      "title": "APOD: 2026 November 20 – V-G-R",
+      "link": "https://science.nasa.gov/image-article/apod-2026-november-20-v-g-r/",
+      "date": "Fri, 20 Nov 2026 05:05:00 +0000",
+      "description": "APOD Science APOD APOD: 2026 November… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. V-G-R Explanation: On November 1",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/IMG_4364N_Kyriazis.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "The Stormy Southwest Pacific",
+      "link": "https://science.nasa.gov/earth/earth-observatory/the-stormy-southwest-pacific/",
+      "date": "Fri, 20 Nov 2026 05:01:00 +0000",
+      "description": "Tropical Cyclone Xavier launched the basin’s storm season with a bang.",
+      "category": "NASA update",
+      "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/the-stormy-southwest-pacific--/cyclonexavier_amo_20261116_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "Challenge: Public Input on Life and the World in 2075",
+      "link": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/challenge-public-input-on-life-and-the-world-in-2075/",
+      "date": "Thu, 19 Nov 2026 19:34:20 +0000",
+      "description": "NASA’s Transformational Tools and Technologies (TTT) is gathering public perspectives on life today and how the world may change by 2075. This challenge asks",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/ttt-publicinputonlife-2026.png"
+    },
+    {
+      "title": "NASA Science Data Powers New Method to Discover Hard-to-Find Pulsars",
+      "link": "https://science.nasa.gov/open-science/fermi-data-pulsar-discovery/",
+      "date": "Thu, 19 Nov 2026 15:33:55 +0000",
+      "description": "Open data from NASA's Fermi mission helped an international team of scientists develop a method for finding pulsars about a million times faster than before.",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/cds/general/images/2023/05/screenshot-2023-06-06-at-2.57.05-pm.png/jcr:content/renditions/cq5dam.web.1280.1280.png"
+    },
+    {
+      "title": "Lake Pelku",
+      "link": "https://www.nasa.gov/image-article/lake-pelku/",
+      "date": "Thu, 19 Nov 2026 15:32:39 +0000",
+      "description": "An astronaut on the International Space Station captured this photograph of Lake Pelku (near center) as the station orbited above Asia.",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/iss075e0267074orig.jpg"
+    },
+    {
+      "title": "NASA Conducts Latest RS-25 Engine Test in Support of Future Artemis Missions",
+      "link": "https://www.nasa.gov/image-article/latest-rs-25-engine-test-in-support-of-future-artemis-missions/",
+      "date": "Thu, 19 Nov 2026 14:44:39 +0000",
+      "description": "NASA tested RS-25 engine No. 10001 on Nov. 18 on the Fred Haise Test Stand at NASA’s Stennis Space Center near Bay St. Louis, Mississippi.",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/ssc-20261118-s01364.jpg"
+    },
+    {
+      "title": "NASA’s Voyager 1 Makes History Reaching One Light-Day From Earth",
+      "link": "https://www.nasa.gov/news-release/nasas-voyager-1-makes-history-reaching-one-light-day-from-earth/",
+      "date": "Thu, 19 Nov 2026 14:31:15 +0000",
+      "description": "NASA’s Voyager 1 probe, humanity’s farthest-flying spacecraft, has reached one light-day from Earth, after more than 49 years of constant travel. A light-day",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/voyager-1-light-day-horizontal.png"
+    },
+    {
       "title": "APOD: 2026 November 19 – The Horsehead and Flame Nebulas",
       "link": "https://science.nasa.gov/image-article/apod-2026-november-19-the-horsehead-and-flame-nebulas/",
       "date": "Thu, 19 Nov 2026 05:05:00 +0000",
-      "description": "APOD Science APOD APOD: 2026 November 19 – The… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. OriginalAnnotated The [",
+      "description": "APODScienceAPODAPOD: 2026 November 19 – The…Today’s APODArchiveSubmissionsIndexSearchCalendarRSSEducationAboutDiscuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. OriginalAnnotated The Horsehead and ",
       "category": "Discovery",
       "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/Horsehead_Nebula_Killion.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
-    },
-    {
-      "title": "El Niño Rains Paint the Atacama",
-      "link": "https://science.nasa.gov/earth/earth-observatory/el-nino-rains-paint-the-atacama/",
-      "date": "Thu, 19 Nov 2026 05:00:00 +0000",
-      "description": "Winter precipitation helped wake dormant seeds in northern Chile, carpeting the desert with what may be the region’s most extensive flowering of the satellite era.",
-      "category": "NASA update",
-      "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/el-ni%C3%B1o-rains-paint-the-atacama/atacamabloom_oli2_20261024_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
-    },
-    {
-      "title": "NASA Sets Coverage for Northrop Grumman CRS-25 Launch, Prelaunch",
-      "link": "https://www.nasa.gov/news-release/nasa-sets-coverage-for-northrop-grumman-crs-25-launch-prelaunch/",
-      "date": "Wed, 18 Nov 2026 22:19:17 +0000",
-      "description": "Filled with approximately 11,000 pounds of cargo, the Northrop Grumman Cygnus XL spacecraft, aboard a SpaceX Falcon 9 rocket, will launch from Space Launch",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/ksc-20260411-ph-nrg01-0009large.jpg"
-    },
-    {
-      "title": "MAF EAP – Holidays – How to manage the BAH HUMBUG that tries to sneak in",
-      "link": "https://www.nasa.gov/centers-and-facilities/michoud/maf-eap/maf-eap-holidays-how-to-manage-the-bah-humbug-that-tries-to-sneak-in/",
-      "date": "Wed, 18 Nov 2026 18:58:27 +0000",
-      "description": "Holidays are often a fun break during a busy year – a long weekend here and there is an event many of us can get behind. However, when a short holiday",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/mafeap-holidays.jpeg"
-    },
-    {
-      "title": "NASA Announces Mid-Power Electric Rocket Challenge for US Companies",
-      "link": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/nasa-announces-mid-power-electric-rocket-challenge-for-us-companies/",
-      "date": "Wed, 18 Nov 2026 18:12:32 +0000",
-      "description": "NASA launched a new competition inviting U.S. companies to produce prototypes of mid-power Hall effect thrusters – a type of electric propulsion system",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2023/03/hall-thruster.jpg"
-    },
-    {
-      "title": "Empire State Building Goes Gold for Voyager",
-      "link": "https://www.nasa.gov/image-article/empire-state-building-goes-gold-for-voyager/",
-      "date": "Wed, 18 Nov 2026 17:50:26 +0000",
-      "description": "The Empire State Building is seen illuminated in gold to celebrate NASA's Voyager 1 spacecraft as it was about to pass one light-day away from Earth, a",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/55658604092-c6f0765cc5-o.jpg"
-    },
-    {
-      "title": "What Is the Moon Base?",
-      "link": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-the-moon-base/",
-      "date": "Wed, 18 Nov 2026 17:36:03 +0000",
-      "description": "NASA is returning astronauts to the Moon – and this time they will spend more time on the lunar surface. The Moon Base is humanity’s first lunar outpost. It",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/stmd-exteriorlunarbase-hdlandscapeversion-2026-0521.png"
-    },
-    {
-      "title": "Thank You for Doing NASA Science!",
-      "link": "https://science.nasa.gov/get-involved/citizen-science/thank-you-for-doing-nasa-science/",
-      "date": "Wed, 18 Nov 2026 17:32:52 +0000",
-      "description": "Chihoko Cullens, principal investigator (PI) of the Space Cloud Watch project, said: “Thank you to Pirjo Koski, Huub Eggen, and Brian Scott! Pirjo posts",
-      "category": "Discovery",
-      "image": "https://assets.science.nasa.gov/content/dam/science/cds/citizen-science/highlights/2026/QuestScienceCenter_OWWL_CitSci.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     }
   ],
   "gallery": {
@@ -258,14 +258,14 @@
     ]
   },
   "apod": {
-    "date": "2026-11-19",
-    "title": "The Horsehead and Flame Nebulas",
-    "explanation": " Explanation:  Today's  image  could have been a painting. But what do these colors mean? The brightest star, left of the center, is blue  Alnitak  (the Girdle):  a triple star system  best known for being the easternmost star in  Orion's Belt . The instantly recognizable shape of a dark horse's head at the center is the aptly named  Horsehead Nebula . It is about five light-years tall and lies approximately 1,500 light-years away. It is made of  dust and gas  that obscure the red glow behind it, which is caused by hydrogen gas being ionized by the bright star  Sigma Orionis  at the top. The orange nebula with dark filaments on the left is the  Flame Nebula . Closer to the Horsehead, the blue  reflection nebula   NGC 2023  is actively forming stars. The data for this \"painting\" were collected for almost six hours at the  Utah   Desert Remote Observatories , but the equipment was  remotely controlled  by the astrophotographer from his home, over 2,000 km away in  Illinois .   Tomorrow's picture:  what's next?",
-    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/Horsehead_Nebula_Killion.jpg?w=6000&h=4800&fit=clip",
-    "link": "https://science.nasa.gov/image-article/apod-2026-november-19-the-horsehead-and-flame-nebulas/",
-    "credit": " Mark E. Killion ",
-    "alt": "Bright stars and colorful nebulas shine on a dark field of stars. A small, dark nebula near the center looks like a horse's head.",
+    "date": "2026-11-20",
+    "title": "V-G-R",
+    "explanation": " Explanation:  On November 17, fans of interstellar spaceflight around  planet Earth  were  invited to shine a message  into the night sky. Traced by a flashlight beam switched on and off, the dashes and dots of a Morse code message captured in this time exposure from the Emirates Astronomical Observatory, are read V-G-R. That's a call sign for the  Voyager 1 spacecraft  currently in interstellar space some 26 billion kilometers away. How long did it take the message to reach humanity's most distant  interstellar spacecraft ? Traveling at the speed of light,  the answer is one day . In fact, the Voyager 1 spacecraft was confirmed to reach its  one light-day distance milestone  on November 18, at 10:16:07 UTC, nearly 50 years after launch in 1977. For extra credit, fans of math can calculate that at one light-day per 50 years, Voyager 1 will reach its one light-year (365 light-days) distance milestone in about 18,250 years.   Tomorrow's picture:  pixels in space",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/IMG_4364N_Kyriazis.jpg?w=3898&h=4724&fit=clip",
+    "link": "https://science.nasa.gov/image-article/apod-2026-november-20-v-g-r/",
+    "credit": " Apostolos Kyriazis ",
+    "alt": "Time exposure of a flashlight beam tracing out Morse code for the letters V - G - R.",
     "media_type": "image"
   },
-  "updated": "2026-11-19T09:51:18.948093+00:00"
+  "updated": "2026-11-20T09:38:24.215695+00:00"
 }
