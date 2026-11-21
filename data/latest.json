@@ -1,10 +1,50 @@
 {
   "news": [
     {
+      "title": "APOD: 2026 November 21 – Voyager’s Neptune",
+      "link": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune/",
+      "date": "Sat, 21 Nov 2026 05:05:00 +0000",
+      "description": "APOD Science APOD APOD: 2026 November 21 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Voyager’s Neptune Explanati",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/Neptune-South-Pole-Voyager-2_2327x1670.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "Curiosity Spots Drifting Twilight Clouds",
+      "link": "https://science.nasa.gov/photojournal/curiosity-spots-drifting-twilight-clouds/",
+      "date": "Fri, 20 Nov 2026 22:27:05 +0000",
+      "description": "NASA’s Curiosity Mars rover captured these drifting clouds on Oct. 31, 2026, the 5,061st Martian day, or sol, of the mission. The rover uses its navigation",
+      "category": "NASA update",
+      "image": "https://assets.science.nasa.gov/content/dam/science/psd/photojournal/pia/pia26805/PIA26805.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "New NASA Seed Funding Primes Small Businesses for Innovation",
+      "link": "https://www.nasa.gov/directorates/rtmd/new-nasa-seed-funding-primes-small-businesses-for-innovation/",
+      "date": "Fri, 20 Nov 2026 20:46:14 +0000",
+      "description": "Awards to small businesses around the country are addressing some of NASA’s most crucial technology needs for exploration of the Moon and Mars while fueling",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/elementium-illustration.png"
+    },
+    {
+      "title": "NASA Honor Awards Ceremony Recognizes Employees at Stennis Space Center",
+      "link": "https://www.nasa.gov/centers-and-facilities/stennis/honor-awards-ceremony-at-stennis/",
+      "date": "Fri, 20 Nov 2026 16:27:46 +0000",
+      "description": "Employees contributing to NASA’s mission at the agency’s Stennis Space Center near Bay St. Louis, Mississippi, were recognized during the center’s Honor",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/dsc-6269-stennis-honor-awards-1.jpg"
+    },
+    {
+      "title": "NASA’s Curiosity Mars Rover Collects Samples",
+      "link": "https://www.nasa.gov/image-article/nasas-curiosity-mars-rover-collects-samples/",
+      "date": "Fri, 20 Nov 2026 15:53:24 +0000",
+      "description": "This Nov. 16 collage shows 49 drill holes captured by NASA’s Curiosity Mars rover as of November 2026. Each hole represents a sample collected from rocks on",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/pia26804.jpg"
+    },
+    {
       "title": "APOD: 2026 November 20 – V-G-R",
       "link": "https://science.nasa.gov/image-article/apod-2026-november-20-v-g-r/",
       "date": "Fri, 20 Nov 2026 05:05:00 +0000",
-      "description": "APOD Science APOD APOD: 2026 November… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. V-G-R Explanation: On November 1",
+      "description": "APODScienceAPODAPOD: 2026 November…Today’s APODArchiveSubmissionsIndexSearchCalendarRSSEducationAboutDiscuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. V-G-R Explanation: On November 17, fans of in",
       "category": "Discovery",
       "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/IMG_4364N_Kyriazis.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     },
@@ -23,46 +63,6 @@
       "description": "NASA’s Transformational Tools and Technologies (TTT) is gathering public perspectives on life today and how the world may change by 2075. This challenge asks",
       "category": "NASA update",
       "image": "https://www.nasa.gov/wp-content/uploads/2026/11/ttt-publicinputonlife-2026.png"
-    },
-    {
-      "title": "NASA Science Data Powers New Method to Discover Hard-to-Find Pulsars",
-      "link": "https://science.nasa.gov/open-science/fermi-data-pulsar-discovery/",
-      "date": "Thu, 19 Nov 2026 15:33:55 +0000",
-      "description": "Open data from NASA's Fermi mission helped an international team of scientists develop a method for finding pulsars about a million times faster than before.",
-      "category": "Discovery",
-      "image": "https://assets.science.nasa.gov/content/dam/science/cds/general/images/2023/05/screenshot-2023-06-06-at-2.57.05-pm.png/jcr:content/renditions/cq5dam.web.1280.1280.png"
-    },
-    {
-      "title": "Lake Pelku",
-      "link": "https://www.nasa.gov/image-article/lake-pelku/",
-      "date": "Thu, 19 Nov 2026 15:32:39 +0000",
-      "description": "An astronaut on the International Space Station captured this photograph of Lake Pelku (near center) as the station orbited above Asia.",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/iss075e0267074orig.jpg"
-    },
-    {
-      "title": "NASA Conducts Latest RS-25 Engine Test in Support of Future Artemis Missions",
-      "link": "https://www.nasa.gov/image-article/latest-rs-25-engine-test-in-support-of-future-artemis-missions/",
-      "date": "Thu, 19 Nov 2026 14:44:39 +0000",
-      "description": "NASA tested RS-25 engine No. 10001 on Nov. 18 on the Fred Haise Test Stand at NASA’s Stennis Space Center near Bay St. Louis, Mississippi.",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/ssc-20261118-s01364.jpg"
-    },
-    {
-      "title": "NASA’s Voyager 1 Makes History Reaching One Light-Day From Earth",
-      "link": "https://www.nasa.gov/news-release/nasas-voyager-1-makes-history-reaching-one-light-day-from-earth/",
-      "date": "Thu, 19 Nov 2026 14:31:15 +0000",
-      "description": "NASA’s Voyager 1 probe, humanity’s farthest-flying spacecraft, has reached one light-day from Earth, after more than 49 years of constant travel. A light-day",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/voyager-1-light-day-horizontal.png"
-    },
-    {
-      "title": "APOD: 2026 November 19 – The Horsehead and Flame Nebulas",
-      "link": "https://science.nasa.gov/image-article/apod-2026-november-19-the-horsehead-and-flame-nebulas/",
-      "date": "Thu, 19 Nov 2026 05:05:00 +0000",
-      "description": "APODScienceAPODAPOD: 2026 November 19 – The…Today’s APODArchiveSubmissionsIndexSearchCalendarRSSEducationAboutDiscuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. OriginalAnnotated The Horsehead and ",
-      "category": "Discovery",
-      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/Horsehead_Nebula_Killion.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     }
   ],
   "gallery": {
@@ -118,18 +118,6 @@
         "credit": "NASA/GSFC/Arizona State University"
       },
       {
-        "title": "Moon to Mars Multidisciplinary Science",
-        "image": "https://images-assets.nasa.gov/image/Moon%20to%20Mars%20Multidisciplinary%20Science/Moon%20to%20Mars%20Multidisciplinary%20Science~thumb.jpg",
-        "link": "https://images.nasa.gov/details/Moon%20to%20Mars%20Multidisciplinary%20Science/",
-        "credit": "HQ"
-      },
-      {
-        "title": "Moon to Mars Transportation and Habitation",
-        "image": "https://images-assets.nasa.gov/image/Moon%20to%20Mars%20Transportation%20and%20Habitation/Moon%20to%20Mars%20Transportation%20and%20Habitation~thumb.jpg",
-        "link": "https://images.nasa.gov/details/Moon%20to%20Mars%20Transportation%20and%20Habitation/",
-        "credit": "HQ"
-      },
-      {
         "title": "Moon to Mars Operations",
         "image": "https://images-assets.nasa.gov/image/Moon%20to%20Mars%20Operations/Moon%20to%20Mars%20Operations~thumb.jpg",
         "link": "https://images.nasa.gov/details/Moon%20to%20Mars%20Operations/",
@@ -139,6 +127,18 @@
         "title": "Moon to Mars Infrastructure",
         "image": "https://images-assets.nasa.gov/image/Moon%20to%20Mars%20Infrastructure/Moon%20to%20Mars%20Infrastructure~thumb.jpg",
         "link": "https://images.nasa.gov/details/Moon%20to%20Mars%20Infrastructure/",
+        "credit": "HQ"
+      },
+      {
+        "title": "Moon to Mars Transportation and Habitation",
+        "image": "https://images-assets.nasa.gov/image/Moon%20to%20Mars%20Transportation%20and%20Habitation/Moon%20to%20Mars%20Transportation%20and%20Habitation~thumb.jpg",
+        "link": "https://images.nasa.gov/details/Moon%20to%20Mars%20Transportation%20and%20Habitation/",
+        "credit": "HQ"
+      },
+      {
+        "title": "Moon to Mars Multidisciplinary Science",
+        "image": "https://images-assets.nasa.gov/image/Moon%20to%20Mars%20Multidisciplinary%20Science/Moon%20to%20Mars%20Multidisciplinary%20Science~thumb.jpg",
+        "link": "https://images.nasa.gov/details/Moon%20to%20Mars%20Multidisciplinary%20Science/",
         "credit": "HQ"
       }
     ],
@@ -150,34 +150,34 @@
         "credit": "NASA/JPL"
       },
       {
-        "title": "Waves on Saturn",
-        "image": "https://images-assets.nasa.gov/image/PIA06655/PIA06655~thumb.jpg",
-        "link": "https://images.nasa.gov/details/PIA06655/",
+        "title": "Saturn Streamers",
+        "image": "https://images-assets.nasa.gov/image/PIA08206/PIA08206~thumb.jpg",
+        "link": "https://images.nasa.gov/details/PIA08206/",
         "credit": "NASA/JPL/Space Science Institute"
       },
       {
-        "title": "Bound to Saturn",
-        "image": "https://images-assets.nasa.gov/image/PIA06586/PIA06586~thumb.jpg",
-        "link": "https://images.nasa.gov/details/PIA06586/",
+        "title": "Serenity of Saturn",
+        "image": "https://images-assets.nasa.gov/image/PIA06606/PIA06606~thumb.jpg",
+        "link": "https://images.nasa.gov/details/PIA06606/",
         "credit": "NASA/JPL/Space Science Institute"
       },
       {
-        "title": "Splendid Saturn",
-        "image": "https://images-assets.nasa.gov/image/PIA06594/PIA06594~thumb.jpg",
-        "link": "https://images.nasa.gov/details/PIA06594/",
+        "title": "Saturn in Red",
+        "image": "https://images-assets.nasa.gov/image/PIA05437/PIA05437~thumb.jpg",
+        "link": "https://images.nasa.gov/details/PIA05437/",
         "credit": "NASA/JPL/Space Science Institute"
       },
       {
-        "title": "Shadowing Saturn",
-        "image": "https://images-assets.nasa.gov/image/PIA08392/PIA08392~thumb.jpg",
-        "link": "https://images.nasa.gov/details/PIA08392/",
+        "title": "Mixing Saturn",
+        "image": "https://images-assets.nasa.gov/image/PIA06580/PIA06580~thumb.jpg",
+        "link": "https://images.nasa.gov/details/PIA06580/",
         "credit": "NASA/JPL/Space Science Institute"
       },
       {
-        "title": "Saturn Waves",
-        "image": "https://images-assets.nasa.gov/image/PIA06500/PIA06500~thumb.jpg",
-        "link": "https://images.nasa.gov/details/PIA06500/",
-        "credit": "NASA/JPL/Space Science Institute"
+        "title": "Bold Saturn",
+        "image": "https://images-assets.nasa.gov/image/PIA06423/PIA06423~thumb.jpg",
+        "link": "https://images.nasa.gov/details/PIA06423/",
+        "credit": "NASA/JPL"
       }
     ],
     "nebula": [
@@ -245,27 +245,27 @@
       },
       {
         "title": "Dawn Spacecraft Processing",
-        "image": "https://images-assets.nasa.gov/image/KSC-07PD-0859/KSC-07PD-0859~thumb.jpg",
-        "link": "https://images.nasa.gov/details/KSC-07PD-0859/",
+        "image": "https://images-assets.nasa.gov/image/KSC-07PD-0865/KSC-07PD-0865~thumb.jpg",
+        "link": "https://images.nasa.gov/details/KSC-07PD-0865/",
         "credit": "KSC"
       },
       {
         "title": "Dawn Spacecraft Processing",
-        "image": "https://images-assets.nasa.gov/image/KSC-07PD-0861/KSC-07PD-0861~thumb.jpg",
-        "link": "https://images.nasa.gov/details/KSC-07PD-0861/",
+        "image": "https://images-assets.nasa.gov/image/KSC-07PD-0858/KSC-07PD-0858~thumb.jpg",
+        "link": "https://images.nasa.gov/details/KSC-07PD-0858/",
         "credit": "KSC"
       }
     ]
   },
   "apod": {
-    "date": "2026-11-20",
-    "title": "V-G-R",
-    "explanation": " Explanation:  On November 17, fans of interstellar spaceflight around  planet Earth  were  invited to shine a message  into the night sky. Traced by a flashlight beam switched on and off, the dashes and dots of a Morse code message captured in this time exposure from the Emirates Astronomical Observatory, are read V-G-R. That's a call sign for the  Voyager 1 spacecraft  currently in interstellar space some 26 billion kilometers away. How long did it take the message to reach humanity's most distant  interstellar spacecraft ? Traveling at the speed of light,  the answer is one day . In fact, the Voyager 1 spacecraft was confirmed to reach its  one light-day distance milestone  on November 18, at 10:16:07 UTC, nearly 50 years after launch in 1977. For extra credit, fans of math can calculate that at one light-day per 50 years, Voyager 1 will reach its one light-year (365 light-days) distance milestone in about 18,250 years.   Tomorrow's picture:  pixels in space",
-    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/IMG_4364N_Kyriazis.jpg?w=3898&h=4724&fit=clip",
-    "link": "https://science.nasa.gov/image-article/apod-2026-november-20-v-g-r/",
-    "credit": " Apostolos Kyriazis ",
-    "alt": "Time exposure of a flashlight beam tracing out Morse code for the letters V - G - R.",
+    "date": "2026-11-21",
+    "title": "Voyager's Neptune",
+    "explanation": " Explanation:  Cruising through the outer solar system, the Voyager 2 spacecraft made its closest  approach to Neptune  on August 25, 1989, the only spacecraft to visit the most distant  ice giant planet . Based on the images recorded during its close encounter and in the following days,  this inspired composited scene  covers the dim outer planet, largest  moon Triton , and faint system of rings. From just beyond Neptune's orbit, the interplanetary perspective looks back toward the Sun, capturing the planet and Triton as thin  sunlit crescents .  Cirrus clouds  and a dark band circle Neptune's south polar region, with a cloudy vortex above the pole  itself . Parts of the  very faint ring system  along with the three bright ring arcs were first imaged by Voyager during the fly-by, though the faintest segments are modeled in this composited picture. Spanning 7.5 degrees, the background starfield is composed from sky survey data centered on the constellation Camelopardalis, corresponding to the outbound Voyager's view of the  magnificent Neptunian system . Still cruising in 2026, the Voyager 2 spacecraft is  now in interstellar space .   Tomorrow's picture:  Sunday's Childe",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/Neptune-South-Pole-Voyager-2_2327x1670.jpg?w=2327&h=1670&fit=clip",
+    "link": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune/",
+    "credit": "Assembly/Processing -  Rolf Olsen , Data -  Voyager 2 ,  NASA Planetary Data System ",
+    "alt": "Composite Voyager image of Neptune in a crescent phase.",
     "media_type": "image"
   },
-  "updated": "2026-11-20T09:38:24.215695+00:00"
+  "updated": "2026-11-21T09:10:22.201424+00:00"
 }
