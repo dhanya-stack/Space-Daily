@@ -1,10 +1,34 @@
 {
   "news": [
     {
+      "title": "APOD: 2026 November 23 – The Emergence of Dark Nebula Lynds 1251",
+      "link": "https://science.nasa.gov/image-article/apod-2026-november-23-the-emergence-of-dark-nebula-lynds-1251/",
+      "date": "Mon, 23 Nov 2026 05:05:00 +0000",
+      "description": "APOD Science APOD APOD: 2026 November 23 – The… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. The Emergence […]",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/Ldn1251Comparison_Cruz_2160.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "Laser Focus at the Top of the World",
+      "link": "https://science.nasa.gov/earth/earth-observatory/laser-focus-at-the-top-of-the-world/",
+      "date": "Mon, 23 Nov 2026 05:01:00 +0000",
+      "description": "A next-generation geodetic instrument developed by NASA, part of a network that helps measure satellites’ orbits and the planet’s shape, has debuted in Svalbard, Norway.",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/laser-focus-at-the-top-of-the-world/svalbardzm_oli2_20260730_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "65 Years of Human Spaceflight at NASA Johnson",
+      "link": "https://www.nasa.gov/centers-and-facilities/johnson/65-years-of-human-spaceflight-at-nasa-johnson/",
+      "date": "Sun, 22 Nov 2026 19:13:25 +0000",
+      "description": "What began as a framework of modules has evolved into a springboard for international cooperation, advanced scientific research and technology demonstrations,",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/jsc2026e426920.jpg"
+    },
+    {
       "title": "APOD: 2026 November 22 – Swirls and Colors on Jupiter from Juno",
       "link": "https://science.nasa.gov/image-article/apod-2026-november-22-swirls-and-colors-on-jupiter-from-juno/",
       "date": "Sun, 22 Nov 2026 05:05:00 +0000",
-      "description": "APOD Science APOD APOD: 2026 November 22 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Swirls and Colors […]",
+      "description": "APODScienceAPODAPOD: 2026 November 22 –…Today’s APODArchiveSubmissionsIndexSearchCalendarRSSEducationAboutDiscuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Swirls and Colors on Jupiter from Juno E",
       "category": "Discovery",
       "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/JupiterSwirls_JunoBrealey_3709.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     },
@@ -12,7 +36,7 @@
       "title": "APOD: 2026 November 21 – Voyager’s Neptune",
       "link": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune/",
       "date": "Sat, 21 Nov 2026 05:05:00 +0000",
-      "description": "APOD Science APOD APOD: 2026 November 21 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Voyager’s Neptune Explanati",
+      "description": "APODScienceAPODAPOD: 2026 November 21 –…Today’s APODArchiveSubmissionsIndexSearchCalendarRSSEducationAboutDiscuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Voyager’s Neptune Explanation: Cruising ",
       "category": "Discovery",
       "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/Neptune-South-Pole-Voyager-2_2327x1670.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     },
@@ -39,30 +63,6 @@
       "description": "Employees contributing to NASA’s mission at the agency’s Stennis Space Center near Bay St. Louis, Mississippi, were recognized during the center’s Honor",
       "category": "NASA update",
       "image": "https://www.nasa.gov/wp-content/uploads/2026/11/dsc-6269-stennis-honor-awards-1.jpg"
-    },
-    {
-      "title": "NASA’s Curiosity Mars Rover Collects Samples",
-      "link": "https://www.nasa.gov/image-article/nasas-curiosity-mars-rover-collects-samples/",
-      "date": "Fri, 20 Nov 2026 15:53:24 +0000",
-      "description": "This Nov. 16 collage shows 49 drill holes captured by NASA’s Curiosity Mars rover as of November 2026. Each hole represents a sample collected from rocks on",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/pia26804.jpg"
-    },
-    {
-      "title": "APOD: 2026 November 20 – V-G-R",
-      "link": "https://science.nasa.gov/image-article/apod-2026-november-20-v-g-r/",
-      "date": "Fri, 20 Nov 2026 05:05:00 +0000",
-      "description": "APODScienceAPODAPOD: 2026 November…Today’s APODArchiveSubmissionsIndexSearchCalendarRSSEducationAboutDiscuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. V-G-R Explanation: On November 17, fans of in",
-      "category": "Discovery",
-      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/IMG_4364N_Kyriazis.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
-    },
-    {
-      "title": "The Stormy Southwest Pacific",
-      "link": "https://science.nasa.gov/earth/earth-observatory/the-stormy-southwest-pacific/",
-      "date": "Fri, 20 Nov 2026 05:01:00 +0000",
-      "description": "Tropical Cyclone Xavier launched the basin’s storm season with a bang.",
-      "category": "NASA update",
-      "image": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/iotd/2026/the-stormy-southwest-pacific--/cyclonexavier_amo_20261116_th.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
     }
   ],
   "gallery": {
@@ -258,14 +258,14 @@
     ]
   },
   "apod": {
-    "date": "2026-11-22",
-    "title": "Swirls and Colors on Jupiter from Juno",
-    "explanation": " Explanation:  What creates the colors in Jupiter's clouds? No one is sure. The thick atmosphere of  Jupiter  is mostly  hydrogen  and  helium , elements which are colorless at the low temperatures of the  Jovian cloud tops . Which trace molecules provide the colors remains a  topic of research , although small amounts of  ammonium hydrosulfide  are  one leading candidate . What is clear from the  featured color-enhanced image  -- and many similar images -- is that lighter clouds are typically higher up than darker ones. Pictured,  light clouds swirl  around  reddish regions  toward the lower right, while they appear to cover over some darker domains on the upper right. The featured image was taken by the robotic  Juno spacecraft  in 2018 during its  14th low pass over Jupiter .  Juno  continues in its looping elliptical orbit,  swooping near the huge planet  every 33 days and exploring a slightly different sector each time around.   Tomorrow's picture:  emerging darkness",
-    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/JupiterSwirls_JunoBrealey_3709.jpg?w=3709&h=2772&fit=clip",
-    "link": "https://science.nasa.gov/image-article/apod-2026-november-22-swirls-and-colors-on-jupiter-from-juno/",
-    "credit": " NASA ,  Juno ,  SwRI ,  MSSS ;  Processing &  License :   Matt Brealey ,  Seán Doran ",
-    "alt": "A busy field of colorful clouds is pictured showing much interesting structure including many cloud swirls.  Please see the explanation for more detailed information.",
+    "date": "2026-11-23",
+    "title": "The Emergence of Dark Nebula Lynds 1251",
+    "explanation": " Explanation:  If you stare into space for a long time, what might you see? At first, you might only see the usual  brightest stars , but if your eyes (or camera) could continue to collect  light , you would see increasingly more. In the direction of the  featured image , after only a few minutes, you would begin to notice some  regions without stars . As your staring continued, the  dark region  would become better defined, and after a full 20 hours, you would notice a  strange dark structure . To celebrate, you use  digital processing  to brighten the image and enhance the colors. At the end, you might have an excellent image of  Lynds 1251  (LDN 1251), a  star -forming region laced with opaque brown-appearing interstellar dust. Also known as the Rotten Fish Nebula, LDN 1251 is home not only to young stars and  dust , but also, your  long staring  indicates, energetic  shock waves , fast  stellar winds , and powerfully beamed  jets .   Tomorrow's picture:  galaxies ringing",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/Ldn1251Comparison_Cruz_2160.jpg?w=2160&h=2700&fit=clip",
+    "link": "https://science.nasa.gov/image-article/apod-2026-november-23-the-emergence-of-dark-nebula-lynds-1251/",
+    "credit": " David Cruz ",
+    "alt": "Six panels of images, all of the same spot in the sky taken at different points in a long exposure of a faint object. The top left panel is the earliest image, taken 4 minutes into the exposure. There is a very faint wisp of dark material slightly blocking the background smattering of stars. With each successive panel, the dark wisp becomes more and more pronounced. The final image in the bottom right contains all the light collected over 20 hours. The shape and details of the dark nebula are captured in striking detail. It looks like a cloud of smoke drifting across the sky.",
     "media_type": "image"
   },
-  "updated": "2026-11-22T09:19:15.551499+00:00"
+  "updated": "2026-11-23T10:16:10.874805+00:00"
 }
