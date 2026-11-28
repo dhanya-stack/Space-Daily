@@ -1,6 +1,30 @@
 {
   "news": [
     {
+      "title": "APOD: 2026 November 28 – Apollo 17 VIP Site Anaglyph",
+      "link": "https://science.nasa.gov/image-article/apod-2026-november-28-apollo-17-vip-site-anaglyph/",
+      "date": "Sat, 28 Nov 2026 05:05:00 +0000",
+      "description": "APOD Science APOD APOD: 2026 November 28 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Apollo 17 VIP […]",
+      "category": "Discovery",
+      "image": "https://assets.science.nasa.gov/content/dam/science/cds/apod/apod/2026/november/a17anaglyph_vanMeijgaarden_f.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+    },
+    {
+      "title": "Artemis III Astronaut Andre Douglas Visits VAB",
+      "link": "https://www.nasa.gov/image-article/artemis-iii-astronaut-andre-douglas-visits-vab/",
+      "date": "Fri, 27 Nov 2026 15:01:00 +0000",
+      "description": "NASA astronaut Andre Douglas, Artemis III mission specialist, stands inside an RS-25 engine test article during a visit to the Vehicle Assembly Building at",
+      "category": "NASA update",
+      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/ksc-20261117-ph-kls02-0020orig.jpg"
+    },
+    {
+      "title": "NASA’s NG-25 Mission to Launch Pioneering Space Crops Research",
+      "link": "https://science.nasa.gov/science-research/biological-physical-sciences/nasas-ng-25-mission-to-launch-pioneering-space-crops-research/",
+      "date": "Fri, 27 Nov 2026 14:22:00 +0000",
+      "description": "NASA experiments, including a first-of-its-kind space crop production system, will travel to the International Space Station aboard Northrop Grumman’s 25th Commercial Resupply Services mission for the agency.",
+      "category": "NASA update",
+      "image": "https://images-assets.nasa.gov/image/jsc2026e415098/jsc2026e415098~large.jpg"
+    },
+    {
       "title": "APOD: 2026 November 27 – The Moon Watchers",
       "link": "https://science.nasa.gov/image-article/apod-2026-november-27-the-moon-watchers/",
       "date": "Fri, 27 Nov 2026 05:05:00 +0000",
@@ -39,30 +63,6 @@
       "description": "How NASA works with small businesses is evolving, and as a result, the agency is strengthening the domestic aerospace industrial base to support future",
       "category": "NASA update",
       "image": "https://www.nasa.gov/wp-content/uploads/2026/11/lrs00622.jpg"
-    },
-    {
-      "title": "NASA Eyes Crop Candidates for Future Menus",
-      "link": "https://science.nasa.gov/directorates/smd/nasa-eyes-crop-candidates-for-future-menus/",
-      "date": "Wed, 25 Nov 2026 17:53:42 +0000",
-      "description": "A new investigation from NASA’s Biological and Physical Sciences Division will be the first-of-its-kind prototype growth chamber that will provide critical insights for developing crop production systems that could grow crops like these for future Moon Base habitats and Mars missions.",
-      "category": "Discovery",
-      "image": "https://assets.science.nasa.gov/content/dam/science/bps/space-crops/SpaceCrops_thanksgiving.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
-    },
-    {
-      "title": "Childhood, Career Come Full Circle for Budget Analyst at NASA Goddard",
-      "link": "https://www.nasa.gov/centers-and-facilities/goddard/childhood-career-come-full-circle-for-budget-analyst-at-nasa-goddard/",
-      "date": "Wed, 25 Nov 2026 16:47:29 +0000",
-      "description": "Conversations about NASA were the norm around the dinner table during Ashley Knight’s childhood. Her parents worked at NASA’s Goddard Space Flight Center in",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/ashley-knight-and-space-shuttle-atlantis.jpg"
-    },
-    {
-      "title": "Eye of the Sahara",
-      "link": "https://www.nasa.gov/image-article/eye-of-the-sahara/",
-      "date": "Wed, 25 Nov 2026 16:21:04 +0000",
-      "description": "The Richat Structure, also known as the \"Eye of the Sahara,\" is seen from the International Space Station as it orbited above on Nov. 14, 2026. It is an",
-      "category": "NASA update",
-      "image": "https://www.nasa.gov/wp-content/uploads/2026/11/iss075e0274930orig.jpg"
     }
   ],
   "gallery": {
@@ -258,14 +258,14 @@
     ]
   },
   "apod": {
-    "date": "2026-11-27",
-    "title": "The Moon Watchers",
-    "explanation": " Explanation:   On November 24 , all denizens of our fair planet could watch the Moon rise opposite the setting Sun. Easy to spot in twilight skies above fields, fences, backyards, and even stone walls, the Moon was big and bright, and at its  full phase . Known to some as a Beaver Moon,  November's Full Moon  was also near perigee, the closest point in its elliptical orbit around planet Earth. That made it one of the biggest and brightest Full Moons, also known as  a supermoon . In fact, November's Full Moon was the first in a series of four consecutive Full Moon's near perigee. So your next chance to watch a supermoon rise will be when the  Cold Moon  rises on December 23.   Tomorrow's picture:  remember where you parked",
-    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/Plenilunio1_2048r.jpg?w=2023&h=2048&fit=clip",
-    "link": "https://science.nasa.gov/image-article/apod-2026-november-27-the-moon-watchers/",
-    "credit": " Marcella Pace ",
-    "alt": "Full Moon rising over a stone wall.",
+    "date": "2026-11-28",
+    "title": "Apollo 17 VIP Site Anaglyph",
+    "explanation": " Explanation:  Get out your red/blue glasses and check out this stereo scene from  Taurus-Littrow  valley on the Moon! The color anaglyph features a detailed 3D view of Apollo 17's  Lunar Rover  in the foreground. Behind it lies the Lunar Module and distant lunar hills. Because the world was going to be able  to watch  the  Lunar Module's  ascent stage liftoff via the rover's TV camera, this  parking place  was also known as the VIP Site.  Fifty years ago , in December of 1972, Apollo 17 astronauts Eugene Cernan and Harrison Schmitt spent about 75 hours on the Moon, while colleague Ronald Evans  orbited overhead . The crew returned with 110 kilograms of rock and soil samples, more than from any of the other lunar landing sites. Cernan and Schmitt  are still  the last  to walk  ( or drive )  on the Moon .   Tomorrow's picture:  dark cloud",
+    "image": "https://assets.science.nasa.gov/dynamicimage/assets/science/cds/apod/apod/2026/november/a17anaglyph_vanMeijgaarden_f.jpg?w=2015&h=2172&fit=clip",
+    "link": "https://science.nasa.gov/image-article/apod-2026-november-28-apollo-17-vip-site-anaglyph/",
+    "credit": " Gene Cernan ,  Apollo 17 ,  NASA ; Anaglyph by  Erik van Meijgaarden ",
+    "alt": "Lunar rover on the Moon.",
     "media_type": "image"
   },
-  "updated": "2026-11-27T10:30:08.562883+00:00"
+  "updated": "2026-11-28T09:46:21.017296+00:00"
 }
